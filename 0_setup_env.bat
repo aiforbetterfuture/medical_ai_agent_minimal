@@ -1,25 +1,37 @@
 @echo off
 setlocal
-REM Pin working directory to the folder of this BAT file:
+
+REM Change to the folder where this BAT file is located
 cd /d %~dp0
-REM Ensure local packages (rag/, agent/, etc.) are importable:
+
+REM Set PYTHONPATH for local imports
 set PYTHONPATH=%CD%
 
-echo [0_setup_env] Creating virtual environment (.venv) ...
+REM Prefer Python 3.10 if available
+set "PY_CMD=python"
+py -3.10 -c "import sys" >nul 2>&1
+if %errorlevel%==0 (
+  set "PY_CMD=py -3.10"
+  echo [0_setup_env] Using Python: py -3.10
+) else (
+  echo [0_setup_env] py -3.10 not found, using default python
+)
+
+echo [0_setup_env] Creating virtual environment ...
 if not exist .venv (
-  python -m venv .venv
+  %PY_CMD% -m venv .venv
   if errorlevel 1 (
-    echo [0_setup_env] Failed to create venv. Check Python installation.
+    echo [0_setup_env] Failed to create venv.
     pause
     exit /b 1
   )
 )
 
-REM Activate virtual environment
+REM Activate venv
 if exist .venv\Scripts\activate.bat (
   call .venv\Scripts\activate.bat
 ) else (
-  echo [0_setup_env] Failed to activate venv. Check Python installation.
+  echo [0_setup_env] Failed to activate venv.
   pause
   exit /b 1
 )
@@ -40,49 +52,50 @@ if errorlevel 1 (
   exit /b 1
 )
 
-REM Verify critical packages are installed
-echo [0_setup_env] Verifying critical packages...
+echo [0_setup_env] Installing spaCy and MedCAT ...
+python -m pip install --upgrade "spacy>=3.1,<3.2"
+python -m pip install --upgrade "medcat[spacy]"
+python -m pip install --upgrade medcat2
+python -m pip install --upgrade peft
+
+echo [0_setup_env] Downloading spaCy model ...
+python -m spacy download en_core_web_md
+
+echo [0_setup_env] Verifying installations ...
+python -c "import medcat; print('medcat:', medcat.__version__)"
+python -c "import spacy; print('spacy:', spacy.__version__)"
+python -c "import spacy; spacy.load('en_core_web_md'); print('spaCy model OK')"
+
+echo [0_setup_env] Verifying python-dotenv ...
 python -c "import dotenv" 2>nul
 if errorlevel 1 (
-  echo [0_setup_env] WARNING: python-dotenv not found, installing...
-  python -m pip install --quiet --upgrade python-dotenv
-  if errorlevel 1 (
-    echo [0_setup_env] ERROR: Failed to install python-dotenv.
-    echo [0_setup_env] Attempting to reinstall from requirements.txt...
-    python -m pip install --quiet --upgrade -r requirements.txt
-    if errorlevel 1 (
-      echo [0_setup_env] ERROR: Failed to install from requirements.txt.
-      pause
-      exit /b 1
-    )
-  )
-  echo [0_setup_env] Verifying python-dotenv installation...
-  python -c "import dotenv; print('[0_setup_env] python-dotenv version:', dotenv.__version__)" 2>nul
-  if errorlevel 1 (
-    echo [0_setup_env] ERROR: python-dotenv installation verification failed.
-    pause
-    exit /b 1
-  )
+  echo [0_setup_env] Installing python-dotenv ...
+  python -m pip install python-dotenv
 )
-echo [0_setup_env] Critical packages verified.
 
 echo.
-echo [0_setup_env] Checking for .env file...
+echo [0_setup_env] Checking .env file ...
 if not exist .env (
   echo [0_setup_env] WARNING: .env file not found.
-  echo [0_setup_env] Please create .env file with your LLM API keys:
-  echo [0_setup_env]   OPENAI_API_KEY=your_key_here
-  echo [0_setup_env]   GOOGLE_API_KEY=your_key_here  (optional, for Gemini)
-  echo [0_setup_env]   GEMINI_API_KEY=your_key_here  (optional, for Gemini)
-  echo [0_setup_env]   ANTHROPIC_API_KEY=your_key_here  (optional, for Claude)
+  echo [0_setup_env] Create .env with your API keys.
 ) else (
   echo [0_setup_env] .env file found.
 )
 
+echo [0_setup_env] Checking MedCAT2 model path ...
+set "DEFAULT_MODEL=%CD%\medcat2\mc_modelpack_snomed_int_16_mar_2022_25be3857ba34bdd5.zip"
+if not defined MEDCAT2_MODEL_PATH (
+  if exist "%DEFAULT_MODEL%" (
+    echo [0_setup_env] Setting MEDCAT2_MODEL_PATH ...
+    setx MEDCAT2_MODEL_PATH "%DEFAULT_MODEL%"
+  ) else (
+    echo [0_setup_env] Model pack not found at default location.
+  )
+) else (
+  echo [0_setup_env] MEDCAT2_MODEL_PATH already set.
+)
+
 echo.
 echo [0_setup_env] Setup complete!
-echo [0_setup_env] Next steps:
-echo [0_setup_env]   1. Ensure .env file is configured with API keys
-echo [0_setup_env]   2. Run 3_run_ui.bat to start the Streamlit UI
-echo [0_setup_env]   3. Or run 4_run_all.bat to start the UI
+echo [0_setup_env] Run: streamlit run app.py
 pause

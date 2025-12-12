@@ -28,6 +28,9 @@ if 'messages' not in st.session_state:
     st.session_state.messages = []  # [{"role": "user"|"assistant", "content": "..."}]
 if 'agent_graph' not in st.session_state:
     st.session_state.agent_graph = None
+if 'profile_store' not in st.session_state:
+    # LangGraph 실행 결과로 전달되는 ProfileStore 객체를 유지해 멀티턴에서도 누적
+    st.session_state.profile_store = None
 
 
 def initialize_agent():
@@ -66,6 +69,73 @@ def format_conversation_history(messages: list) -> str:
     return "\n".join(history_lines)
 
 
+def _extract_profile_snapshot(profile_store):
+    """
+    ProfileStore에서 UI용 스냅샷 추출
+    """
+    if not profile_store:
+        return {
+            "gender_age": "정보 없음",
+            "conditions": [],
+            "symptoms": [],
+            "vitals": [],
+            "labs": [],
+            "medications": [],
+        }
+    
+    ltm = profile_store.ltm
+    gender = ltm.demographics.get("gender", "")
+    age = ltm.demographics.get("age", "")
+    gender_age = f"{age}세 / {gender}" if (gender or age) else "정보 없음"
+
+    def _dedup_latest(items, key):
+        seen = set()
+        out = []
+        for it in reversed(items):  # 최신순 역순 → 중복 제거 후 다시 뒤집기
+            k = key(it)
+            if k in seen:
+                continue
+            seen.add(k)
+            out.append(it)
+        return list(reversed(out))
+
+    conditions = [c.name for c in _dedup_latest(ltm.conditions, lambda x: x.name) if c.name]
+    symptoms = [
+        f"{s.name}{' (부정)' if s.negated else ''}"
+        for s in _dedup_latest(ltm.symptoms, lambda x: (x.name, x.negated))
+        if s.name
+    ]
+    vitals = [
+        f"{v.name}: {v.value}{v.unit}".strip()
+        for v in _dedup_latest(ltm.vitals, lambda x: (x.name, x.value, x.unit))
+        if v.name
+    ]
+    labs = [
+        f"{l.name}: {l.value}{l.unit}".strip()
+        for l in _dedup_latest(ltm.labs, lambda x: (x.name, x.value, x.unit))
+        if l.name
+    ]
+    meds = [m.name for m in _dedup_latest(ltm.meds, lambda x: x.name) if m.name]
+
+    return {
+        "gender_age": gender_age,
+        "conditions": conditions,
+        "symptoms": symptoms,
+        "vitals": vitals,
+        "labs": labs,
+        "medications": meds,
+    }
+
+
+def _render_tag_line(label: str, items: list):
+    """간단한 태그형 표시"""
+    if not items:
+        st.markdown(f"**{label}**: 없음")
+        return
+    chips = " ".join([f"`{t}`" for t in items])
+    st.markdown(f"**{label}**: {chips}")
+
+
 def main():
     """메인 함수"""
     st.title("🏥 의학지식 AI Agent")
@@ -73,22 +143,32 @@ def main():
     
     # 사이드바
     with st.sidebar:
-        st.header("⚙️ 설정")
+        st.header("⚙️ 모드 선택")
         mode = st.selectbox(
-            "모드 선택",
+            "모드",
             ["ai_agent", "llm"],
             index=0,
             help="ai_agent: 전체 워크플로우 실행, llm: LLM만 사용"
         )
-        
+
+        st.markdown("---")
+        st.header("🧾 내 정보 (실시간)")
+        snapshot = _extract_profile_snapshot(st.session_state.profile_store)
+        st.markdown(f"**성별/나이:** {snapshot['gender_age']}")
+        _render_tag_line("질환", snapshot["conditions"])
+        _render_tag_line("증상", snapshot["symptoms"])
+        _render_tag_line("약물", snapshot["medications"])
+        _render_tag_line("활력징후", snapshot["vitals"])
+        _render_tag_line("검사", snapshot["labs"])
+        st.caption("잘못된 정보는 채팅창에서 바로잡아 주세요.")
+
         st.markdown("---")
         st.header("📋 대화 관리")
         if st.button("🗑️ 대화 초기화", use_container_width=True):
             st.session_state.messages = []
             st.rerun()
-        
         st.markdown(f"**대화 수:** {len([m for m in st.session_state.messages if m['role'] == 'user'])}")
-        
+
         st.markdown("---")
         with st.expander("ℹ️ 사용 방법"):
             st.markdown("""
@@ -138,12 +218,23 @@ def main():
                         st.session_state.messages[:-1]  # 현재 질문 제외
                     )
                     
+                    session_payload = {}
+                    if st.session_state.profile_store is not None:
+                        # LangGraph 상태에 기존 프로필을 전달해 멀티턴 누적
+                        session_payload['profile_store'] = st.session_state.profile_store
+
                     # Agent 실행
-                    answer = run_agent(
+                    final_state = run_agent(
                         user_text=prompt,
                         mode=mode,
-                        conversation_history=conversation_history
+                        conversation_history=conversation_history,
+                        session_state=session_payload,
+                        return_state=True
                     )
+
+                    # 프로필 상태 업데이트 (사이드바 실시간 반영)
+                    st.session_state.profile_store = final_state.get('profile_store', st.session_state.profile_store)
+                    answer = final_state.get('answer', '')
                     
                     # AI 메시지 추가 및 표시
                     st.markdown(answer)

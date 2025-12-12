@@ -32,8 +32,14 @@ def generate_answer_node(state: AgentState) -> AgentState:
     
     # 답변 생성
     try:
+        # context_prompt가 있으면 사용자 프롬프트 앞에 붙여 맥락을 전달
+        combined_user_prompt = "\n\n".join(filter(None, [
+            state.get('context_prompt', ''),
+            state.get('user_prompt', '')
+        ]))
+        
         answer = llm_client.generate(
-            prompt=state['user_prompt'],
+            prompt=combined_user_prompt,
             system_prompt=state['system_prompt']
         )
     except Exception as e:

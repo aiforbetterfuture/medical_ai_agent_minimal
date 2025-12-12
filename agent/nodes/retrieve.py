@@ -8,6 +8,7 @@ from core.llm_client import get_llm_client
 from core.config import get_retrieval_config, get_embedding_config
 from core.utils import is_llm_mode
 from core.config import get_agent_config
+from context.token_manager import TokenManager
 
 
 def _select_route(slot_out: dict, feature_flags: dict) -> str:
@@ -95,7 +96,7 @@ def retrieve_node(state: AgentState) -> AgentState:
     slot_out = state.get('slot_out', {})
     rewritten_query = _rewrite_query(state['user_text'], slot_out, profile_summary, feature_flags)
     state['query_for_retrieval'] = rewritten_query
-
+    
     # 쿼리 벡터 생성
     try:
         query_vector = llm_client.embed(rewritten_query)
@@ -125,15 +126,68 @@ def retrieve_node(state: AgentState) -> AgentState:
         retriever_cache[retriever_key] = hybrid_retriever
         state['retriever_cache'] = retriever_cache
     
+    # 토큰 예산 확인 (없으면 기본값 사용)
+    token_plan = state.get('token_plan', {})
+    docs_budget = token_plan.get('for_docs', 900)
+
+    # Active Retrieval: dynamic_k 우선 사용
+    dynamic_k = state.get('dynamic_k')
+
+    if dynamic_k is not None and feature_flags.get('active_retrieval_enabled', False):
+        # Active Retrieval이 활성화되고 dynamic_k가 설정된 경우
+        print(f"[Active Retrieval] Using dynamic_k={dynamic_k}")
+
+        # 예산 제약 적용 (안전장치)
+        avg_doc_tokens = feature_flags.get('avg_doc_tokens', 200)
+        max_k_by_budget = max(1, docs_budget // max(1, avg_doc_tokens))
+        final_k = min(dynamic_k, max_k_by_budget)
+
+        if final_k < dynamic_k:
+            print(f"[Active Retrieval] dynamic_k={dynamic_k} reduced to {final_k} due to budget constraint")
+    else:
+        # 기존 로직 (Fallback)
+        base_k = feature_flags.get(
+            'top_k_override',
+            retrieval_config.get('multi', {}).get('retrievers', [{}])[0].get('k', 8)
+        )
+
+        # 예산 기반 k 계산 (평균 문서 길이 근사치)
+        avg_doc_tokens = feature_flags.get('avg_doc_tokens', 200)
+        max_k_by_budget = max(1, docs_budget // max(1, avg_doc_tokens))
+        final_k = min(base_k, max_k_by_budget) if feature_flags.get('budget_aware_retrieval', True) else base_k
+
+    # 검색 모드에 따라 query/query_vector 선택
+    retrieval_mode = feature_flags.get('retrieval_mode', 'hybrid')  # hybrid/bm25/faiss
+    query_arg = rewritten_query if retrieval_mode != 'faiss' else ""
+    query_vec_arg = query_vector if retrieval_mode != 'bm25' else None
+    
     # 검색 실행
-    retrieved_docs = hybrid_retriever.search(
-        query=rewritten_query,
-        query_vector=query_vector,
-        k=feature_flags.get('top_k', retrieval_config.get('multi', {}).get('retrievers', [{}])[0].get('k', 8))
+    candidate_docs = hybrid_retriever.search(
+        query=query_arg,
+        query_vector=query_vec_arg,
+        k=final_k
     )
+
+    # 예산 내 문서만 선택 (토큰 수가 예산을 넘지 않도록 필터, 옵션)
+    if feature_flags.get('budget_aware_retrieval', True):
+        token_manager = state.get('token_manager') or TokenManager(max_total_tokens=4000)
+        state['token_manager'] = token_manager
+
+        selected_docs = []
+        used_tokens = 0
+        for doc in candidate_docs:
+            doc_text = doc.get('text', '')
+            doc_tokens = token_manager.count_tokens(doc_text)
+            if used_tokens + doc_tokens <= docs_budget:
+                selected_docs.append(doc)
+                used_tokens += doc_tokens
+            else:
+                break
+    else:
+        selected_docs = candidate_docs
     
     return {
         **state,
-        'retrieved_docs': retrieved_docs
+        'retrieved_docs': selected_docs
     }
 

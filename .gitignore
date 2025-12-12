@@ -35,3 +35,19 @@ logs/
 .DS_Store
 Thumbs.db
 
+# Large model/data artifacts
+medcat2/
+synthea/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.dat
+*.bin
+*.pt
+*.pth
+*.model
+*.ckpt
+# auto-ignore any newly detected large binary blobs
+*.onnx
+

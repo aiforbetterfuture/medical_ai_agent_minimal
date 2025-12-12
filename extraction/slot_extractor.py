@@ -1,8 +1,13 @@
 """
 슬롯 추출 모듈
-- MedCAT2 기반 엔티티 추출
+- MedCAT2 기반 엔티티 추출 (다국어 지원)
 - 정규표현식 기반 인구통계학적 정보 추출
 - 6개 슬롯 구조화
+
+다국어 파이프라인 통합:
+- 한국어 입력 자동 감지 및 번역
+- Helsinki-NLP 신경망 번역 + 사전 기반 번역 하이브리드
+- 추출된 엔티티에 한국어/영어 이름 동시 제공
 """
 
 import re
@@ -11,12 +16,12 @@ from typing import Dict, Any, List, Optional
 
 logger = logging.getLogger(__name__)
 
-from .medcat2_adapter import MedCAT2Adapter
+from .medcat2_adapter import MedCAT2Adapter, _detect_language
 
 
 class SlotExtractor:
     """
-    슬롯 추출기
+    슬롯 추출기 (다국어 지원)
     
     사용자 질의에서 다음 정보를 추출:
     - 인구통계학적 정보 (나이, 성별)
@@ -24,15 +29,32 @@ class SlotExtractor:
     - 증상 (symptoms)
     - 수치 (vitals, labs)
     - 복용 약물 (medications)
+    
+    다국어 지원:
+    - 한국어 입력 자동 감지 및 영어 번역
+    - 추출된 엔티티에 한국어/영어 이름 동시 제공
     """
     
-    def __init__(self, use_medcat2: bool = True, medcat2_model_path: Optional[str] = None):
+    def __init__(
+        self, 
+        use_medcat2: bool = True, 
+        medcat2_model_path: Optional[str] = None,
+        use_multilingual: bool = True,
+        use_neural_translation: bool = True,
+        use_dict_translation: bool = True
+    ):
         """
         Args:
             use_medcat2: MedCAT2 사용 여부
             medcat2_model_path: MedCAT2 모델 경로
+            use_multilingual: 다국어 파이프라인 사용 여부
+            use_neural_translation: Helsinki-NLP 신경망 번역 사용 여부
+            use_dict_translation: 사전 기반 번역 사용 여부
         """
         self.use_medcat2 = use_medcat2
+        self.use_multilingual = use_multilingual
+        self.use_neural_translation = use_neural_translation
+        self.use_dict_translation = use_dict_translation
         self.medcat2_adapter = None
         
         if use_medcat2:
@@ -58,10 +80,10 @@ class SlotExtractor:
     
     def extract(self, text: str) -> Dict[str, Any]:
         """
-        텍스트에서 슬롯 추출
+        텍스트에서 슬롯 추출 (다국어 자동 지원)
         
         Args:
-            text: 사용자 입력 텍스트
+            text: 사용자 입력 텍스트 (한국어 또는 영어)
         
         Returns:
             {
@@ -70,7 +92,13 @@ class SlotExtractor:
                 'symptoms': List[Dict],
                 'vitals': List[Dict],
                 'labs': List[Dict],
-                'medications': List[Dict]
+                'medications': List[Dict],
+                'metadata': {  # 다국어 처리 메타데이터
+                    'original_text': str,
+                    'translated_text': str,
+                    'detected_language': str,
+                    'translation_method': str
+                }
             }
         """
         t = text.strip()
@@ -81,37 +109,66 @@ class SlotExtractor:
             'vitals': [],
             'medications': [],
             'demographics': {},
-            'pregnancy': False
+            'pregnancy': False,
+            'metadata': {}
         }
         
-        # 인구통계학적 정보 추출
+        # 언어 감지
+        detected_lang = _detect_language(t)
+        
+        # 인구통계학적 정보 추출 (원본 텍스트에서)
         self._extract_demographics(t, slots)
         
         # MedCAT2로 엔티티 추출
         if self.medcat2_adapter:
             try:
-                medcat_entities = self.medcat2_adapter.extract_entities(t)
+                # 다국어 파이프라인 사용 여부 결정
+                use_multilingual = self.use_multilingual and detected_lang in ('ko', 'mixed')
                 
-                # 질환
+                if use_multilingual:
+                    # 다국어 추출 (한국어 자동 번역)
+                    medcat_entities = self.medcat2_adapter.extract_entities_multilingual(
+                        t,
+                        use_neural_translation=self.use_neural_translation,
+                        use_dict_translation=self.use_dict_translation
+                    )
+                    # 메타데이터 저장
+                    slots['metadata'] = medcat_entities.get('metadata', {})
+                else:
+                    # 기본 영어 추출
+                    medcat_entities = self.medcat2_adapter.extract_entities(t)
+                    slots['metadata'] = {
+                        'original_text': t,
+                        'translated_text': t,
+                        'detected_language': detected_lang,
+                        'translation_method': 'none'
+                    }
+                
+                # 질환 (신뢰도 임계값 낮춤 - 다국어 번역 후 정확도 고려)
+                confidence_threshold = 0.5 if use_multilingual else 0.7
                 for cond in medcat_entities.get('conditions', []):
-                    if cond.get('confidence', 0) >= 0.7:
+                    if cond.get('confidence', 0) >= confidence_threshold:
                         slots['conditions'].append(cond)
                 
                 # 증상
+                symptom_threshold = 0.4 if use_multilingual else 0.6
                 for symp in medcat_entities.get('symptoms', []):
-                    if symp.get('confidence', 0) >= 0.6:
+                    if symp.get('confidence', 0) >= symptom_threshold:
                         slots['symptoms'].append(symp)
                 
                 # 약물
+                med_threshold = 0.6 if use_multilingual else 0.8
                 for med in medcat_entities.get('medications', []):
-                    if med.get('confidence', 0) >= 0.8:
+                    if med.get('confidence', 0) >= med_threshold:
                         slots['medications'].append(med)
                 
                 # 수치
                 slots['vitals'].extend(medcat_entities.get('vitals', []))
                 slots['labs'].extend(medcat_entities.get('labs', []))
+                
             except Exception as e:
                 logger.debug(f"MedCAT2 추출 오류: {e}")
+                slots['metadata']['error'] = str(e)
         
         # 키워드 기반 추출 (보완)
         self._extract_by_keywords(t, slots)

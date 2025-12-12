@@ -18,6 +18,13 @@ sentence-transformers>=2.2.0
 
 # Medical entity extraction
 medcat>=2.0
+peft>=0.10.0
+
+# Multilingual translation (Helsinki-NLP opus-mt)
+transformers>=4.30.0
+torch>=2.0.0
+langdetect>=1.0.9
+sentencepiece>=0.1.99
 
 # Optional: Web UI
 streamlit>=1.28.0
