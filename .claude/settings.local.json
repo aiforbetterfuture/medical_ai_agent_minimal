@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(nul)"
+      "Bash(nul)",
+      "Bash(git add:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": [],
     "ask": []
