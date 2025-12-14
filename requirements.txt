@@ -17,7 +17,9 @@ numpy>=1.24.0
 sentence-transformers>=2.2.0
 
 # Medical entity extraction
+# Note: medcat 2.x requires pydantic>=2.0 and spacy>=3.8
 medcat>=2.0
+spacy>=3.8
 peft>=0.10.0
 
 # Multilingual translation (Helsinki-NLP opus-mt)
@@ -28,4 +30,8 @@ sentencepiece>=0.1.99
 
 # Optional: Web UI
 streamlit>=1.28.0
+
+# Evaluation metrics
+ragas>=0.1.0
+datasets>=2.14.0
 

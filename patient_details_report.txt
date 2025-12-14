@@ -1,0 +1,2344 @@
+====================================================================================================
+환자 ID: ca90b49d-b0ad-32f0-c80b-9716a926fb94
+파일명: Delaine470_Osinski784_ca90b49d-b0ad-32f0-c80b-9716a926fb94.json
+====================================================================================================
+
+【기본 정보】
+  이름: Delaine470 Osinski784
+  성별: female
+  생년월일: 1955-05-14
+  나이: 70세
+  사망 여부: 생존
+  혼인 상태: Married
+  인종: None
+  민족: None
+  출생 시 성별: F
+  어머니 결혼 전 성: Lupe126 Grant908
+  주소: 117 Sawayn Haven Suite 49, Lawrence, MA 01843
+
+【질환】 (49개)
+  1. Only received primary school education (finding)
+      상태: None
+      발병일: 1973-07-07T17:40:56+09:00
+  2. Past pregnancy history of miscarriage (situation)
+      상태: None
+      발병일: 1988-12-31T16:53:21+09:00
+  3. Prediabetes (finding)
+      상태: None
+      발병일: 1995-05-20T16:53:21+09:00
+  4. Anemia (disorder)
+      상태: None
+      발병일: 1997-05-24T16:53:21+09:00
+  5. Body mass index 30+ - obesity (finding)
+      상태: None
+      발병일: 1999-05-29T16:53:21+09:00
+  6. Hyperlipidemia (disorder)
+      상태: None
+      발병일: 2001-02-24T16:53:21+09:00
+  7. Victim of intimate partner abuse (finding)
+      상태: None
+      발병일: 2005-05-14T18:29:46+09:00
+  8. Has a criminal record (finding)
+      상태: None
+      발병일: 2013-06-29T17:51:41+09:00
+  9. Part-time employment (finding)
+      상태: None
+      발병일: 2014-07-05T17:43:06+09:00
+  10. Medication review due (situation)
+      상태: None
+      발병일: 2016-07-16T16:53:21+09:00
+  11. Full-time employment (finding)
+      상태: None
+      발병일: 2016-07-16T17:53:14+09:00
+  12. Limited social contact (finding)
+      상태: None
+      발병일: 2016-07-16T17:53:14+09:00
+  13. Ischemic heart disease (disorder)
+      상태: None
+      발병일: 2017-07-22T16:53:21+09:00
+  14. Stress (finding)
+      상태: None
+      발병일: 2017-07-22T17:42:27+09:00
+  15. Abnormal findings diagnostic imaging heart+coronary circulat (finding)
+      상태: None
+      발병일: 2017-08-04T04:42:25+09:00
+  16. Primary dental caries (disorder)
+      상태: None
+      발병일: 2017-08-12T19:02:20+09:00
+  17. Medication review due (situation)
+      상태: None
+      발병일: 2018-07-28T16:53:21+09:00
+  18. Part-time employment (finding)
+      상태: None
+      발병일: 2018-07-28T17:41:26+09:00
+  19. Social isolation (finding)
+      상태: None
+      발병일: 2018-07-28T17:41:26+09:00
+  20. Gingivitis (disorder)
+      상태: None
+      발병일: 2018-07-28T17:41:26+09:00
+  21. Medication review due (situation)
+      상태: None
+      발병일: 2019-08-03T16:53:21+09:00
+  22. Full-time employment (finding)
+      상태: None
+      발병일: 2019-08-03T17:52:15+09:00
+  23. Reports of violence in the environment (finding)
+      상태: None
+      발병일: 2019-08-03T17:52:15+09:00
+  24. Medication review due (situation)
+      상태: None
+      발병일: 2020-08-08T16:53:21+09:00
+  25. Stress (finding)
+      상태: None
+      발병일: 2020-08-08T17:28:05+09:00
+  26. Gingivitis (disorder)
+      상태: None
+      발병일: 2020-08-08T19:55:49+09:00
+  27. Suspected disease caused by Severe acute respiratory coronavirus 2 (situation)
+      상태: None
+      발병일: 2020-09-13T16:53:21+09:00
+  28. Fatigue (finding)
+      상태: None
+      발병일: 2020-09-13T16:53:21+09:00
+  29. Chill (finding)
+      상태: None
+      발병일: 2020-09-13T16:53:21+09:00
+  30. Fever (finding)
+      상태: None
+      발병일: 2020-09-13T16:53:21+09:00
+  31. Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)
+      상태: None
+      발병일: 2020-09-13T17:58:59+09:00
+  32. Pneumonia (disorder)
+      상태: None
+      발병일: 2020-09-13T18:39:39+09:00
+  33. Hypoxemia (disorder)
+      상태: None
+      발병일: 2020-09-13T18:39:39+09:00
+  34. Respiratory distress (finding)
+      상태: None
+      발병일: 2020-09-13T18:39:39+09:00
+  35. Acute respiratory failure (disorder)
+      상태: None
+      발병일: 2020-09-13T18:39:39+09:00
+  36. Acute bronchitis (disorder)
+      상태: None
+      발병일: 2020-10-02T15:53:21+09:00
+  37. Unemployed (finding)
+      상태: None
+      발병일: 2020-10-10T17:39:20+09:00
+  38. Gingivitis (disorder)
+      상태: None
+      발병일: 2020-10-10T19:01:41+09:00
+  39. Medication review due (situation)
+      상태: None
+      발병일: 2020-10-17T16:53:21+09:00
+  40. Victim of intimate partner abuse (finding)
+      상태: None
+      발병일: 2021-01-16T17:51:12+09:00
+  41. Acute bronchitis (disorder)
+      상태: None
+      발병일: 2021-01-30T16:53:21+09:00
+  42. Medication review due (situation)
+      상태: None
+      발병일: 2021-08-14T16:53:21+09:00
+  43. Full-time employment (finding)
+      상태: None
+      발병일: 2021-08-14T17:47:35+09:00
+  44. Medication review due (situation)
+      상태: None
+      발병일: 2023-08-26T16:53:21+09:00
+  45. Medication review due (situation)
+      상태: None
+      발병일: 2024-08-31T16:53:21+09:00
+  46. Victim of intimate partner abuse (finding)
+      상태: None
+      발병일: 2024-08-31T17:41:33+09:00
+  47. Fracture of bone (disorder)
+      상태: None
+      발병일: 2024-09-07T16:53:21+09:00
+  48. Fracture of clavicle (disorder)
+      상태: None
+      발병일: 2024-09-07T16:53:21+09:00
+  49. Unemployed (finding)
+      상태: None
+      발병일: 2025-09-06T17:32:14+09:00
+
+【처방약】 (40개)
+  1. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  2. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  3. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  4. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  5. Clopidogrel 75 MG Oral Tablet
+      상태: active
+  6. Simvastatin 20 MG Oral Tablet
+      상태: active
+  7. 24 HR metoprolol succinate 100 MG Extended Release Oral Tablet
+      상태: active
+  8. Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray
+      상태: active
+  9. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  10. Unknown
+      상태: completed
+  11. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  12. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  13. Unknown
+      상태: completed
+  14. Unknown
+      상태: completed
+  15. Unknown
+      상태: completed
+  16. Unknown
+      상태: completed
+  17. Unknown
+      상태: completed
+  18. Unknown
+      상태: completed
+  19. Unknown
+      상태: completed
+  20. Unknown
+      상태: completed
+  21. Unknown
+      상태: completed
+  22. Unknown
+      상태: completed
+  23. Unknown
+      상태: completed
+  24. Unknown
+      상태: completed
+  25. Unknown
+      상태: completed
+  26. Unknown
+      상태: completed
+  27. Unknown
+      상태: completed
+  28. Unknown
+      상태: completed
+  29. Unknown
+      상태: completed
+  30. Unknown
+      상태: completed
+  31. Unknown
+      상태: completed
+  32. Unknown
+      상태: completed
+  33. Acetaminophen 325 MG Oral Tablet
+      상태: completed
+  34. Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution
+      상태: completed
+  35. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  36. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  37. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  38. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  39. Acetaminophen 325 MG Oral Tablet
+      상태: completed
+      용법: Take as needed.
+  40. Simvastatin 10 MG Oral Tablet
+      상태: active
+      용법: None
+
+【알레르기】 없음
+
+【시술/수술】 (134개)
+  1. Assessment of health and social care needs (procedure)
+      시행일: {'start': '2016-07-16T16:53:21+09:00', 'end': '2016-07-16T17:53:14+09:00'}
+  2. Depression screening (procedure)
+      시행일: {'start': '2016-07-16T17:53:14+09:00', 'end': '2016-07-16T18:06:35+09:00'}
+  3. Depression screening (procedure)
+      시행일: {'start': '2016-07-16T18:06:35+09:00', 'end': '2016-07-16T18:29:25+09:00'}
+  4. Medication reconciliation (procedure)
+      시행일: {'start': '2017-07-22T16:53:21+09:00', 'end': '2017-07-22T17:08:21+09:00'}
+  5. Assessment of health and social care needs (procedure)
+      시행일: {'start': '2017-07-22T16:53:21+09:00', 'end': '2017-07-22T17:42:27+09:00'}
+  6. Assessment of anxiety (procedure)
+      시행일: {'start': '2017-07-22T17:42:27+09:00', 'end': '2017-07-22T18:07:45+09:00'}
+  7. Depression screening (procedure)
+      시행일: {'start': '2017-07-22T18:07:45+09:00', 'end': '2017-07-22T18:21:18+09:00'}
+  8. Depression screening (procedure)
+      시행일: {'start': '2017-07-22T18:21:18+09:00', 'end': '2017-07-22T18:43:56+09:00'}
+  9. Assessment of substance use (procedure)
+      시행일: {'start': '2017-07-22T18:43:56+09:00', 'end': '2017-07-22T18:55:22+09:00'}
+  10. Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)
+      시행일: {'start': '2017-07-22T18:55:22+09:00', 'end': '2017-07-22T19:17:37+09:00'}
+
+【바이탈 사인】 (150개)
+  1. Body Height: 169.3 cm
+      측정일: 2016-07-16T16:53:21+09:00
+  2. Body Weight: 79.4 kg
+      측정일: 2016-07-16T16:53:21+09:00
+  3. Body mass index (BMI) [Ratio]: 27.7 kg/m2
+      측정일: 2016-07-16T16:53:21+09:00
+  4. Blood pressure panel with all children optional: N/A
+      측정일: 2016-07-16T16:53:21+09:00
+  5. Heart rate: 66 /min
+      측정일: 2016-07-16T16:53:21+09:00
+  6. Respiratory rate: 16 /min
+      측정일: 2016-07-16T16:53:21+09:00
+  7. Body Height: 169.3 cm
+      측정일: 2017-07-22T16:53:21+09:00
+  8. Body Weight: 79.4 kg
+      측정일: 2017-07-22T16:53:21+09:00
+  9. Body mass index (BMI) [Ratio]: 27.7 kg/m2
+      측정일: 2017-07-22T16:53:21+09:00
+  10. Blood pressure panel with all children optional: N/A
+      측정일: 2017-07-22T16:53:21+09:00
+
+【검사 결과】 (161개)
+  1. Glucose [Mass/volume] in Blood: 92.31 mg/dL
+      검사일: 2016-03-13T16:53:21+09:00
+  2. Creatinine [Mass/volume] in Blood: 3.2215 mg/dL
+      검사일: 2016-03-13T16:53:21+09:00
+  3. Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD): 79.756 mL/min
+      검사일: 2016-03-13T16:53:21+09:00
+  4. Cholesterol [Mass/volume] in Serum or Plasma: 208.86 mg/dL
+      검사일: 2016-03-13T16:53:21+09:00
+  5. Low Density Lipoprotein Cholesterol: 136.57 mg/dL
+      검사일: 2016-03-13T16:53:21+09:00
+  6. Cholesterol in HDL [Mass/volume] in Serum or Plasma: 47.606 mg/dL
+      검사일: 2016-03-13T16:53:21+09:00
+  7. Hemoglobin A1c/Hemoglobin.total in Blood: 5.92 %
+      검사일: 2016-07-16T16:53:21+09:00
+  8. Glucose [Mass/volume] in Blood: 89.7 mg/dL
+      검사일: 2016-07-16T16:53:21+09:00
+  9. Creatinine [Mass/volume] in Blood: 0.74 mg/dL
+      검사일: 2016-07-16T16:53:21+09:00
+  10. Hemoglobin [Mass/volume] in Blood: 12.437 g/dL
+      검사일: 2016-07-16T16:53:21+09:00
+
+【진료 기록】 (50개)
+  1. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 1973-07-07T16:53:21+09:00 ~ 1973-07-07T17:40:56+09:00
+  2. 유형: AMB
+      종류: Prenatal visit (regime/therapy)
+      기간: 1988-12-31T16:53:21+09:00 ~ 1988-12-31T17:08:21+09:00
+  3. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 1995-05-20T16:53:21+09:00 ~ 1995-05-20T17:24:53+09:00
+  4. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 1997-05-24T16:53:21+09:00 ~ 1997-05-24T17:47:36+09:00
+  5. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 1999-05-29T16:53:21+09:00 ~ 1999-05-29T17:49:12+09:00
+  6. 유형: AMB
+      종류: Encounter for check up (procedure)
+      기간: 2001-02-24T16:53:21+09:00 ~ 2001-02-24T17:28:40+09:00
+  7. 유형: AMB
+      종류: Follow-up encounter (procedure)
+      기간: 2001-03-17T16:53:21+09:00 ~ 2001-03-17T17:08:21+09:00
+  8. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2005-05-14T16:53:21+09:00 ~ 2005-05-14T17:47:15+09:00
+  9. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2013-06-29T16:53:21+09:00 ~ 2013-06-29T17:51:41+09:00
+  10. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2014-07-05T16:53:21+09:00 ~ 2014-07-05T17:43:06+09:00
+
+【예방접종】 (15개)
+  1. Influenza, seasonal, injectable, preservative free
+      접종일: 2016-07-16T16:53:21+09:00
+  2. Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed
+      접종일: 2016-07-16T16:53:21+09:00
+  3. Influenza, seasonal, injectable, preservative free
+      접종일: 2017-07-22T16:53:21+09:00
+  4. Influenza, seasonal, injectable, preservative free
+      접종일: 2018-07-28T16:53:21+09:00
+  5. Influenza, seasonal, injectable, preservative free
+      접종일: 2019-08-03T16:53:21+09:00
+  6. Influenza, seasonal, injectable, preservative free
+      접종일: 2020-08-08T16:53:21+09:00
+  7. Pneumococcal conjugate PCV 13
+      접종일: 2020-08-08T16:53:21+09:00
+  8. Influenza, seasonal, injectable, preservative free
+      접종일: 2021-01-16T16:53:21+09:00
+  9. COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose
+      접종일: 2021-03-27T16:53:21+09:00
+  10. COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose
+      접종일: 2021-04-24T16:53:21+09:00
+
+【사회력】 (12개)
+  1. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2016-07-16T16:53:21+09:00
+  2. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2017-07-22T16:53:21+09:00
+  3. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2018-07-28T16:53:21+09:00
+  4. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2019-08-03T16:53:21+09:00
+  5. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2020-08-08T16:53:21+09:00
+  6. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2020-10-10T16:53:21+09:00
+  7. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2021-01-16T16:53:21+09:00
+  8. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2021-08-14T16:53:21+09:00
+  9. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2022-08-20T16:53:21+09:00
+  10. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2023-08-26T16:53:21+09:00
+  11. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2024-08-31T16:53:21+09:00
+  12. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2025-09-06T16:53:21+09:00
+
+【가족력】 없음
+
+【치료 계획】 (6개)
+  1. None
+      상태: active
+  2. None
+      상태: active
+  3. None
+      상태: completed
+  4. None
+      상태: completed
+  5. None
+      상태: completed
+  6. None
+      상태: completed
+
+【진단 보고서】 (178개)
+  1. History and physical note
+  2. History and physical note
+  3. History and physical note
+  4. History and physical note
+  5. History and physical note
+
+【기타 관찰】 (686개)
+  1. Urea nitrogen [Mass/volume] in Blood: 12.17 mg/dL
+  2. Calcium [Mass/volume] in Blood: 8.86 mg/dL
+  3. Sodium [Moles/volume] in Blood: 137.99 mmol/L
+  4. Potassium [Moles/volume] in Blood: 4.73 mmol/L
+  5. Chloride [Moles/volume] in Blood: 104.12 mmol/L
+  6. Carbon dioxide, total [Moles/volume] in Blood: 21.56 mmol/L
+  7. Protein [Mass/volume] in Serum or Plasma: 7.5407 g/dL
+  8. Albumin [Mass/volume] in Serum or Plasma: 3.9272 g/dL
+  9. Globulin [Mass/volume] in Serum by calculation: 2.9114 g/L
+  10. Bilirubin.total [Mass/volume] in Serum or Plasma: 0.29212 mg/dL
+
+【리소스 통계】
+  CarePlan: 6개
+  CareTeam: 6개
+  Claim: 90개
+  Condition: 49개
+  Device: 3개
+  DiagnosticReport: 178개
+  DocumentReference: 50개
+  Encounter: 50개
+  ExplanationOfBenefit: 90개
+  ImagingStudy: 3개
+  Immunization: 15개
+  Medication: 21개
+  MedicationAdministration: 21개
+  MedicationRequest: 40개
+  Observation: 1009개
+  Patient: 1개
+  Procedure: 134개
+  Provenance: 1개
+  SupplyDelivery: 97개
+
+====================================================================================================
+
+====================================================================================================
+환자 ID: bde3305a-1950-801d-7a13-4e3a2d4cc0ad
+파일명: Johnson679_Graham902_bde3305a-1950-801d-7a13-4e3a2d4cc0ad.json
+====================================================================================================
+
+【기본 정보】
+  이름: Johnson679 Felipe97 Graham902
+  성별: male
+  생년월일: 1956-09-25
+  나이: 69세
+  사망 여부: 생존
+  혼인 상태: Married
+  인종: None
+  민족: None
+  출생 시 성별: M
+  어머니 결혼 전 성: Carma664 Schmidt332
+  주소: 809 Block Club Apt 35, South Yarmouth, MA 02664
+
+【질환】 (65개)
+  1. Educated to high school level (finding)
+      상태: None
+      발병일: 1974-11-19T22:12:12+09:00
+  2. Lack of access to transportation (finding)
+      상태: None
+      발병일: 1974-11-19T22:12:12+09:00
+  3. Transport problem (finding)
+      상태: None
+      발병일: 1975-11-25T22:27:31+09:00
+  4. Prediabetes (finding)
+      상태: None
+      발병일: 1978-11-28T21:31:46+09:00
+  5. Anemia (disorder)
+      상태: None
+      발병일: 1978-11-28T21:31:46+09:00
+  6. Body mass index 30+ - obesity (finding)
+      상태: None
+      발병일: 1990-12-11T21:31:46+09:00
+  7. Essential hypertension (disorder)
+      상태: None
+      발병일: 2009-10-13T21:31:46+09:00
+  8. Metabolic syndrome X (disorder)
+      상태: None
+      발병일: 2009-10-13T21:31:46+09:00
+  9. Osteoarthritis of knee (disorder)
+      상태: None
+      발병일: 2011-06-20T21:31:46+09:00
+  10. Medication review due (situation)
+      상태: None
+      발병일: 2013-11-05T21:31:46+09:00
+  11. Full-time employment (finding)
+      상태: None
+      발병일: 2015-11-17T22:07:11+09:00
+  12. Concussion injury of brain (disorder)
+      상태: None
+      발병일: 2016-04-11T22:18:44+09:00
+  13. Concussion with no loss of consciousness (disorder)
+      상태: None
+      발병일: 2016-04-11T22:18:44+09:00
+  14. Stress (finding)
+      상태: None
+      발병일: 2016-11-22T22:22:13+09:00
+  15. Part-time employment (finding)
+      상태: None
+      발병일: 2017-11-28T22:09:06+09:00
+  16. Otitis media (disorder)
+      상태: None
+      발병일: 2018-07-02T21:31:46+09:00
+  17. Unemployed (finding)
+      상태: None
+      발병일: 2018-12-04T22:02:11+09:00
+  18. Stress (finding)
+      상태: None
+      발병일: 2018-12-04T22:02:11+09:00
+  19. Medication review due (situation)
+      상태: None
+      발병일: 2019-11-26T21:31:46+09:00
+  20. Chronic kidney disease stage 1 (disorder)
+      상태: None
+      발병일: 2019-11-26T21:31:46+09:00
+  21. Disorder of kidney due to diabetes mellitus (disorder)
+      상태: None
+      발병일: 2019-11-26T21:31:46+09:00
+  22. Full-time employment (finding)
+      상태: None
+      발병일: 2019-11-26T22:10:34+09:00
+  23. Reports of violence in the environment (finding)
+      상태: None
+      발병일: 2019-11-26T22:10:34+09:00
+  24. Medication review due (situation)
+      상태: None
+      발병일: 2019-12-10T21:31:46+09:00
+  25. Social isolation (finding)
+      상태: None
+      발병일: 2019-12-10T22:26:23+09:00
+  26. Gingivitis (disorder)
+      상태: None
+      발병일: 2019-12-10T23:29:37+09:00
+  27. Medication review due (situation)
+      상태: None
+      발병일: 2019-12-17T21:31:46+09:00
+  28. Sinusitis (disorder)
+      상태: None
+      발병일: 2019-12-31T21:31:46+09:00
+  29. Medication review due (situation)
+      상태: None
+      발병일: 2020-01-07T21:31:46+09:00
+  30. Medication review due (situation)
+      상태: None
+      발병일: 2020-02-04T21:31:46+09:00
+  31. Unemployed (finding)
+      상태: None
+      발병일: 2020-02-04T22:21:20+09:00
+  32. Social isolation (finding)
+      상태: None
+      발병일: 2020-02-04T22:21:20+09:00
+  33. Chronic sinusitis (disorder)
+      상태: None
+      발병일: 2020-02-13T21:31:46+09:00
+  34. Medication review due (situation)
+      상태: None
+      발병일: 2020-02-25T21:31:46+09:00
+  35. Suspected disease caused by Severe acute respiratory coronavirus 2 (situation)
+      상태: None
+      발병일: 2020-05-20T21:31:46+09:00
+  36. Sore throat (finding)
+      상태: None
+      발병일: 2020-05-20T21:31:46+09:00
+  37. Sputum finding (finding)
+      상태: None
+      발병일: 2020-05-20T21:31:46+09:00
+  38. Fatigue (finding)
+      상태: None
+      발병일: 2020-05-20T21:31:46+09:00
+  39. Fever (finding)
+      상태: None
+      발병일: 2020-05-20T21:31:46+09:00
+  40. Loss of taste (finding)
+      상태: None
+      발병일: 2020-05-20T21:31:46+09:00
+  41. Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)
+      상태: None
+      발병일: 2020-05-20T22:15:34+09:00
+  42. Medication review due (situation)
+      상태: None
+      발병일: 2020-12-15T21:31:46+09:00
+  43. Full-time employment (finding)
+      상태: None
+      발병일: 2020-12-15T22:10:09+09:00
+  44. Stress (finding)
+      상태: None
+      발병일: 2020-12-15T22:10:09+09:00
+  45. Gingivitis (disorder)
+      상태: None
+      발병일: 2020-12-15T23:08:20+09:00
+  46. Medication review due (situation)
+      상태: None
+      발병일: 2021-02-02T21:31:46+09:00
+  47. Part-time employment (finding)
+      상태: None
+      발병일: 2021-02-02T22:20:11+09:00
+  48. Full-time employment (finding)
+      상태: None
+      발병일: 2021-12-21T22:10:02+09:00
+  49. Medication review due (situation)
+      상태: None
+      발병일: 2022-07-26T21:31:46+09:00
+  50. Infection of tooth (disorder)
+      상태: None
+      발병일: 2023-01-10T23:23:14+09:00
+  51. Loss of teeth (disorder)
+      상태: None
+      발병일: 2023-01-17T21:31:46+09:00
+  52. Torus palatinus (disorder)
+      상태: None
+      발병일: 2023-01-17T21:31:46+09:00
+  53. Medication review due (situation)
+      상태: None
+      발병일: 2023-08-22T21:31:46+09:00
+  54. Stress (finding)
+      상태: None
+      발병일: 2023-08-22T22:16:18+09:00
+  55. Medication review due (situation)
+      상태: None
+      발병일: 2024-01-02T21:31:46+09:00
+  56. Not in labor force (finding)
+      상태: None
+      발병일: 2024-01-02T22:03:45+09:00
+  57. Medication review due (situation)
+      상태: None
+      발병일: 2024-01-16T21:31:46+09:00
+  58. Part-time employment (finding)
+      상태: None
+      발병일: 2024-01-16T22:08:26+09:00
+  59. Not in labor force (finding)
+      상태: None
+      발병일: 2024-09-10T22:14:53+09:00
+  60. Multiple myeloma (disorder)
+      상태: None
+      발병일: 2024-09-17T21:31:46+09:00
+  61. Awaiting transplantation of bone marrow (situation)
+      상태: None
+      발병일: 2024-10-24T21:31:46+09:00
+  62. History of autologous bone marrow transplant (situation)
+      상태: None
+      발병일: 2024-11-17T01:47:29+09:00
+  63. Medication review due (situation)
+      상태: None
+      발병일: 2025-01-07T21:31:46+09:00
+  64. Full-time employment (finding)
+      상태: None
+      발병일: 2025-01-07T22:22:25+09:00
+  65. Gingivitis (disorder)
+      상태: None
+      발병일: 2025-01-07T23:54:05+09:00
+
+【처방약】 (70개)
+  1. Naproxen sodium 220 MG Oral Tablet
+      상태: active
+  2. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  3. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  4. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  5. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  6. Unknown
+      상태: completed
+  7. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  8. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  9. Amoxicillin 250 MG Oral Capsule
+      상태: completed
+      용법: Take at regular intervals. Complete the prescribed course unless otherwise directed (qualifier value)
+  10. Ibuprofen 200 MG Oral Tablet
+      상태: completed
+      용법: Take as needed.
+  11. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  12. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  13. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  14. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  15. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  16. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  17. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  18. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  19. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  20. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  21. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  22. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  23. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  24. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  25. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  26. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  27. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  28. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  29. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  30. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  31. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  32. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  33. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  34. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  35. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  36. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  37. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  38. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  39. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  40. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  41. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  42. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  43. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  44. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  45. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  46. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  47. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  48. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  49. Unknown
+      상태: completed
+  50. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  51. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  52. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  53. Unknown
+      상태: completed
+  54. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  55. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  56. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  57. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  58. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  59. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  60. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  61. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  62. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  63. Unknown
+      상태: completed
+  64. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: completed
+  65. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  66. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  67. Unknown
+      상태: completed
+  68. insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]
+      상태: active
+  69. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: active
+      용법: None
+  70. lisinopril 10 MG Oral Tablet
+      상태: active
+      용법: None
+
+【알레르기】 없음
+
+【시술/수술】 (276개)
+  1. Dental consultation and report (procedure)
+      시행일: {'start': '2015-12-01T21:31:46+09:00', 'end': '2015-12-01T22:26:17+09:00'}
+  2. Dental care (regime/therapy)
+      시행일: {'start': '2015-12-01T22:26:17+09:00', 'end': '2015-12-01T22:44:03+09:00'}
+  3. Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)
+      시행일: {'start': '2015-12-01T22:44:03+09:00', 'end': '2015-12-01T23:34:40+09:00'}
+  4. Removal of subgingival plaque and calculus from all teeth using dental instrument (procedure)
+      시행일: {'start': '2015-12-01T23:34:40+09:00', 'end': '2015-12-02T00:04:39+09:00'}
+  5. Dental plain X-ray bitewing (procedure)
+      시행일: {'start': '2015-12-02T00:04:39+09:00', 'end': '2015-12-02T00:34:39+09:00'}
+  6. Examination of gingivae (procedure)
+      시행일: {'start': '2015-12-02T00:04:39+09:00', 'end': '2015-12-02T00:51:48+09:00'}
+  7. Oral health education (procedure)
+      시행일: {'start': '2015-12-02T00:51:48+09:00', 'end': '2015-12-02T00:56:54+09:00'}
+  8. Assessment of health and social care needs (procedure)
+      시행일: {'start': '2016-11-22T21:31:46+09:00', 'end': '2016-11-22T22:22:13+09:00'}
+  9. Patient referral for dental care (procedure)
+      시행일: {'start': '2016-11-22T22:22:13+09:00', 'end': '2016-11-22T22:29:14+09:00'}
+  10. Dental consultation and report (procedure)
+      시행일: {'start': '2016-12-06T21:31:46+09:00', 'end': '2016-12-06T22:05:10+09:00'}
+
+【바이탈 사인】 (114개)
+  1. Body Height: 171.8 cm
+      측정일: 2016-11-22T21:31:46+09:00
+  2. Body Weight: 80.3 kg
+      측정일: 2016-11-22T21:31:46+09:00
+  3. Body mass index (BMI) [Ratio]: 27.21 kg/m2
+      측정일: 2016-11-22T21:31:46+09:00
+  4. Blood pressure panel with all children optional: N/A
+      측정일: 2016-11-22T21:31:46+09:00
+  5. Heart rate: 89 /min
+      측정일: 2016-11-22T21:31:46+09:00
+  6. Respiratory rate: 15 /min
+      측정일: 2016-11-22T21:31:46+09:00
+  7. Body Height: 171.8 cm
+      측정일: 2017-11-28T21:31:46+09:00
+  8. Body Weight: 80 kg
+      측정일: 2017-11-28T21:31:46+09:00
+  9. Body mass index (BMI) [Ratio]: 27.1 kg/m2
+      측정일: 2017-11-28T21:31:46+09:00
+  10. Blood pressure panel with all children optional: N/A
+      측정일: 2017-11-28T21:31:46+09:00
+
+【검사 결과】 (234개)
+  1. Hemoglobin A1c/Hemoglobin.total in Blood: 5.85 %
+      검사일: 2016-11-22T21:31:46+09:00
+  2. Glucose [Mass/volume] in Blood: 97.21 mg/dL
+      검사일: 2016-11-22T21:31:46+09:00
+  3. Creatinine [Mass/volume] in Blood: 0.89 mg/dL
+      검사일: 2016-11-22T21:31:46+09:00
+  4. Hemoglobin A1c/Hemoglobin.total in Blood: 6.15 %
+      검사일: 2017-11-28T21:31:46+09:00
+  5. Glucose [Mass/volume] in Blood: 71.51 mg/dL
+      검사일: 2017-11-28T21:31:46+09:00
+  6. Creatinine [Mass/volume] in Blood: 0.88 mg/dL
+      검사일: 2017-11-28T21:31:46+09:00
+  7. Hemoglobin A1c/Hemoglobin.total in Blood: 5.94 %
+      검사일: 2018-12-04T21:31:46+09:00
+  8. Glucose [Mass/volume] in Blood: 89.25 mg/dL
+      검사일: 2018-12-04T21:31:46+09:00
+  9. Creatinine [Mass/volume] in Blood: 0.87 mg/dL
+      검사일: 2018-12-04T21:31:46+09:00
+  10. Cholesterol [Mass/volume] in Serum or Plasma: 178.58 mg/dL
+      검사일: 2018-12-04T21:31:46+09:00
+
+【진료 기록】 (53개)
+  1. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 1974-11-19T21:31:46+09:00 ~ 1974-11-19T22:12:12+09:00
+  2. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 1975-11-25T21:31:46+09:00 ~ 1975-11-25T22:27:31+09:00
+  3. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 1978-11-28T21:31:46+09:00 ~ 1978-11-28T22:26:16+09:00
+  4. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 1990-12-11T21:31:46+09:00 ~ 1990-12-11T22:10:27+09:00
+  5. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2009-10-13T21:31:46+09:00 ~ 2009-10-13T22:26:56+09:00
+  6. 유형: AMB
+      종류: Encounter for problem (procedure)
+      기간: 2011-06-20T21:31:46+09:00 ~ 2011-06-20T21:46:46+09:00
+  7. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2013-11-05T21:31:46+09:00 ~ 2013-11-05T22:14:48+09:00
+  8. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2015-11-17T21:31:46+09:00 ~ 2015-11-17T22:07:11+09:00
+  9. 유형: AMB
+      종류: Encounter for check up (procedure)
+      기간: 2015-12-01T21:31:46+09:00 ~ 2015-12-02T00:56:54+09:00
+  10. 유형: EMER
+      종류: Emergency room admission (procedure)
+      기간: 2016-04-11T22:18:44+09:00 ~ 2016-04-11T23:18:44+09:00
+
+【예방접종】 (12개)
+  1. Influenza, seasonal, injectable, preservative free
+      접종일: 2016-11-22T21:31:46+09:00
+  2. Influenza, seasonal, injectable, preservative free
+      접종일: 2017-11-28T21:31:46+09:00
+  3. Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed
+      접종일: 2017-11-28T21:31:46+09:00
+  4. Influenza, seasonal, injectable, preservative free
+      접종일: 2018-12-04T21:31:46+09:00
+  5. Influenza, seasonal, injectable, preservative free
+      접종일: 2019-11-26T21:31:46+09:00
+  6. Influenza, seasonal, injectable, preservative free
+      접종일: 2020-12-15T21:31:46+09:00
+  7. Influenza, seasonal, injectable, preservative free
+      접종일: 2021-12-21T21:31:46+09:00
+  8. Pneumococcal conjugate PCV 13
+      접종일: 2021-12-21T21:31:46+09:00
+  9. Influenza, seasonal, injectable, preservative free
+      접종일: 2022-07-26T21:31:46+09:00
+  10. pneumococcal polysaccharide vaccine, 23 valent
+      접종일: 2022-12-27T21:31:46+09:00
+
+【사회력】 (18개)
+  1. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2016-11-22T21:31:46+09:00
+  2. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2017-11-28T21:31:46+09:00
+  3. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2018-12-04T21:31:46+09:00
+  4. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2019-11-26T21:31:46+09:00
+  5. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2019-12-10T21:31:46+09:00
+  6. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2020-01-07T21:31:46+09:00
+  7. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2020-02-04T21:31:46+09:00
+  8. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2020-02-25T21:31:46+09:00
+  9. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2020-12-15T21:31:46+09:00
+  10. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2021-02-02T21:31:46+09:00
+  11. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2021-12-21T21:31:46+09:00
+  12. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2022-07-26T21:31:46+09:00
+  13. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2022-12-27T21:31:46+09:00
+  14. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2023-08-22T21:31:46+09:00
+  15. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2024-01-02T21:31:46+09:00
+  16. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2024-01-16T21:31:46+09:00
+  17. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2024-09-10T21:31:46+09:00
+  18. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2025-01-07T21:31:46+09:00
+
+【가족력】 없음
+
+【치료 계획】 (6개)
+  1. None
+      상태: active
+  2. None
+      상태: active
+  3. None
+      상태: active
+  4. None
+      상태: completed
+  5. None
+      상태: completed
+  6. None
+      상태: completed
+
+【진단 보고서】 (182개)
+  1. History and physical note
+  2. History and physical note
+  3. History and physical note
+  4. History and physical note
+  5. History and physical note
+
+【기타 관찰】 (832개)
+  1. Pain severity - 0-10 verbal numeric rating [Score] - Reported: 1 {score}
+  2. Urea nitrogen [Mass/volume] in Blood: 19.01 mg/dL
+  3. Calcium [Mass/volume] in Blood: 10.06 mg/dL
+  4. Sodium [Moles/volume] in Blood: 140.22 mmol/L
+  5. Potassium [Moles/volume] in Blood: 4.95 mmol/L
+  6. Chloride [Moles/volume] in Blood: 107.73 mmol/L
+  7. Carbon dioxide, total [Moles/volume] in Blood: 25.61 mmol/L
+  8. Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences [PRAPARE]: N/A
+  9. Pain severity - 0-10 verbal numeric rating [Score] - Reported: 0 {score}
+  10. Urea nitrogen [Mass/volume] in Blood: 13.71 mg/dL
+
+【리소스 통계】
+  CarePlan: 6개
+  CareTeam: 6개
+  Claim: 123개
+  Condition: 65개
+  Device: 14개
+  DiagnosticReport: 182개
+  DocumentReference: 53개
+  Encounter: 53개
+  ExplanationOfBenefit: 123개
+  ImagingStudy: 7개
+  Immunization: 12개
+  Medication: 5개
+  MedicationAdministration: 5개
+  MedicationRequest: 70개
+  Observation: 1198개
+  Patient: 1개
+  Procedure: 276개
+  Provenance: 1개
+  SupplyDelivery: 43개
+
+====================================================================================================
+
+====================================================================================================
+환자 ID: 9a7ada99-fc16-8ad3-263c-7cc2c9770dbc
+파일명: Shiela18_Goyette777_9a7ada99-fc16-8ad3-263c-7cc2c9770dbc.json
+====================================================================================================
+
+【기본 정보】
+  이름: Shiela18 Goyette777
+  성별: female
+  생년월일: 1974-05-15
+  나이: 51세
+  사망 여부: 생존
+  혼인 상태: Never Married
+  인종: None
+  민족: None
+  출생 시 성별: F
+  어머니 결혼 전 성: Tona622 Kreiger457
+  주소: 678 Schulist Bay Unit 68, Worcester, MA 01545
+
+【질환】 (25개)
+  1. Educated to high school level (finding)
+      상태: None
+      발병일: 1992-07-08T05:46:21+09:00
+  2. Social isolation (finding)
+      상태: None
+      발병일: 1993-07-14T05:59:33+09:00
+  3. Limited social contact (finding)
+      상태: None
+      발병일: 2005-07-27T06:12:19+09:00
+  4. Victim of intimate partner abuse (finding)
+      상태: None
+      발병일: 2005-07-27T07:19:57+09:00
+  5. Stress (finding)
+      상태: None
+      발병일: 2008-07-30T05:58:47+09:00
+  6. Full-time employment (finding)
+      상태: None
+      발병일: 2011-08-03T06:07:43+09:00
+  7. Medication review due (situation)
+      상태: None
+      발병일: 2016-05-25T05:13:09+09:00
+  8. Acute bronchitis (disorder)
+      상태: None
+      발병일: 2019-01-21T05:13:09+09:00
+  9. Part-time employment (finding)
+      상태: None
+      발병일: 2019-01-30T05:45:21+09:00
+  10. Stress (finding)
+      상태: None
+      발병일: 2019-01-30T05:45:21+09:00
+  11. Hyperlipidemia (disorder)
+      상태: None
+      발병일: 2020-06-03T05:13:09+09:00
+  12. Viral sinusitis (disorder)
+      상태: None
+      발병일: 2021-12-25T10:13:09+09:00
+  13. Medication review due (situation)
+      상태: None
+      발병일: 2022-06-08T05:13:09+09:00
+  14. Body mass index 30+ - obesity (finding)
+      상태: None
+      발병일: 2022-06-08T05:13:09+09:00
+  15. Full-time employment (finding)
+      상태: None
+      발병일: 2022-06-08T05:50:45+09:00
+  16. Limited social contact (finding)
+      상태: None
+      발병일: 2022-06-08T05:50:45+09:00
+  17. Stress (finding)
+      상태: None
+      발병일: 2022-06-08T05:50:45+09:00
+  18. Severe anxiety (panic) (finding)
+      상태: None
+      발병일: 2022-06-08T06:14:57+09:00
+  19. Gingivitis (disorder)
+      상태: None
+      발병일: 2022-06-08T08:01:35+09:00
+  20. Essential hypertension (disorder)
+      상태: None
+      발병일: 2024-05-15T05:13:09+09:00
+  21. Medication review due (situation)
+      상태: None
+      발병일: 2024-05-15T05:13:09+09:00
+  22. Part-time employment (finding)
+      상태: None
+      발병일: 2024-05-15T05:59:42+09:00
+  23. Medication review due (situation)
+      상태: None
+      발병일: 2025-05-21T05:13:09+09:00
+  24. Social isolation (finding)
+      상태: None
+      발병일: 2025-05-21T05:46:47+09:00
+  25. Stress (finding)
+      상태: None
+      발병일: 2025-05-21T05:46:47+09:00
+
+【처방약】 (16개)
+  1. Trinessa 28 Day Pack
+      상태: completed
+  2. Seasonique 91 Day Pack
+      상태: completed
+  3. Acetaminophen 325 MG Oral Tablet
+      상태: completed
+  4. Unknown
+      상태: completed
+  5. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  6. Levora 0.15/30 28 Day Pack
+      상태: completed
+  7. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  8. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  9. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  10. Camila 28 Day Pack
+      상태: completed
+  11. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  12. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  13. Unknown
+      상태: completed
+  14. Simvastatin 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  15. lisinopril 10 MG Oral Tablet
+      상태: active
+      용법: None
+  16. Simvastatin 10 MG Oral Tablet
+      상태: active
+      용법: None
+
+【알레르기】 없음
+
+【시술/수술】 (60개)
+  1. Assessment of health and social care needs (procedure)
+      시행일: {'start': '2016-05-25T05:13:09+09:00', 'end': '2016-05-25T06:04:02+09:00'}
+  2. Assessment of substance use (procedure)
+      시행일: {'start': '2016-05-25T06:04:02+09:00', 'end': '2016-05-25T06:14:03+09:00'}
+  3. Screening for drug abuse (procedure)
+      시행일: {'start': '2016-05-25T06:14:03+09:00', 'end': '2016-05-25T06:40:55+09:00'}
+  4. Assessment of health and social care needs (procedure)
+      시행일: {'start': '2018-05-30T05:13:09+09:00', 'end': '2018-05-30T06:00:55+09:00'}
+  5. Assessment of anxiety (procedure)
+      시행일: {'start': '2018-05-30T06:00:55+09:00', 'end': '2018-05-30T06:17:13+09:00'}
+  6. Screening for domestic abuse (procedure)
+      시행일: {'start': '2018-05-30T06:17:13+09:00', 'end': '2018-05-30T06:56:17+09:00'}
+  7. Depression screening (procedure)
+      시행일: {'start': '2018-05-30T06:56:17+09:00', 'end': '2018-05-30T07:07:53+09:00'}
+  8. Depression screening (procedure)
+      시행일: {'start': '2018-05-30T07:07:53+09:00', 'end': '2018-05-30T07:32:47+09:00'}
+  9. Assessment of substance use (procedure)
+      시행일: {'start': '2018-05-30T07:32:47+09:00', 'end': '2018-05-30T07:47:24+09:00'}
+  10. Screening for drug abuse (procedure)
+      시행일: {'start': '2018-05-30T07:47:24+09:00', 'end': '2018-05-30T08:11:37+09:00'}
+
+【바이탈 사인】 (42개)
+  1. Body Height: 167.5 cm
+      측정일: 2016-05-25T05:13:09+09:00
+  2. Body Weight: 82.3 kg
+      측정일: 2016-05-25T05:13:09+09:00
+  3. Body mass index (BMI) [Ratio]: 29.34 kg/m2
+      측정일: 2016-05-25T05:13:09+09:00
+  4. Blood pressure panel with all children optional: N/A
+      측정일: 2016-05-25T05:13:09+09:00
+  5. Heart rate: 61 /min
+      측정일: 2016-05-25T05:13:09+09:00
+  6. Respiratory rate: 15 /min
+      측정일: 2016-05-25T05:13:09+09:00
+  7. Body Height: 167.5 cm
+      측정일: 2018-05-30T05:13:09+09:00
+  8. Body Weight: 76.4 kg
+      측정일: 2018-05-30T05:13:09+09:00
+  9. Body mass index (BMI) [Ratio]: 27.22 kg/m2
+      측정일: 2018-05-30T05:13:09+09:00
+  10. Blood pressure panel with all children optional: N/A
+      측정일: 2018-05-30T05:13:09+09:00
+
+【검사 결과】 (47개)
+  1. Cholesterol [Mass/volume] in Serum or Plasma: 135.01 mg/dL
+      검사일: 2016-05-25T05:13:09+09:00
+  2. Low Density Lipoprotein Cholesterol: 42.44 mg/dL
+      검사일: 2016-05-25T05:13:09+09:00
+  3. Cholesterol in HDL [Mass/volume] in Serum or Plasma: 63.28 mg/dL
+      검사일: 2016-05-25T05:13:09+09:00
+  4. Cholesterol [Mass/volume] in Serum or Plasma: 300.05 mg/dL
+      검사일: 2020-06-03T05:13:09+09:00
+  5. Low Density Lipoprotein Cholesterol: 192.92 mg/dL
+      검사일: 2020-06-03T05:13:09+09:00
+  6. Cholesterol in HDL [Mass/volume] in Serum or Plasma: 60.57 mg/dL
+      검사일: 2020-06-03T05:13:09+09:00
+  7. Glucose [Mass/volume] in Blood: 90.11 mg/dL
+      검사일: 2020-06-03T05:13:09+09:00
+  8. Creatinine [Mass/volume] in Blood: 2.8417 mg/dL
+      검사일: 2020-06-03T05:13:09+09:00
+  9. Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD): 80.722 mL/min
+      검사일: 2020-06-03T05:13:09+09:00
+  10. Cholesterol [Mass/volume] in Serum or Plasma: 168.86 mg/dL
+      검사일: 2020-06-03T05:13:09+09:00
+
+【진료 기록】 (31개)
+  1. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 1992-07-08T05:13:09+09:00 ~ 1992-07-08T05:46:21+09:00
+  2. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 1993-07-14T05:13:09+09:00 ~ 1993-07-14T05:59:33+09:00
+  3. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2005-07-27T05:13:09+09:00 ~ 2005-07-27T06:12:19+09:00
+  4. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2008-07-30T05:13:09+09:00 ~ 2008-07-30T05:58:47+09:00
+  5. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2011-08-03T05:13:09+09:00 ~ 2011-08-03T06:07:43+09:00
+  6. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2016-05-25T05:13:09+09:00 ~ 2016-05-25T06:04:02+09:00
+  7. 유형: AMB
+      종류: Consultation for treatment (procedure)
+      기간: 2017-09-08T00:09:22+09:00 ~ 2017-09-08T00:24:22+09:00
+  8. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2018-05-30T05:13:09+09:00 ~ 2018-05-30T06:00:55+09:00
+  9. 유형: AMB
+      종류: Consultation for treatment (procedure)
+      기간: 2018-09-03T00:09:22+09:00 ~ 2018-09-03T00:24:22+09:00
+  10. 유형: AMB
+      종류: Patient encounter procedure (procedure)
+      기간: 2018-10-31T05:13:09+09:00 ~ 2018-10-31T06:18:12+09:00
+
+【예방접종】 (12개)
+  1. Influenza, seasonal, injectable, preservative free
+      접종일: 2016-05-25T05:13:09+09:00
+  2. Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed
+      접종일: 2016-05-25T05:13:09+09:00
+  3. Hep A, adult
+      접종일: 2016-05-25T05:13:09+09:00
+  4. Influenza, seasonal, injectable, preservative free
+      접종일: 2018-05-30T05:13:09+09:00
+  5. Influenza, seasonal, injectable, preservative free
+      접종일: 2019-01-30T05:13:09+09:00
+  6. Influenza, seasonal, injectable, preservative free
+      접종일: 2020-06-03T05:13:09+09:00
+  7. Influenza, seasonal, injectable, preservative free
+      접종일: 2022-06-08T05:13:09+09:00
+  8. zoster vaccine, live
+      접종일: 2024-05-15T05:13:09+09:00
+  9. Influenza, seasonal, injectable, preservative free
+      접종일: 2024-05-15T05:13:09+09:00
+  10. zoster vaccine, live
+      접종일: 2025-05-21T05:13:09+09:00
+
+【사회력】 (7개)
+  1. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2016-05-25T05:13:09+09:00
+  2. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2018-05-30T05:13:09+09:00
+  3. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2019-01-30T05:13:09+09:00
+  4. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2020-06-03T05:13:09+09:00
+  5. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2022-06-08T05:13:09+09:00
+  6. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2024-05-15T05:13:09+09:00
+  7. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2025-05-21T05:13:09+09:00
+
+【가족력】 없음
+
+【치료 계획】 (3개)
+  1. None
+      상태: completed
+  2. None
+      상태: active
+  3. None
+      상태: active
+
+【진단 보고서】 (64개)
+  1. History and physical note
+  2. History and physical note
+  3. History and physical note
+  4. History and physical note
+  5. History and physical note
+
+【기타 관찰】 (127개)
+  1. Pain severity - 0-10 verbal numeric rating [Score] - Reported: 2 {score}
+  2. Triglycerides: 146.46 mg/dL
+  3. Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences [PRAPARE]: N/A
+  4. Total score [DAST-10]: 0 {score}
+  5. Pain severity - 0-10 verbal numeric rating [Score] - Reported: 2 {score}
+  6. Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences [PRAPARE]: N/A
+  7. Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]: 6 {score}
+  8. Total score [HARK]: 0 {score}
+  9. Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]: 2 {score}
+  10. Total score [DAST-10]: 2 {score}
+
+【리소스 통계】
+  CarePlan: 3개
+  CareTeam: 3개
+  Claim: 47개
+  Condition: 25개
+  Device: 1개
+  DiagnosticReport: 64개
+  DocumentReference: 31개
+  Encounter: 31개
+  ExplanationOfBenefit: 47개
+  ImagingStudy: 1개
+  Immunization: 12개
+  Medication: 2개
+  MedicationAdministration: 2개
+  MedicationRequest: 16개
+  Observation: 223개
+  Patient: 1개
+  Procedure: 60개
+  Provenance: 1개
+  SupplyDelivery: 6개
+
+====================================================================================================
+
+====================================================================================================
+환자 ID: 64ec3be7-1014-cea4-57da-ec5a9e13ac7d
+파일명: Neville893_Bauch723_64ec3be7-1014-cea4-57da-ec5a9e13ac7d.json
+====================================================================================================
+
+【기본 정보】
+  이름: Neville893 Vaughn909 Bauch723
+  성별: male
+  생년월일: 1980-10-21
+  나이: 45세
+  사망 여부: 생존
+  혼인 상태: Married
+  인종: None
+  민족: None
+  출생 시 성별: M
+  어머니 결혼 전 성: Susann104 Volkman526
+  주소: 370 Will Route, Dover, MA 02030
+
+【질환】 (36개)
+  1. Risk activity involvement (finding)
+      상태: None
+      발병일: 1992-11-10T15:01:50+09:00
+  2. Received higher education (finding)
+      상태: None
+      발병일: 1998-12-15T14:14:36+09:00
+  3. Essential hypertension (disorder)
+      상태: None
+      발병일: 2002-10-01T13:36:52+09:00
+  4. Prediabetes (finding)
+      상태: None
+      발병일: 2003-10-14T13:36:52+09:00
+  5. Anemia (disorder)
+      상태: None
+      발병일: 2004-10-19T13:36:52+09:00
+  6. Diabetes mellitus type 2 (disorder)
+      상태: None
+      발병일: 2005-10-25T13:36:52+09:00
+  7. Hypertriglyceridemia (disorder)
+      상태: None
+      발병일: 2006-10-31T13:36:52+09:00
+  8. Metabolic syndrome X (disorder)
+      상태: None
+      발병일: 2007-11-06T13:36:52+09:00
+  9. Loss of teeth (disorder)
+      상태: None
+      발병일: 2008-12-02T13:36:52+09:00
+  10. Chronic pain (finding)
+      상태: None
+      발병일: 2014-02-06T13:36:52+09:00
+  11. Chronic low back pain (finding)
+      상태: None
+      발병일: 2014-02-06T13:36:52+09:00
+  12. Chronic neck pain (finding)
+      상태: None
+      발병일: 2014-02-06T13:36:52+09:00
+  13. Full-time employment (finding)
+      상태: None
+      발병일: 2014-12-16T14:23:33+09:00
+  14. Concussion injury of brain (disorder)
+      상태: None
+      발병일: 2015-10-18T00:20:21+09:00
+  15. Concussion with no loss of consciousness (disorder)
+      상태: None
+      발병일: 2015-10-18T00:20:21+09:00
+  16. Medication review due (situation)
+      상태: None
+      발병일: 2015-12-22T13:36:52+09:00
+  17. Stress (finding)
+      상태: None
+      발병일: 2015-12-22T14:19:46+09:00
+  18. Part-time employment (finding)
+      상태: None
+      발병일: 2016-12-27T14:09:25+09:00
+  19. Medication review due (situation)
+      상태: None
+      발병일: 2018-01-02T13:36:52+09:00
+  20. Medication review due (situation)
+      상태: None
+      발병일: 2019-01-08T13:36:52+09:00
+  21. Full-time employment (finding)
+      상태: None
+      발병일: 2019-01-08T14:27:15+09:00
+  22. Social isolation (finding)
+      상태: None
+      발병일: 2019-01-08T14:27:15+09:00
+  23. Stress (finding)
+      상태: None
+      발병일: 2020-01-14T14:35:44+09:00
+  24. Severe anxiety (panic) (finding)
+      상태: None
+      발병일: 2020-01-14T15:04:48+09:00
+  25. Part-time employment (finding)
+      상태: None
+      발병일: 2021-01-19T14:14:24+09:00
+  26. Gingivitis (disorder)
+      상태: None
+      발병일: 2021-01-19T15:31:10+09:00
+  27. Medication review due (situation)
+      상태: None
+      발병일: 2022-01-25T13:36:52+09:00
+  28. Social isolation (finding)
+      상태: None
+      발병일: 2022-01-25T14:11:13+09:00
+  29. Stress (finding)
+      상태: None
+      발병일: 2022-01-25T14:11:13+09:00
+  30. Reports of violence in the environment (finding)
+      상태: None
+      발병일: 2022-01-25T14:11:13+09:00
+  31. Medication review due (situation)
+      상태: None
+      발병일: 2023-01-31T13:36:52+09:00
+  32. Full-time employment (finding)
+      상태: None
+      발병일: 2023-01-31T14:10:57+09:00
+  33. Limited social contact (finding)
+      상태: None
+      발병일: 2023-01-31T14:10:57+09:00
+  34. Gingivitis (disorder)
+      상태: None
+      발병일: 2023-01-31T16:22:36+09:00
+  35. Dental filling lost (finding)
+      상태: None
+      발병일: 2023-02-14T15:54:14+09:00
+  36. Part-time employment (finding)
+      상태: None
+      발병일: 2025-02-11T14:20:27+09:00
+
+【처방약】 (69개)
+  1. ferrous sulfate 325 MG Oral Tablet
+      상태: active
+  2. Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]
+      상태: completed
+      용법: Every six hours (qualifier value)
+  3. Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]
+      상태: completed
+      용법: None
+  4. 72 HR Fentanyl 0.025 MG/HR Transdermal System
+      상태: completed
+      용법: Every seventy two hours (qualifier value)
+  5. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  6. amLODIPine 2.5 MG Oral Tablet
+      상태: completed
+      용법: None
+  7. Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]
+      상태: completed
+      용법: Every six hours (qualifier value)
+  8. Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]
+      상태: completed
+      용법: None
+  9. 72 HR Fentanyl 0.025 MG/HR Transdermal System
+      상태: completed
+      용법: Every seventy two hours (qualifier value)
+  10. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  11. amLODIPine 2.5 MG Oral Tablet
+      상태: completed
+      용법: None
+  12. Unknown
+      상태: completed
+  13. Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]
+      상태: completed
+      용법: Every six hours (qualifier value)
+  14. Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]
+      상태: completed
+      용법: None
+  15. 72 HR Fentanyl 0.025 MG/HR Transdermal System
+      상태: completed
+      용법: Every seventy two hours (qualifier value)
+  16. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  17. amLODIPine 2.5 MG Oral Tablet
+      상태: completed
+      용법: None
+  18. Unknown
+      상태: completed
+  19. Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]
+      상태: completed
+      용법: Every six hours (qualifier value)
+  20. Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]
+      상태: completed
+      용법: None
+  21. 72 HR Fentanyl 0.025 MG/HR Transdermal System
+      상태: completed
+      용법: Every seventy two hours (qualifier value)
+  22. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  23. amLODIPine 2.5 MG Oral Tablet
+      상태: completed
+      용법: None
+  24. Unknown
+      상태: completed
+  25. Unknown
+      상태: completed
+  26. Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]
+      상태: completed
+      용법: Every six hours (qualifier value)
+  27. Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]
+      상태: completed
+      용법: None
+  28. 72 HR Fentanyl 0.025 MG/HR Transdermal System
+      상태: completed
+      용법: Every seventy two hours (qualifier value)
+  29. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  30. amLODIPine 2.5 MG Oral Tablet
+      상태: completed
+      용법: None
+  31. Unknown
+      상태: completed
+  32. Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]
+      상태: completed
+      용법: Every six hours (qualifier value)
+  33. Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]
+      상태: completed
+      용법: None
+  34. 72 HR Fentanyl 0.025 MG/HR Transdermal System
+      상태: completed
+      용법: Every seventy two hours (qualifier value)
+  35. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  36. amLODIPine 2.5 MG Oral Tablet
+      상태: completed
+      용법: None
+  37. Unknown
+      상태: completed
+  38. Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]
+      상태: completed
+      용법: Every six hours (qualifier value)
+  39. Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]
+      상태: completed
+      용법: None
+  40. 72 HR Fentanyl 0.025 MG/HR Transdermal System
+      상태: completed
+      용법: Every seventy two hours (qualifier value)
+  41. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  42. amLODIPine 2.5 MG Oral Tablet
+      상태: completed
+      용법: None
+  43. Unknown
+      상태: completed
+  44. Unknown
+      상태: completed
+  45. Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]
+      상태: completed
+      용법: Every six hours (qualifier value)
+  46. Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]
+      상태: completed
+      용법: None
+  47. 72 HR Fentanyl 0.025 MG/HR Transdermal System
+      상태: completed
+      용법: Every seventy two hours (qualifier value)
+  48. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  49. amLODIPine 2.5 MG Oral Tablet
+      상태: completed
+      용법: None
+  50. Unknown
+      상태: completed
+  51. Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]
+      상태: completed
+      용법: Every six hours (qualifier value)
+  52. Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]
+      상태: completed
+      용법: None
+  53. 72 HR Fentanyl 0.025 MG/HR Transdermal System
+      상태: completed
+      용법: Every seventy two hours (qualifier value)
+  54. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  55. amLODIPine 2.5 MG Oral Tablet
+      상태: completed
+      용법: None
+  56. Unknown
+      상태: completed
+  57. Unknown
+      상태: completed
+  58. Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]
+      상태: completed
+      용법: Every six hours (qualifier value)
+  59. Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]
+      상태: completed
+      용법: None
+  60. 72 HR Fentanyl 0.025 MG/HR Transdermal System
+      상태: completed
+      용법: Every seventy two hours (qualifier value)
+  61. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  62. amLODIPine 2.5 MG Oral Tablet
+      상태: completed
+      용법: None
+  63. Unknown
+      상태: completed
+  64. Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]
+      상태: active
+      용법: Every six hours (qualifier value)
+  65. Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]
+      상태: active
+      용법: None
+  66. 72 HR Fentanyl 0.025 MG/HR Transdermal System
+      상태: active
+      용법: Every seventy two hours (qualifier value)
+  67. lisinopril 10 MG Oral Tablet
+      상태: active
+      용법: None
+  68. amLODIPine 2.5 MG Oral Tablet
+      상태: active
+      용법: None
+  69. Unknown
+      상태: completed
+
+【알레르기】 없음
+
+【시술/수술】 (156개)
+  1. Assessment of health and social care needs (procedure)
+      시행일: {'start': '2015-12-22T13:36:52+09:00', 'end': '2015-12-22T14:19:46+09:00'}
+  2. Screening for domestic abuse (procedure)
+      시행일: {'start': '2015-12-22T14:19:46+09:00', 'end': '2015-12-22T14:49:05+09:00'}
+  3. Depression screening (procedure)
+      시행일: {'start': '2015-12-22T14:49:05+09:00', 'end': '2015-12-22T15:01:54+09:00'}
+  4. Depression screening (procedure)
+      시행일: {'start': '2015-12-22T15:01:54+09:00', 'end': '2015-12-22T15:26:01+09:00'}
+  5. Assessment of substance use (procedure)
+      시행일: {'start': '2015-12-22T15:26:01+09:00', 'end': '2015-12-22T15:37:30+09:00'}
+  6. Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)
+      시행일: {'start': '2015-12-22T15:37:30+09:00', 'end': '2015-12-22T16:00:50+09:00'}
+  7. Dental consultation and report (procedure)
+      시행일: {'start': '2015-12-24T19:55:24+09:00', 'end': '2015-12-24T20:25:21+09:00'}
+  8. Dental plain X-ray bitewing (procedure)
+      시행일: {'start': '2015-12-24T20:25:21+09:00', 'end': '2015-12-24T20:55:21+09:00'}
+  9. Take oral or dental impression (procedure)
+      시행일: {'start': '2015-12-24T20:25:21+09:00', 'end': '2015-12-24T21:17:07+09:00'}
+  10. Fitting of denture (procedure)
+      시행일: {'start': '2016-01-07T21:17:07+09:00', 'end': '2016-01-07T21:35:11+09:00'}
+
+【바이탈 사인】 (60개)
+  1. Body Height: 173.3 cm
+      측정일: 2015-12-22T13:36:52+09:00
+  2. Body Weight: 82.1 kg
+      측정일: 2015-12-22T13:36:52+09:00
+  3. Body mass index (BMI) [Ratio]: 27.34 kg/m2
+      측정일: 2015-12-22T13:36:52+09:00
+  4. Blood pressure panel with all children optional: N/A
+      측정일: 2015-12-22T13:36:52+09:00
+  5. Heart rate: 77 /min
+      측정일: 2015-12-22T13:36:52+09:00
+  6. Respiratory rate: 13 /min
+      측정일: 2015-12-22T13:36:52+09:00
+  7. Body Height: 173.3 cm
+      측정일: 2016-12-27T13:36:52+09:00
+  8. Body Weight: 82.1 kg
+      측정일: 2016-12-27T13:36:52+09:00
+  9. Body mass index (BMI) [Ratio]: 27.34 kg/m2
+      측정일: 2016-12-27T13:36:52+09:00
+  10. Blood pressure panel with all children optional: N/A
+      측정일: 2016-12-27T13:36:52+09:00
+
+【검사 결과】 (84개)
+  1. Hemoglobin A1c/Hemoglobin.total in Blood: 6.84 %
+      검사일: 2015-12-22T13:36:52+09:00
+  2. Glucose [Mass/volume] in Blood: 110.1 mg/dL
+      검사일: 2015-12-22T13:36:52+09:00
+  3. Creatinine [Mass/volume] in Blood: 1.36 mg/dL
+      검사일: 2015-12-22T13:36:52+09:00
+  4. Cholesterol [Mass/volume] in Serum or Plasma: 207.5 mg/dL
+      검사일: 2015-12-22T13:36:52+09:00
+  5. Low Density Lipoprotein Cholesterol: 130.66 mg/dL
+      검사일: 2015-12-22T13:36:52+09:00
+  6. Cholesterol in HDL [Mass/volume] in Serum or Plasma: 41.57 mg/dL
+      검사일: 2015-12-22T13:36:52+09:00
+  7. Microalbumin/Creatinine [Mass Ratio] in Urine: 0.89 mg/g
+      검사일: 2015-12-22T13:36:52+09:00
+  8. Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD): 88.04 mL/min/{1.73_m2}
+      검사일: 2015-12-22T13:36:52+09:00
+  9. Hemoglobin A1c/Hemoglobin.total in Blood: 6.84 %
+      검사일: 2016-12-27T13:36:52+09:00
+  10. Glucose [Mass/volume] in Blood: 120.02 mg/dL
+      검사일: 2016-12-27T13:36:52+09:00
+
+【진료 기록】 (45개)
+  1. 유형: AMB
+      종류: Well child visit (procedure)
+      기간: 1992-11-10T13:36:52+09:00 ~ 1992-11-10T13:54:11+09:00
+  2. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 1998-12-15T13:36:52+09:00 ~ 1998-12-15T14:14:36+09:00
+  3. 유형: AMB
+      종류: Encounter for check up (procedure)
+      기간: 2002-10-01T13:36:52+09:00 ~ 2002-10-01T14:25:35+09:00
+  4. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2003-10-14T13:36:52+09:00 ~ 2003-10-14T14:33:58+09:00
+  5. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2004-10-19T13:36:52+09:00 ~ 2004-10-19T14:30:35+09:00
+  6. 유형: AMB
+      종류: Encounter for problem (procedure)
+      기간: 2004-10-26T13:36:52+09:00 ~ 2004-10-26T14:51:33+09:00
+  7. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2005-10-25T13:36:52+09:00 ~ 2005-10-25T14:23:44+09:00
+  8. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2006-10-31T13:36:52+09:00 ~ 2006-10-31T14:32:08+09:00
+  9. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2007-11-06T13:36:52+09:00 ~ 2007-11-06T14:23:16+09:00
+  10. 유형: AMB
+      종류: Encounter for problem (procedure)
+      기간: 2008-12-02T13:36:52+09:00 ~ 2008-12-02T14:47:34+09:00
+
+【예방접종】 (15개)
+  1. Influenza, seasonal, injectable, preservative free
+      접종일: 2015-12-22T13:36:52+09:00
+  2. Influenza, seasonal, injectable, preservative free
+      접종일: 2016-12-27T13:36:52+09:00
+  3. Influenza, seasonal, injectable, preservative free
+      접종일: 2018-01-02T13:36:52+09:00
+  4. Influenza, seasonal, injectable, preservative free
+      접종일: 2019-01-08T13:36:52+09:00
+  5. Influenza, seasonal, injectable, preservative free
+      접종일: 2020-01-14T13:36:52+09:00
+  6. Influenza, seasonal, injectable, preservative free
+      접종일: 2021-01-19T13:36:52+09:00
+  7. Hep A, adult
+      접종일: 2021-01-19T13:36:52+09:00
+  8. COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose
+      접종일: 2021-09-07T13:36:52+09:00
+  9. COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose
+      접종일: 2021-10-05T13:36:52+09:00
+  10. Influenza, seasonal, injectable, preservative free
+      접종일: 2022-01-25T13:36:52+09:00
+
+【사회력】 (10개)
+  1. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2015-12-22T13:36:52+09:00
+  2. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2016-12-27T13:36:52+09:00
+  3. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2018-01-02T13:36:52+09:00
+  4. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2019-01-08T13:36:52+09:00
+  5. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2020-01-14T13:36:52+09:00
+  6. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2021-01-19T13:36:52+09:00
+  7. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2022-01-25T13:36:52+09:00
+  8. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2023-01-31T13:36:52+09:00
+  9. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2024-02-06T13:36:52+09:00
+  10. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2025-02-11T13:36:52+09:00
+
+【가족력】 없음
+
+【치료 계획】 (4개)
+  1. None
+      상태: active
+  2. None
+      상태: active
+  3. None
+      상태: active
+  4. None
+      상태: completed
+
+【진단 보고서】 (93개)
+  1. History and physical note
+  2. History and physical note
+  3. History and physical note
+  4. History and physical note
+  5. History and physical note
+
+【기타 관찰】 (200개)
+  1. Pain severity - 0-10 verbal numeric rating [Score] - Reported: 3 {score}
+  2. Urea nitrogen [Mass/volume] in Blood: 19.59 mg/dL
+  3. Calcium [Mass/volume] in Blood: 10.04 mg/dL
+  4. Sodium [Moles/volume] in Blood: 139.79 mmol/L
+  5. Potassium [Moles/volume] in Blood: 4.58 mmol/L
+  6. Chloride [Moles/volume] in Blood: 101.7 mmol/L
+  7. Carbon dioxide, total [Moles/volume] in Blood: 27.35 mmol/L
+  8. Triglycerides: 176.36 mg/dL
+  9. Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences [PRAPARE]: N/A
+  10. Total score [HARK]: 0 {score}
+
+【리소스 통계】
+  CarePlan: 4개
+  CareTeam: 4개
+  Claim: 114개
+  Condition: 36개
+  Device: 7개
+  DiagnosticReport: 93개
+  DocumentReference: 45개
+  Encounter: 45개
+  ExplanationOfBenefit: 114개
+  ImagingStudy: 15개
+  Immunization: 15개
+  Medication: 13개
+  MedicationAdministration: 13개
+  MedicationRequest: 69개
+  Observation: 354개
+  Patient: 1개
+  Procedure: 156개
+  Provenance: 1개
+  SupplyDelivery: 33개
+
+====================================================================================================
+
+====================================================================================================
+환자 ID: 4b92d386-72b6-bb69-5389-29c3d79a2ba1
+파일명: Huey641_Wiegand701_4b92d386-72b6-bb69-5389-29c3d79a2ba1.json
+====================================================================================================
+
+【기본 정보】
+  이름: Huey641 Freddy176 Wiegand701
+  성별: male
+  생년월일: 1954-10-21
+  나이: 71세
+  사망 여부: 생존
+  혼인 상태: Divorced
+  인종: None
+  민족: None
+  출생 시 성별: M
+  어머니 결혼 전 성: Loree183 Schuppe920
+  주소: 121 Ebert Extension Unit 64, Milford, MA 01757
+
+【질환】 (37개)
+  1. Educated to high school level (finding)
+      상태: None
+      발병일: 1972-12-14T04:37:39+09:00
+  2. Chronic sinusitis (disorder)
+      상태: None
+      발병일: 1995-07-31T12:58:37+09:00
+  3. Prediabetes (finding)
+      상태: None
+      발병일: 1996-10-31T03:58:37+09:00
+  4. Anemia (disorder)
+      상태: None
+      발병일: 1996-10-31T03:58:37+09:00
+  5. Body mass index 30+ - obesity (finding)
+      상태: None
+      발병일: 2004-10-21T03:58:37+09:00
+  6. Limited social contact (finding)
+      상태: None
+      발병일: 2006-08-03T04:39:56+09:00
+  7. Loss of teeth (disorder)
+      상태: None
+      발병일: 2007-02-15T03:58:37+09:00
+  8. Essential hypertension (disorder)
+      상태: None
+      발병일: 2010-12-09T03:58:37+09:00
+  9. Medication review due (situation)
+      상태: None
+      발병일: 2010-12-16T03:58:37+09:00
+  10. Part-time employment (finding)
+      상태: None
+      발병일: 2015-01-01T04:51:20+09:00
+  11. Full-time employment (finding)
+      상태: None
+      발병일: 2016-01-07T04:49:39+09:00
+  12. Social isolation (finding)
+      상태: None
+      발병일: 2016-01-07T04:49:39+09:00
+  13. Stress (finding)
+      상태: None
+      발병일: 2016-01-07T04:49:39+09:00
+  14. Has a criminal record (finding)
+      상태: None
+      발병일: 2016-01-07T04:49:39+09:00
+  15. Victim of intimate partner abuse (finding)
+      상태: None
+      발병일: 2016-01-07T04:49:39+09:00
+  16. Viral sinusitis (disorder)
+      상태: None
+      발병일: 2016-04-27T02:58:37+09:00
+  17. Medication review due (situation)
+      상태: None
+      발병일: 2017-01-12T03:58:37+09:00
+  18. Medication review due (situation)
+      상태: None
+      발병일: 2018-01-18T03:58:37+09:00
+  19. Ischemic heart disease (disorder)
+      상태: None
+      발병일: 2019-01-24T03:58:37+09:00
+  20. Gingivitis (disorder)
+      상태: None
+      발병일: 2019-01-24T06:21:30+09:00
+  21. Abnormal findings diagnostic imaging heart+coronary circulat (finding)
+      상태: None
+      발병일: 2019-02-06T23:35:37+09:00
+  22. Gingival disease (disorder)
+      상태: None
+      발병일: 2019-02-14T06:55:26+09:00
+  23. Metabolic syndrome X (disorder)
+      상태: None
+      발병일: 2020-01-30T03:58:37+09:00
+  24. Part-time employment (finding)
+      상태: None
+      발병일: 2020-01-30T04:52:44+09:00
+  25. Full-time employment (finding)
+      상태: None
+      발병일: 2021-02-04T04:37:13+09:00
+  26. Polyp of colon (disorder)
+      상태: None
+      발병일: 2021-03-01T07:08:06+09:00
+  27. Medication review due (situation)
+      상태: None
+      발병일: 2022-02-10T03:58:37+09:00
+  28. Part-time employment (finding)
+      상태: None
+      발병일: 2022-02-10T04:34:47+09:00
+  29. Social isolation (finding)
+      상태: None
+      발병일: 2022-02-10T04:34:47+09:00
+  30. Medication review due (situation)
+      상태: None
+      발병일: 2023-02-16T03:58:37+09:00
+  31. Full-time employment (finding)
+      상태: None
+      발병일: 2023-02-16T04:54:35+09:00
+  32. Limited social contact (finding)
+      상태: None
+      발병일: 2023-02-16T04:54:35+09:00
+  33. Not in labor force (finding)
+      상태: None
+      발병일: 2024-02-22T04:35:13+09:00
+  34. Stress (finding)
+      상태: None
+      발병일: 2024-02-22T04:35:13+09:00
+  35. Gingivitis (disorder)
+      상태: None
+      발병일: 2024-02-22T05:30:10+09:00
+  36. Dental filling lost (finding)
+      상태: None
+      발병일: 2024-03-07T06:56:20+09:00
+  37. Full-time employment (finding)
+      상태: None
+      발병일: 2025-02-27T04:53:15+09:00
+
+【처방약】 (29개)
+  1. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  2. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  3. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  4. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  5. Unknown
+      상태: completed
+  6. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  7. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  8. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  9. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  10. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  11. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  12. Clopidogrel 75 MG Oral Tablet
+      상태: active
+  13. Simvastatin 20 MG Oral Tablet
+      상태: active
+  14. 24 HR metoprolol succinate 100 MG Extended Release Oral Tablet
+      상태: active
+  15. Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray
+      상태: active
+  16. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  17. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  18. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  19. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  20. Unknown
+      상태: completed
+  21. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  22. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  23. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  24. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  25. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: completed
+      용법: None
+  26. lisinopril 10 MG Oral Tablet
+      상태: completed
+      용법: None
+  27. Unknown
+      상태: completed
+  28. Hydrochlorothiazide 25 MG Oral Tablet
+      상태: active
+      용법: None
+  29. lisinopril 10 MG Oral Tablet
+      상태: active
+      용법: None
+
+【알레르기】 없음
+
+【시술/수술】 (126개)
+  1. Medication reconciliation (procedure)
+      시행일: {'start': '2016-01-07T03:58:37+09:00', 'end': '2016-01-07T04:13:37+09:00'}
+  2. Assessment of health and social care needs (procedure)
+      시행일: {'start': '2016-01-07T03:58:37+09:00', 'end': '2016-01-07T04:49:39+09:00'}
+  3. Depression screening (procedure)
+      시행일: {'start': '2016-01-07T04:49:39+09:00', 'end': '2016-01-07T05:00:39+09:00'}
+  4. Depression screening (procedure)
+      시행일: {'start': '2016-01-07T05:00:39+09:00', 'end': '2016-01-07T05:22:56+09:00'}
+  5. Assessment of substance use (procedure)
+      시행일: {'start': '2016-01-07T05:22:56+09:00', 'end': '2016-01-07T05:37:02+09:00'}
+  6. Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)
+      시행일: {'start': '2016-01-07T05:37:02+09:00', 'end': '2016-01-07T06:01:48+09:00'}
+  7. Patient referral for dental care (procedure)
+      시행일: {'start': '2016-01-07T06:01:48+09:00', 'end': '2016-01-07T06:09:27+09:00'}
+  8. Dental consultation and report (procedure)
+      시행일: {'start': '2016-01-21T03:58:37+09:00', 'end': '2016-01-21T04:32:04+09:00'}
+  9. Dental care (regime/therapy)
+      시행일: {'start': '2016-01-21T04:32:04+09:00', 'end': '2016-01-21T05:01:04+09:00'}
+  10. Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)
+      시행일: {'start': '2016-01-21T05:01:04+09:00', 'end': '2016-01-21T05:19:23+09:00'}
+
+【바이탈 사인】 (60개)
+  1. Body Height: 184.9 cm
+      측정일: 2016-01-07T03:58:37+09:00
+  2. Body Weight: 94.6 kg
+      측정일: 2016-01-07T03:58:37+09:00
+  3. Body mass index (BMI) [Ratio]: 27.68 kg/m2
+      측정일: 2016-01-07T03:58:37+09:00
+  4. Blood pressure panel with all children optional: N/A
+      측정일: 2016-01-07T03:58:37+09:00
+  5. Heart rate: 82 /min
+      측정일: 2016-01-07T03:58:37+09:00
+  6. Respiratory rate: 13 /min
+      측정일: 2016-01-07T03:58:37+09:00
+  7. Body Height: 184.9 cm
+      측정일: 2017-01-12T03:58:37+09:00
+  8. Body Weight: 96.3 kg
+      측정일: 2017-01-12T03:58:37+09:00
+  9. Body mass index (BMI) [Ratio]: 28.15 kg/m2
+      측정일: 2017-01-12T03:58:37+09:00
+  10. Blood pressure panel with all children optional: N/A
+      측정일: 2017-01-12T03:58:37+09:00
+
+【검사 결과】 (44개)
+  1. Hemoglobin A1c/Hemoglobin.total in Blood: 6.27 %
+      검사일: 2016-01-07T03:58:37+09:00
+  2. Glucose [Mass/volume] in Blood: 68.72 mg/dL
+      검사일: 2016-01-07T03:58:37+09:00
+  3. Creatinine [Mass/volume] in Blood: 1.04 mg/dL
+      검사일: 2016-01-07T03:58:37+09:00
+  4. Hemoglobin A1c/Hemoglobin.total in Blood: 6.09 %
+      검사일: 2017-01-12T03:58:37+09:00
+  5. Glucose [Mass/volume] in Blood: 89.55 mg/dL
+      검사일: 2017-01-12T03:58:37+09:00
+  6. Creatinine [Mass/volume] in Blood: 1.04 mg/dL
+      검사일: 2017-01-12T03:58:37+09:00
+  7. Cholesterol [Mass/volume] in Serum or Plasma: 147.29 mg/dL
+      검사일: 2017-01-12T03:58:37+09:00
+  8. Low Density Lipoprotein Cholesterol: 64.79 mg/dL
+      검사일: 2017-01-12T03:58:37+09:00
+  9. Cholesterol in HDL [Mass/volume] in Serum or Plasma: 56.2 mg/dL
+      검사일: 2017-01-12T03:58:37+09:00
+  10. Hemoglobin [Mass/volume] in Blood: 15.949 g/dL
+      검사일: 2017-01-12T03:58:37+09:00
+
+【진료 기록】 (37개)
+  1. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 1972-12-14T03:58:37+09:00 ~ 1972-12-14T04:37:39+09:00
+  2. 유형: AMB
+      종류: Encounter for symptom (procedure)
+      기간: 1995-07-31T12:58:37+09:00 ~ 1995-07-31T13:13:37+09:00
+  3. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 1996-10-31T03:58:37+09:00 ~ 1996-10-31T04:31:33+09:00
+  4. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2004-10-21T03:58:37+09:00 ~ 2004-10-21T04:56:46+09:00
+  5. 유형: AMB
+      종류: Encounter for check up (procedure)
+      기간: 2006-08-03T03:58:37+09:00 ~ 2006-08-03T04:39:56+09:00
+  6. 유형: AMB
+      종류: Encounter for problem (procedure)
+      기간: 2007-02-15T03:58:37+09:00 ~ 2007-02-15T05:40:10+09:00
+  7. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2010-12-09T03:58:37+09:00 ~ 2010-12-09T04:40:12+09:00
+  8. 유형: AMB
+      종류: Encounter for check up (procedure)
+      기간: 2010-12-16T03:58:37+09:00 ~ 2010-12-16T04:13:37+09:00
+  9. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2015-01-01T03:58:37+09:00 ~ 2015-01-01T04:51:20+09:00
+  10. 유형: AMB
+      종류: General examination of patient (procedure)
+      기간: 2016-01-07T03:58:37+09:00 ~ 2016-01-07T04:49:39+09:00
+
+【예방접종】 (15개)
+  1. Influenza, seasonal, injectable, preservative free
+      접종일: 2016-01-07T03:58:37+09:00
+  2. Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed
+      접종일: 2016-01-07T03:58:37+09:00
+  3. Influenza, seasonal, injectable, preservative free
+      접종일: 2017-01-12T03:58:37+09:00
+  4. Influenza, seasonal, injectable, preservative free
+      접종일: 2018-01-18T03:58:37+09:00
+  5. Influenza, seasonal, injectable, preservative free
+      접종일: 2019-01-24T03:58:37+09:00
+  6. Influenza, seasonal, injectable, preservative free
+      접종일: 2020-01-30T03:58:37+09:00
+  7. Pneumococcal conjugate PCV 13
+      접종일: 2020-01-30T03:58:37+09:00
+  8. Influenza, seasonal, injectable, preservative free
+      접종일: 2021-02-04T03:58:37+09:00
+  9. pneumococcal polysaccharide vaccine, 23 valent
+      접종일: 2021-02-04T03:58:37+09:00
+  10. COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose
+      접종일: 2021-02-18T03:58:37+09:00
+
+【사회력】 (10개)
+  1. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2016-01-07T03:58:37+09:00
+  2. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2017-01-12T03:58:37+09:00
+  3. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2018-01-18T03:58:37+09:00
+  4. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2019-01-24T03:58:37+09:00
+  5. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2020-01-30T03:58:37+09:00
+  6. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2021-02-04T03:58:37+09:00
+  7. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2022-02-10T03:58:37+09:00
+  8. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2023-02-16T03:58:37+09:00
+  9. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2024-02-22T03:58:37+09:00
+  10. Tobacco smoking status: Never smoked tobacco (finding)
+      기록일: 2025-02-27T03:58:37+09:00
+
+【가족력】 없음
+
+【치료 계획】 (2개)
+  1. None
+      상태: active
+  2. None
+      상태: active
+
+【진단 보고서】 (78개)
+  1. History and physical note
+  2. History and physical note
+  3. History and physical note
+  4. History and physical note
+  5. History and physical note
+
+【기타 관찰】 (133개)
+  1. Pain severity - 0-10 verbal numeric rating [Score] - Reported: 3 {score}
+  2. Urea nitrogen [Mass/volume] in Blood: 11.08 mg/dL
+  3. Calcium [Mass/volume] in Blood: 8.69 mg/dL
+  4. Sodium [Moles/volume] in Blood: 137.81 mmol/L
+  5. Potassium [Moles/volume] in Blood: 5.2 mmol/L
+  6. Chloride [Moles/volume] in Blood: 106.61 mmol/L
+  7. Carbon dioxide, total [Moles/volume] in Blood: 23.13 mmol/L
+  8. Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences [PRAPARE]: N/A
+  9. Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]: 1 {score}
+  10. Total score [AUDIT-C]: 1 {score}
+
+【리소스 통계】
+  CarePlan: 2개
+  CareTeam: 2개
+  Claim: 66개
+  Condition: 37개
+  Device: 10개
+  DiagnosticReport: 78개
+  DocumentReference: 37개
+  Encounter: 37개
+  ExplanationOfBenefit: 66개
+  ImagingStudy: 6개
+  Immunization: 15개
+  Medication: 3개
+  MedicationAdministration: 3개
+  MedicationRequest: 29개
+  Observation: 247개
+  Patient: 1개
+  Procedure: 126개
+  Provenance: 1개
+  SupplyDelivery: 43개
+
+====================================================================================================

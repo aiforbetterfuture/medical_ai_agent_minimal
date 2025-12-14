@@ -51,3 +51,6 @@ synthea/
 # auto-ignore any newly detected large binary blobs
 *.onnx
 
+# Windows reserved names
+nul
+

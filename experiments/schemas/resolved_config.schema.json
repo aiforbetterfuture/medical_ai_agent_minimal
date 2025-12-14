@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Resolved Configuration Schema",
+  "description": "Complete configuration snapshot for reproducible experiment runs",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "created_at_utc",
+    "git_info",
+    "config"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "resolved_config.v1"
+    },
+    "run_id": {
+      "type": "string",
+      "description": "Unique run identifier (e.g., run_20250101_120000)"
+    },
+    "created_at_utc": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp in UTC"
+    },
+    "git_info": {
+      "type": "object",
+      "properties": {
+        "branch": {"type": "string"},
+        "commit_hash": {"type": "string"},
+        "is_dirty": {"type": "boolean"}
+      },
+      "required": ["branch", "commit_hash", "is_dirty"]
+    },
+    "config": {
+      "type": "object",
+      "description": "Full resolved configuration including all parameters",
+      "properties": {
+        "llm": {
+          "type": "object",
+          "properties": {
+            "provider": {"type": "string"},
+            "model": {"type": "string"},
+            "temperature": {"type": "number"},
+            "max_tokens": {"type": "integer"}
+          },
+          "required": ["provider", "model", "temperature", "max_tokens"]
+        },
+        "modes": {
+          "type": "object",
+          "properties": {
+            "run_order": {
+              "type": "array",
+              "items": {"type": "string", "enum": ["llm", "agent"]}
+            }
+          },
+          "required": ["run_order"]
+        },
+        "features": {
+          "type": "object",
+          "properties": {
+            "active_retrieval_enabled": {"type": "boolean"},
+            "context_compression_enabled": {"type": "boolean"},
+            "hierarchical_memory_enabled": {"type": "boolean"},
+            "self_refine_enabled": {"type": "boolean"}
+          }
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "patient_list_path": {"type": "string"},
+            "profile_cards_dir": {"type": "string"}
+          },
+          "required": ["patient_list_path", "profile_cards_dir"]
+        },
+        "question_bank": {
+          "type": "object",
+          "properties": {
+            "path": {"type": "string"},
+            "selection_method": {"type": "string"}
+          },
+          "required": ["path", "selection_method"]
+        }
+      },
+      "required": ["llm", "modes", "features", "data", "question_bank"]
+    },
+    "experiment_params": {
+      "type": "object",
+      "properties": {
+        "max_patients": {"type": "integer"},
+        "max_turns": {"type": "integer"}
+      },
+      "required": ["max_patients", "max_turns"]
+    }
+  }
+}

@@ -81,11 +81,31 @@ def check_similarity_node(state: AgentState) -> AgentState:
         cached_response, similarity_score = cache_result
         print(f"[Cache Hit] Found similar question with {similarity_score:.2%} similarity")
 
+        # 캐시된 응답 확인
+        original_response = cached_response.response
+        if not original_response or not original_response.strip():
+            print(f"[WARNING] 캐시된 응답이 비어있습니다. 원본 질문: {cached_response.query[:50]}...")
+            return {
+                **state,
+                'cache_hit': False,
+                'skip_pipeline': False,
+                'cache_stats': cache.get_stats()
+            }
+
         # Apply style variations to avoid repetition
-        varied_response = variator.vary_response(
-            cached_response.response,
-            variation_level=style_variation_level
-        )
+        try:
+            varied_response = variator.vary_response(
+                original_response,
+                variation_level=style_variation_level
+            )
+            
+            # 변형된 응답이 비어있는 경우 원본 사용
+            if not varied_response or not varied_response.strip():
+                print(f"[WARNING] 변형된 응답이 비어있어 원본 사용")
+                varied_response = original_response
+        except Exception as e:
+            print(f"[WARNING] 스타일 변형 실패: {e}, 원본 응답 사용")
+            varied_response = original_response
 
         # Calculate savings (approximate)
         # Assume average tokens: query processing (50) + retrieval (200) + generation (500) = 750 tokens
@@ -128,6 +148,21 @@ def store_response_node(state: AgentState) -> AgentState:
 
     # Skip if this was a cache hit (already cached)
     if state.get('cache_hit', False):
+        # 캐시 히트인 경우 answer가 설정되어 있는지 확인
+        answer = state.get('answer', '')
+        cached_response = state.get('cached_response', '')
+        
+        # answer가 비어있고 cached_response가 있으면 사용
+        if not answer or not answer.strip():
+            if cached_response:
+                print(f"[INFO] 캐시 히트: cached_response를 answer로 설정 ({len(cached_response)}자)")
+                return {
+                    **state,
+                    'answer': cached_response
+                }
+            else:
+                print(f"[WARNING] 캐시 히트인데 answer와 cached_response가 모두 비어있습니다")
+        
         return state
 
     # Skip in LLM mode

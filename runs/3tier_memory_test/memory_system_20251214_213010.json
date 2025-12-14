@@ -1,0 +1,896 @@
+{
+  "user_id": "VIRTUAL_001",
+  "turn_counter": 21,
+  "memory_counter": 4,
+  "working_memory": [
+    {
+      "turn_id": 16,
+      "user_query": "고혈압, 당뇨병에 대한 장기 관리 계획은 어떻게 세우고 계신가요?",
+      "agent_response": "",
+      "extracted_slots": {
+        "conditions": [
+          {
+            "name": "Family hi대tory: 고혈압 환자",
+            "cui": "160357008",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Family history: Hypertension",
+            "pretty_name_ko": "Family hi대tory: 고혈압 환자"
+          },
+          {
+            "name": "당뇨병 환자",
+            "cui": "73211009",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Diabetes mellitus",
+            "pretty_name_ko": "당뇨병 환자"
+          }
+        ],
+        "symptoms": [],
+        "labs": [],
+        "vitals": [],
+        "medications": [],
+        "demographics": {},
+        "pregnancy": false,
+        "metadata": {
+          "original_text": "고혈압, 당뇨병에 대한 장기 관리 계획은 어떻게 세우고 계신가요?",
+          "translated_text": "hypertension, diabetes mellitus에 s한 장기 관리 계획은 어떻게 years old우고 계신가요?",
+          "detected_language": "ko",
+          "translation_method": "dictionary"
+        }
+      },
+      "timestamp": "2025-12-14T21:38:55.120387",
+      "importance": 1.0
+    },
+    {
+      "turn_id": 17,
+      "user_query": "합병증 예방을 위해 어떤 검사가 필요한가요?",
+      "agent_response": "",
+      "extracted_slots": {
+        "conditions": [
+          {
+            "name": "Needed",
+            "cui": "410525008",
+            "confidence": 0.6637357049338911,
+            "source": "medcat2",
+            "pretty_name_en": "Needed",
+            "pretty_name_ko": "Needed"
+          },
+          {
+            "name": "Prevent대",
+            "cui": "116699007",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Prevents",
+            "pretty_name_ko": "Prevent대"
+          },
+          {
+            "name": "Complication",
+            "cui": "263718001",
+            "confidence": 0.5067018367502656,
+            "source": "medcat2",
+            "pretty_name_en": "Complication",
+            "pretty_name_ko": "Complication"
+          }
+        ],
+        "symptoms": [],
+        "labs": [],
+        "vitals": [],
+        "medications": [],
+        "demographics": {},
+        "pregnancy": false,
+        "metadata": {
+          "original_text": "합병증 예방을 위해 어떤 검사가 필요한가요?",
+          "translated_text": "What tests do you need to prevent complications?",
+          "detected_language": "ko",
+          "translation_method": "dictionary+neural"
+        }
+      },
+      "timestamp": "2025-12-14T21:39:10.441563",
+      "importance": 0.8
+    },
+    {
+      "turn_id": 18,
+      "user_query": "정기적으로 혈압과 혈당을 체크하고 계신가요?",
+      "agent_response": "",
+      "extracted_slots": {
+        "conditions": [
+          {
+            "name": "Blood대",
+            "cui": "32873005",
+            "confidence": 0.99,
+            "source": "medcat2",
+            "pretty_name_en": "Bloods",
+            "pretty_name_ko": "Blood대"
+          },
+          {
+            "name": "혈압",
+            "cui": "75367002",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Blood pressure",
+            "pretty_name_ko": "혈압"
+          },
+          {
+            "name": "Gluco대e",
+            "cui": "67079006",
+            "confidence": 0.99,
+            "source": "medcat2",
+            "pretty_name_en": "Glucose",
+            "pretty_name_ko": "Gluco대e"
+          }
+        ],
+        "symptoms": [],
+        "labs": [],
+        "vitals": [],
+        "medications": [],
+        "demographics": {},
+        "pregnancy": false,
+        "metadata": {
+          "original_text": "정기적으로 혈압과 혈당을 체크하고 계신가요?",
+          "translated_text": "정기적으로 blood pressure과 blood glucose을 체크하고 계신가요?",
+          "detected_language": "ko",
+          "translation_method": "dictionary"
+        }
+      },
+      "timestamp": "2025-12-14T21:39:26.266283",
+      "importance": 0.8
+    },
+    {
+      "turn_id": 19,
+      "user_query": "건강 상태를 더 잘 관리하기 위해 어떤 추가적인 조치를 취할 계획이신가요?",
+      "agent_response": "",
+      "extracted_slots": {
+        "conditions": [
+          {
+            "name": "HeALTh",
+            "cui": "263775005",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Health",
+            "pretty_name_ko": "HeALTh"
+          }
+        ],
+        "symptoms": [],
+        "labs": [],
+        "vitals": [],
+        "medications": [],
+        "demographics": {},
+        "pregnancy": false,
+        "metadata": {
+          "original_text": "건강 상태를 더 잘 관리하기 위해 어떤 추가적인 조치를 취할 계획이신가요?",
+          "translated_text": "What additional steps do you plan to take to improve your health?",
+          "detected_language": "ko",
+          "translation_method": "dictionary+neural"
+        }
+      },
+      "timestamp": "2025-12-14T21:39:45.508317",
+      "importance": 0.7
+    },
+    {
+      "turn_id": 20,
+      "user_query": "지금까지 이야기한 내용을 바탕으로 종합적인 관리 계획을 알려주세요.",
+      "agent_response": "",
+      "extracted_slots": {
+        "conditions": [
+          {
+            "name": "Clinical management plan",
+            "cui": "737427001",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Clinical management plan",
+            "pretty_name_ko": "Clinical management plan"
+          },
+          {
+            "name": "대peaking",
+            "cui": "87335007",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Speaking",
+            "pretty_name_ko": "대peaking"
+          }
+        ],
+        "symptoms": [],
+        "labs": [],
+        "vitals": [],
+        "medications": [],
+        "demographics": {},
+        "pregnancy": false,
+        "metadata": {
+          "original_text": "지금까지 이야기한 내용을 바탕으로 종합적인 관리 계획을 알려주세요.",
+          "translated_text": "I've been telling you a comprehensive management plan based on what we've been talking about.",
+          "detected_language": "ko",
+          "translation_method": "dictionary+neural"
+        }
+      },
+      "timestamp": "2025-12-14T21:40:04.109413",
+      "importance": 0.8
+    }
+  ],
+  "compressing_memory": [
+    {
+      "memory_id": 0,
+      "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위한 조치가 고려될 것입니다.",
+      "key_medical_info": {
+        "conditions": [
+          {
+            "name": "Family hi대tory: 고혈압 환자",
+            "cui": "160357008",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Family history: Hypertension",
+            "pretty_name_ko": "Family hi대tory: 고혈압 환자"
+          },
+          {
+            "name": "당뇨병 환자",
+            "cui": "73211009",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Diabetes mellitus",
+            "pretty_name_ko": "당뇨병 환자"
+          },
+          {
+            "name": "Con대tant - do대ing in대truction fragment",
+            "cui": "420341009",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Constant - dosing instruction fragment",
+            "pretty_name_ko": "Con대tant - do대ing in대truction fragment"
+          },
+          {
+            "name": "Increa대e",
+            "cui": "260366006",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Increase",
+            "pretty_name_ko": "Increa대e"
+          },
+          {
+            "name": "Daily",
+            "cui": "69620002",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Daily",
+            "pretty_name_ko": "Daily"
+          },
+          {
+            "name": "WA대 A",
+            "cui": "159083000",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "WAS A",
+            "pretty_name_ko": "WA대 A"
+          },
+          {
+            "name": "Light, electromagnetic radiation",
+            "cui": "56242006",
+            "confidence": 0.7510667941277678,
+            "source": "medcat2",
+            "pretty_name_en": "Light, electromagnetic radiation",
+            "pretty_name_ko": "Light, electromagnetic radiation"
+          },
+          {
+            "name": "Current",
+            "cui": "15240007",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Current",
+            "pretty_name_ko": "Current"
+          },
+          {
+            "name": "리시노프릴",
+            "cui": "386873009",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Lisinopril",
+            "pretty_name_ko": "리시노프릴"
+          },
+          {
+            "name": "Atorva스타틴",
+            "cui": "373444002",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Atorvastatin",
+            "pretty_name_ko": "Atorva스타틴"
+          }
+        ],
+        "medications": [
+          {
+            "name": "메트폴민",
+            "cui": "372567009",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Metformin",
+            "pretty_name_ko": "메트폴민"
+          },
+          {
+            "name": "메트포르민",
+            "confidence": 0.5,
+            "source": "keyword"
+          },
+          {
+            "name": "스타틴",
+            "confidence": 0.5,
+            "source": "keyword"
+          }
+        ],
+        "symptoms": [
+          {
+            "name": "두통",
+            "cui": "25064002",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Headache",
+            "pretty_name_ko": "두통"
+          },
+          {
+            "name": "호흡 곤란",
+            "cui": "267036007",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Dyspnea",
+            "pretty_name_ko": "호흡 곤란"
+          }
+        ],
+        "vitals": []
+      },
+      "turn_range": [
+        0,
+        4
+      ],
+      "timestamp": "2025-12-14T21:33:15.493000",
+      "importance": 0.8400000000000001
+    },
+    {
+      "memory_id": 1,
+      "summary": "환자는 최근 증상이 악화되었다고 호소하며, 고혈압과 당뇨병을 앓고 있다. 진단된 질환은 고혈압 및 당뇨병이며, 현재 복용 중인 약물에 대한 부작용이나 다른 약물 복용 여부를 확인하고 있다. 최근 검사 결과와 관련된 중요한 수치에 대한 언급은 없으나, 정기적인 검사와 약물 복용의 규칙성을 강조하고 있다. 향후 관리 계획으로는 증상 악화에 대한 조치와 고혈압 및 당뇨병 관리를 위한 정기 검사가 포함된다.",
+      "key_medical_info": {
+        "conditions": [
+          {
+            "name": "Current",
+            "cui": "15240007",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Current",
+            "pretty_name_ko": "Current"
+          },
+          {
+            "name": "Effect",
+            "cui": "253861007",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Effect",
+            "pretty_name_ko": "Effect"
+          },
+          {
+            "name": "Recent",
+            "cui": "6493001",
+            "confidence": 0.99,
+            "source": "medcat2",
+            "pretty_name_en": "Recent",
+            "pretty_name_ko": "Recent"
+          },
+          {
+            "name": "Family hi대tory: 고혈압 환자",
+            "cui": "160357008",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Family history: Hypertension",
+            "pretty_name_ko": "Family hi대tory: 고혈압 환자"
+          },
+          {
+            "name": "당뇨병 환자",
+            "cui": "73211009",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Diabetes mellitus",
+            "pretty_name_ko": "당뇨병 환자"
+          }
+        ],
+        "medications": [],
+        "symptoms": [],
+        "vitals": []
+      },
+      "turn_range": [
+        5,
+        9
+      ],
+      "timestamp": "2025-12-14T21:35:10.062975",
+      "importance": 0.76
+    },
+    {
+      "memory_id": 2,
+      "summary": "환자는 식이요법과 운동에 대한 질문을 통해 건강 관리에 관심을 보였습니다. 주요 증상으로는 수면 중 자주 깨는 문제가 있으며, 이는 불면증과 관련이 있을 수 있습니다. 현재 저염식 및 저당식 식단을 유지하고 있으며, 주 3회 30분 걷기를 실천하고 있습니다. 환자는 하루 6시간의 수면이 충분하다고 느끼지 않으며, 이는 수면의 질과 관련이 있을 수 있습니다. 향후 관리는 식단 조절 및 운동 지속에 집중하며, 수면 문제 해결을 위해 추가적인 평가가 필요할 것으로 보입니다. 현재 복용 중인 약물에 대한 언급은 없었습니다.",
+      "key_medical_info": {
+        "conditions": [
+          {
+            "name": "Dietary finding",
+            "cui": "41829006",
+            "confidence": 0.5606815390429433,
+            "source": "medcat2",
+            "pretty_name_en": "Dietary finding",
+            "pretty_name_ko": "Dietary finding"
+          },
+          {
+            "name": "Walking",
+            "cui": "870595007",
+            "confidence": 0.7499119170937648,
+            "source": "medcat2",
+            "pretty_name_en": "Walking",
+            "pretty_name_ko": "Walking"
+          },
+          {
+            "name": "Minute",
+            "cui": "356624006",
+            "confidence": 0.99,
+            "source": "medcat2",
+            "pretty_name_en": "Minute",
+            "pretty_name_ko": "Minute"
+          },
+          {
+            "name": "After exerci대e",
+            "cui": "255214003",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "After exercise",
+            "pretty_name_ko": "After exerci대e"
+          },
+          {
+            "name": "Maintained",
+            "cui": "385630006",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Maintained",
+            "pretty_name_ko": "Maintained"
+          },
+          {
+            "name": "대imple carbohydrate",
+            "cui": "74801000",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Simple carbohydrate",
+            "pretty_name_ko": "대imple carbohydrate"
+          },
+          {
+            "name": "Emotion",
+            "cui": "285854004",
+            "confidence": 0.649931960182651,
+            "source": "medcat2",
+            "pretty_name_en": "Emotion",
+            "pretty_name_ko": "Emotion"
+          },
+          {
+            "name": "Once a day, at bedtime",
+            "cui": "396142006",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Once a day, at bedtime",
+            "pretty_name_ko": "Once a day, at bedtime"
+          },
+          {
+            "name": "Awakening",
+            "cui": "421355008",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Awakening",
+            "pretty_name_ko": "Awakening"
+          },
+          {
+            "name": "Frequent",
+            "cui": "70232002",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Frequent",
+            "pretty_name_ko": "Frequent"
+          },
+          {
+            "name": "During 대leep",
+            "cui": "309610004",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "During sleep",
+            "pretty_name_ko": "During 대leep"
+          }
+        ],
+        "medications": [],
+        "symptoms": [],
+        "vitals": []
+      },
+      "turn_range": [
+        10,
+        14
+      ],
+      "timestamp": "2025-12-14T21:37:58.490904",
+      "importance": 0.7799999999999999
+    },
+    {
+      "memory_id": 3,
+      "summary": "환자는 고혈압과 당뇨병을 앓고 있으며, 증상 관리와 예방을 위해 생활습관 개선을 고려하고 있습니다. 의사는 장기 관리 계획을 수립 중이며, 합병증 예방을 위한 검사를 필요로 하고 있습니다. 환자는 정기적으로 혈압과 혈당을 체크하고 있으며, 건강 상태 관리를 위해 추가적인 조치를 취할 계획입니다. 현재 복용 중인 약물에 대한 언급은 없으나, 지속적인 관리가 강조되고 있습니다.",
+      "key_medical_info": {
+        "conditions": [
+          {
+            "name": "Life대tyle",
+            "cui": "134436002",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Lifestyle",
+            "pretty_name_ko": "Life대tyle"
+          },
+          {
+            "name": "Prevent대",
+            "cui": "116699007",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Prevents",
+            "pretty_name_ko": "Prevent대"
+          },
+          {
+            "name": "Family hi대tory: 고혈압 환자",
+            "cui": "160357008",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Family history: Hypertension",
+            "pretty_name_ko": "Family hi대tory: 고혈압 환자"
+          },
+          {
+            "name": "당뇨병 환자",
+            "cui": "73211009",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Diabetes mellitus",
+            "pretty_name_ko": "당뇨병 환자"
+          },
+          {
+            "name": "Needed",
+            "cui": "410525008",
+            "confidence": 0.6637357049338911,
+            "source": "medcat2",
+            "pretty_name_en": "Needed",
+            "pretty_name_ko": "Needed"
+          },
+          {
+            "name": "Complication",
+            "cui": "263718001",
+            "confidence": 0.5067018367502656,
+            "source": "medcat2",
+            "pretty_name_en": "Complication",
+            "pretty_name_ko": "Complication"
+          },
+          {
+            "name": "Blood대",
+            "cui": "32873005",
+            "confidence": 0.99,
+            "source": "medcat2",
+            "pretty_name_en": "Bloods",
+            "pretty_name_ko": "Blood대"
+          },
+          {
+            "name": "혈압",
+            "cui": "75367002",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Blood pressure",
+            "pretty_name_ko": "혈압"
+          },
+          {
+            "name": "Gluco대e",
+            "cui": "67079006",
+            "confidence": 0.99,
+            "source": "medcat2",
+            "pretty_name_en": "Glucose",
+            "pretty_name_ko": "Gluco대e"
+          },
+          {
+            "name": "HeALTh",
+            "cui": "263775005",
+            "confidence": 1,
+            "source": "medcat2",
+            "pretty_name_en": "Health",
+            "pretty_name_ko": "HeALTh"
+          }
+        ],
+        "medications": [],
+        "symptoms": [],
+        "vitals": []
+      },
+      "turn_range": [
+        15,
+        19
+      ],
+      "timestamp": "2025-12-14T21:39:47.658696",
+      "importance": 0.8200000000000001
+    }
+  ],
+  "semantic_memory": {
+    "chronic_conditions": [
+      {
+        "name": "Family hi대tory: 고혈압 환자",
+        "first_mentioned": "2025-12-14T21:33:15.493000",
+        "last_mentioned": "2025-12-14T21:39:47.659691",
+        "frequency": 4,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "당뇨병 환자",
+        "first_mentioned": "2025-12-14T21:33:15.493000",
+        "last_mentioned": "2025-12-14T21:39:47.659691",
+        "frequency": 4,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Con대tant - do대ing in대truction fragment",
+        "first_mentioned": "2025-12-14T21:33:15.493000",
+        "last_mentioned": "2025-12-14T21:33:15.493000",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Increa대e",
+        "first_mentioned": "2025-12-14T21:33:15.494006",
+        "last_mentioned": "2025-12-14T21:33:15.494006",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Daily",
+        "first_mentioned": "2025-12-14T21:33:15.494006",
+        "last_mentioned": "2025-12-14T21:33:15.494006",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "WA대 A",
+        "first_mentioned": "2025-12-14T21:33:15.494006",
+        "last_mentioned": "2025-12-14T21:33:15.494006",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Light, electromagnetic radiation",
+        "first_mentioned": "2025-12-14T21:33:15.494006",
+        "last_mentioned": "2025-12-14T21:33:15.494006",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Current",
+        "first_mentioned": "2025-12-14T21:33:15.495005",
+        "last_mentioned": "2025-12-14T21:39:47.660198",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "리시노프릴",
+        "first_mentioned": "2025-12-14T21:33:15.495005",
+        "last_mentioned": "2025-12-14T21:33:15.495005",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Atorva스타틴",
+        "first_mentioned": "2025-12-14T21:33:15.495005",
+        "last_mentioned": "2025-12-14T21:33:15.495005",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Effect",
+        "first_mentioned": "2025-12-14T21:35:10.064093",
+        "last_mentioned": "2025-12-14T21:35:10.064093",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Recent",
+        "first_mentioned": "2025-12-14T21:35:10.064093",
+        "last_mentioned": "2025-12-14T21:35:10.064093",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Dietary finding",
+        "first_mentioned": "2025-12-14T21:37:58.490904",
+        "last_mentioned": "2025-12-14T21:37:58.490904",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Walking",
+        "first_mentioned": "2025-12-14T21:37:58.490904",
+        "last_mentioned": "2025-12-14T21:37:58.490904",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Minute",
+        "first_mentioned": "2025-12-14T21:37:58.490904",
+        "last_mentioned": "2025-12-14T21:37:58.490904",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "After exerci대e",
+        "first_mentioned": "2025-12-14T21:37:58.490904",
+        "last_mentioned": "2025-12-14T21:37:58.490904",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Maintained",
+        "first_mentioned": "2025-12-14T21:37:58.490904",
+        "last_mentioned": "2025-12-14T21:37:58.490904",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "대imple carbohydrate",
+        "first_mentioned": "2025-12-14T21:37:58.490904",
+        "last_mentioned": "2025-12-14T21:37:58.490904",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Emotion",
+        "first_mentioned": "2025-12-14T21:37:58.490904",
+        "last_mentioned": "2025-12-14T21:37:58.490904",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Once a day, at bedtime",
+        "first_mentioned": "2025-12-14T21:37:58.490904",
+        "last_mentioned": "2025-12-14T21:37:58.490904",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Awakening",
+        "first_mentioned": "2025-12-14T21:37:58.490904",
+        "last_mentioned": "2025-12-14T21:37:58.490904",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Frequent",
+        "first_mentioned": "2025-12-14T21:37:58.490904",
+        "last_mentioned": "2025-12-14T21:37:58.490904",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "During 대leep",
+        "first_mentioned": "2025-12-14T21:37:58.490904",
+        "last_mentioned": "2025-12-14T21:37:58.490904",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Life대tyle",
+        "first_mentioned": "2025-12-14T21:39:47.658696",
+        "last_mentioned": "2025-12-14T21:39:47.658696",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Prevent대",
+        "first_mentioned": "2025-12-14T21:39:47.658696",
+        "last_mentioned": "2025-12-14T21:39:47.658696",
+        "frequency": 3,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Needed",
+        "first_mentioned": "2025-12-14T21:39:47.659691",
+        "last_mentioned": "2025-12-14T21:39:47.659691",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Complication",
+        "first_mentioned": "2025-12-14T21:39:47.660198",
+        "last_mentioned": "2025-12-14T21:39:47.660198",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Blood대",
+        "first_mentioned": "2025-12-14T21:39:47.660198",
+        "last_mentioned": "2025-12-14T21:39:47.660198",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "혈압",
+        "first_mentioned": "2025-12-14T21:39:47.660198",
+        "last_mentioned": "2025-12-14T21:39:47.660198",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "Gluco대e",
+        "first_mentioned": "2025-12-14T21:39:47.660198",
+        "last_mentioned": "2025-12-14T21:39:47.660198",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      },
+      {
+        "name": "HeALTh",
+        "first_mentioned": "2025-12-14T21:39:47.660198",
+        "last_mentioned": "2025-12-14T21:39:47.660198",
+        "frequency": 2,
+        "verified_by": "frequency",
+        "medcat_verified": false
+      }
+    ],
+    "chronic_medications": [
+      {
+        "name": "메트폴민",
+        "first_mentioned": "2025-12-14T21:33:15.495005",
+        "frequency": 2
+      },
+      {
+        "name": "메트포르민",
+        "first_mentioned": "2025-12-14T21:33:15.495005",
+        "frequency": 2
+      },
+      {
+        "name": "스타틴",
+        "first_mentioned": "2025-12-14T21:33:15.495005",
+        "frequency": 2
+      }
+    ],
+    "allergies": [],
+    "health_patterns": {
+      "frequent_symptoms": [
+        {
+          "name": "두통",
+          "frequency": 1
+        },
+        {
+          "name": "호흡 곤란",
+          "frequency": 1
+        }
+      ]
+    },
+    "last_updated": "2025-12-14T21:39:47.661214"
+  },
+  "metrics": {
+    "total_turns": 21,
+    "compressions_performed": 4,
+    "semantic_updates": 4,
+    "avg_compression_time_ms": 3048.277735710144,
+    "working_memory_hits": 0,
+    "compressing_memory_hits": 0,
+    "semantic_memory_hits": 0
+  }
+}

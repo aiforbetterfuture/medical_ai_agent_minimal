@@ -34,7 +34,11 @@ def assemble_context_node(state: AgentState) -> AgentState:
     include_longterm = feature_flags.get('include_longterm', False)
     include_evidence = feature_flags.get('include_evidence', True)
     include_personalization = feature_flags.get('include_personalization', True)
-    
+
+    # Initialize variables that may be used later in both modes
+    hierarchical_contexts = {}
+    compression_stats = {}
+
     # LLM 모드: 간단한 프롬프트만 사용
     if mode == 'llm':
         system_prompt = build_system_prompt(mode='llm')
@@ -48,7 +52,6 @@ def assemble_context_node(state: AgentState) -> AgentState:
 
         # Hierarchical Memory 컨텍스트 가져오기 (선택적)
         hierarchical_memory_enabled = feature_flags.get('hierarchical_memory_enabled', False)
-        hierarchical_contexts = {}
 
         if hierarchical_memory_enabled and 'hierarchical_memory' in state:
             print("[Hierarchical Memory] Retrieving context from 3 tiers...")
@@ -84,7 +87,6 @@ def assemble_context_node(state: AgentState) -> AgentState:
 
         # Context Compression 적용 (선택적)
         compression_enabled = feature_flags.get('context_compression_enabled', False)
-        compression_stats = {}
 
         if compression_enabled and retrieved_docs:
             print("[Context Compression] Applying compression...")

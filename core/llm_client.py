@@ -27,9 +27,10 @@ class LLMClient(ABC):
 class OpenAIClient(LLMClient):
     """OpenAI 클라이언트"""
     
-    def __init__(self, api_key: Optional[str] = None, model: str = 'gpt-4o-mini', **kwargs):
+    def __init__(self, api_key: Optional[str] = None, model: str = 'gpt-4o-mini', embedding_model: Optional[str] = None, **kwargs):
         self.api_key = api_key or os.getenv('OPENAI_API_KEY')
         self.model = model
+        self.embedding_model = embedding_model  # 임베딩 모델 저장
         self.temperature = kwargs.get('temperature', 0.7)
         self.max_tokens = kwargs.get('max_tokens', 1000)
         
@@ -49,22 +50,56 @@ class OpenAIClient(LLMClient):
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": prompt})
         
-        response = self.client.chat.completions.create(
-            model=self.model,
-            messages=messages,
-            temperature=kwargs.get('temperature', self.temperature),
-            max_tokens=kwargs.get('max_tokens', self.max_tokens)
-        )
-        
-        return response.choices[0].message.content
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=messages,
+                temperature=kwargs.get('temperature', self.temperature),
+                max_tokens=kwargs.get('max_tokens', self.max_tokens)
+            )
+            
+            if not response.choices or not response.choices[0].message.content:
+                raise ValueError("LLM 응답이 비어있습니다")
+            
+            return response.choices[0].message.content
+        except Exception as e:
+            # 에러를 그대로 전파 (상위에서 처리)
+            raise
     
-    def embed(self, text: str) -> List[float]:
-        """임베딩 생성"""
-        response = self.client.embeddings.create(
-            model='text-embedding-3-small',
-            input=text
-        )
-        return response.data[0].embedding
+    def embed(self, text: str, embedding_model: Optional[str] = None) -> List[float]:
+        """
+        임베딩 생성
+        
+        Args:
+            text: 임베딩할 텍스트
+            embedding_model: 임베딩 모델명 (없으면 설정에서 읽음)
+        
+        Returns:
+            임베딩 벡터 (3072차원 for text-embedding-3-large)
+        """
+        # 모델명 결정: 인자 > 인스턴스 속성 > 기본값
+        if embedding_model is None:
+            embedding_model = getattr(self, 'embedding_model', None)
+        
+        if embedding_model is None:
+            # 설정에서 읽기
+            from core.config import get_embedding_config
+            embedding_config = get_embedding_config()
+            embedding_model = embedding_config.get('model', 'text-embedding-3-large')
+        
+        try:
+            response = self.client.embeddings.create(
+                model=embedding_model,
+                input=text
+            )
+            
+            if not response.data or not response.data[0].embedding:
+                raise ValueError("임베딩 응답이 비어있습니다")
+            
+            return response.data[0].embedding
+        except Exception as e:
+            # 에러를 그대로 전파 (상위에서 처리)
+            raise
 
 
 class GeminiClient(LLMClient):

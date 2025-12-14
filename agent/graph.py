@@ -99,15 +99,23 @@ def build_agent_graph():
 
         - needs_retrieval=False이고 이미 assemble_context를 거쳤으면 바로 생성
         - 재검색 루프에서 이미 검색을 마친 경우 (iteration_count > 0 and retrieved_docs 있음) 바로 생성
+        - 첫 번째 검색 후 문서가 있으면 바로 생성 (무한 루프 방지)
         - 그 외에는 retrieve 실행
         """
         needs_retrieval = state.get('needs_retrieval', True)
         iteration_count = state.get('iteration_count', 0)
         retrieved_docs = state.get('retrieved_docs', [])
 
+        # Check if retrieval has been attempted (flag set by retrieve node)
+        retrieval_attempted = state.get('retrieval_attempted', False)
+
+        # 첫 번째 검색을 완료했으면 (문서 유무와 관계없이) 바로 답변 생성
+        # 무한 루프 방지: 검색을 시도했으나 문서를 못 찾은 경우에도 진행
+        if iteration_count == 0 and retrieval_attempted:
+            return "generate_answer"
+
         # 재검색 루프에서 이미 검색을 마친 경우: 바로 답변 생성
-        # (retrieve → assemble_context 후 다시 이 라우터를 거칠 때)
-        if iteration_count > 0 and len(retrieved_docs) > 0:
+        if iteration_count > 0:
             return "generate_answer"
 
         # 검색 스킵 조건: Active Retrieval이 검색 불필요 판단
@@ -250,6 +258,7 @@ def run_agent(
         'profile_summary': '',
         'retrieved_docs': [],
         'query_vector': [],
+        'retrieval_attempted': False,  # Initialize retrieval attempted flag
         'system_prompt': '',
         'user_prompt': '',
         'answer': '',

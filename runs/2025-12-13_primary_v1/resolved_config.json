@@ -1,0 +1,46 @@
+{
+  "schema_version": "resolved_config.v1",
+  "run_id": "2025-12-13_primary_v1",
+  "created_at_utc": "2025-12-14T11:48:48.219555+00:00",
+  "git_info": {
+    "branch": "main",
+    "commit_hash": "efa1a73cf3",
+    "is_dirty": false
+  },
+  "config": {
+    "llm": {
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "temperature": 0.2,
+      "max_tokens": 800
+    },
+    "modes": {
+      "run_order": [
+        "llm",
+        "agent"
+      ]
+    },
+    "features": {
+      "active_retrieval_enabled": false,
+      "context_compression_enabled": false,
+      "hierarchical_memory_enabled": false,
+      "self_refine_enabled": false
+    },
+    "data": {
+      "patient_list_path": "data/patients/patient_list_80.json",
+      "profile_cards_dir": "data/patients/profile_cards"
+    },
+    "question_bank": {
+      "path": "experiments/question_bank/question_bank_5x15.v1.json",
+      "selection_method": "deterministic_sha256",
+      "version": "N/A"
+    },
+    "run": {
+      "timezone": "Asia/Seoul"
+    }
+  },
+  "experiment_params": {
+    "max_patients": 1,
+    "max_turns": 2
+  }
+}

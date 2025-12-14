@@ -1,0 +1,127 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Summary Schema",
+  "description": "Statistical analysis summary for multi-turn experiment runs",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "created_at_utc",
+    "paired_comparison",
+    "per_turn_breakdown",
+    "efficiency_comparison"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "summary.v1"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "created_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "paired_comparison": {
+      "type": "object",
+      "description": "Paired t-test results for LLM vs AI Agent",
+      "patternProperties": {
+        "^[a-z_]+$": {
+          "type": "object",
+          "properties": {
+            "llm_mean": {"type": ["number", "null"]},
+            "llm_std": {"type": ["number", "null"]},
+            "agent_mean": {"type": ["number", "null"]},
+            "agent_std": {"type": ["number", "null"]},
+            "delta_mean": {"type": ["number", "null"]},
+            "delta_std": {"type": ["number", "null"]},
+            "cohens_d": {"type": ["number", "null"]},
+            "ci95_lower": {"type": ["number", "null"]},
+            "ci95_upper": {"type": ["number", "null"]},
+            "p_value": {"type": ["number", "null"]},
+            "n_pairs": {"type": ["integer", "null"]}
+          },
+          "required": ["llm_mean", "agent_mean", "delta_mean", "cohens_d", "p_value", "n_pairs"]
+        }
+      }
+    },
+    "per_turn_breakdown": {
+      "type": "object",
+      "description": "Breakdown by turn (turn_1, turn_2, etc.)",
+      "patternProperties": {
+        "^turn_[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "llm": {
+              "type": "object",
+              "description": "LLM mode metrics for this turn",
+              "patternProperties": {
+                "^[a-z_]+$": {
+                  "type": "object",
+                  "properties": {
+                    "mean": {"type": ["number", "null"]},
+                    "std": {"type": ["number", "null"]},
+                    "min": {"type": ["number", "null"]},
+                    "max": {"type": ["number", "null"]},
+                    "p25": {"type": ["number", "null"]},
+                    "p75": {"type": ["number", "null"]},
+                    "count": {"type": ["integer", "null"]}
+                  }
+                }
+              }
+            },
+            "agent": {
+              "type": "object",
+              "description": "AI Agent mode metrics for this turn",
+              "patternProperties": {
+                "^[a-z_]+$": {
+                  "type": "object",
+                  "properties": {
+                    "mean": {"type": ["number", "null"]},
+                    "std": {"type": ["number", "null"]},
+                    "min": {"type": ["number", "null"]},
+                    "max": {"type": ["number", "null"]},
+                    "p25": {"type": ["number", "null"]},
+                    "p75": {"type": ["number", "null"]},
+                    "count": {"type": ["integer", "null"]}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "efficiency_comparison": {
+      "type": "object",
+      "description": "Cost and performance metrics",
+      "properties": {
+        "cost_per_turn_llm": {"type": ["number", "null"]},
+        "cost_per_turn_agent": {"type": ["number", "null"]},
+        "latency_mean_llm": {"type": ["number", "null"]},
+        "latency_mean_agent": {"type": ["number", "null"]},
+        "latency_std_llm": {"type": ["number", "null"]},
+        "latency_std_agent": {"type": ["number", "null"]},
+        "cache_hit_rate_llm": {"type": ["number", "null"]},
+        "cache_hit_rate_agent": {"type": ["number", "null"]},
+        "total_tokens_llm": {"type": ["integer", "null"]},
+        "total_tokens_agent": {"type": ["integer", "null"]}
+      }
+    },
+    "ablation_breakdown": {
+      "type": ["object", "null"],
+      "description": "Ablation study results (optional)",
+      "patternProperties": {
+        "^[a-z_]+$": {
+          "type": "object",
+          "properties": {
+            "enabled": {"type": "boolean"},
+            "metrics": {"type": "object"},
+            "n_pairs": {"type": ["integer", "null"]}
+          }
+        }
+      }
+    }
+  }
+}

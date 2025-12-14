@@ -3,7 +3,11 @@
     "allow": [
       "Bash(nul)",
       "Bash(git add:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(python scripts/generate_synthea_profiles.py:*)",
+      "Bash(python experiments/test_integration.py:*)",
+      "Bash(python:*)",
+      "Bash(powershell -Command:*)"
     ],
     "deny": [],
     "ask": []

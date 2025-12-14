@@ -1,0 +1,134 @@
+# 턴별 요구 슬롯 및 평가 기준
+# Context Utilization Score (CUS) 계산용
+
+schema_version: "1.0"
+
+# 공통 슬롯 정의
+slot_definitions:
+  demographics:
+    - age
+    - sex
+  
+  conditions:
+    - primary_condition
+    - comorbidities
+  
+  meds:
+    - active_meds
+  
+  vitals:
+    - height
+    - weight
+    - bmi
+    - bp_systolic
+    - bp_diastolic
+    - heart_rate
+    - respiratory_rate
+  
+  labs:
+    - hba1c
+    - glucose
+    - ldl
+    - triglyceride
+    - creatinine
+    - egfr
+    - potassium
+    - hemoglobin
+    - alt
+    - ast
+  
+  procedures:
+    - major_procedures
+
+# 턴별 요구 슬롯 및 가중치
+turns:
+  "1":
+    name: "Demographics + primary condition + chief symptom"
+    required_slots:
+      - slot: age
+        weight: 1.0
+      - slot: sex
+        weight: 1.0
+      - slot: primary_condition
+        weight: 2.0
+    scoring:
+      cus_min_expected: 0.5
+
+  "2":
+    name: "Meds + key labs/vitals + major procedure"
+    required_slots:
+      - slot: active_meds
+        weight: 2.0
+      - slot: labs
+        weight: 2.0
+      - slot: vitals
+        weight: 1.0
+      - slot: major_procedures
+        weight: 0.5
+    scoring:
+      cus_min_expected: 0.6
+
+  "3":
+    name: "Exercise (question is intentionally underspecified)"
+    required_slots:
+      - slot: primary_condition
+        weight: 2.0
+      - slot: labs
+        weight: 2.0
+      - slot: vitals
+        weight: 1.0
+      - slot: active_meds
+        weight: 1.0
+    must_include_elements:
+      - "frequency"
+      - "intensity"
+      - "duration"
+      - "stop_criteria"
+    scoring:
+      cus_min_expected: 0.65
+
+  "4":
+    name: "Diet (question is intentionally underspecified)"
+    required_slots:
+      - slot: primary_condition
+        weight: 2.0
+      - slot: labs
+        weight: 2.0
+      - slot: active_meds
+        weight: 1.0
+    must_include_elements:
+      - "rules_3_to_5"
+      - "monitoring_metric"
+    scoring:
+      cus_min_expected: 0.65
+
+  "5":
+    name: "Integrated 4-week plan"
+    required_slots:
+      - slot: primary_condition
+        weight: 2.0
+      - slot: labs
+        weight: 2.0
+      - slot: vitals
+        weight: 1.0
+      - slot: active_meds
+        weight: 1.0
+    must_include_elements:
+      - "priorities_top3"
+      - "weekly_plan"
+      - "monitoring_metric"
+      - "retest_timing"
+    scoring:
+      cus_min_expected: 0.7
+
+# 최종 종합점수 가중치
+aggregate:
+  weights:
+    ragas_faithfulness: 0.15
+    ragas_answer_relevance: 0.15
+    perplexity: 0.10
+    cus: 0.25
+    sfs: 0.15
+    csp: 0.10
+    ass: 0.10
+

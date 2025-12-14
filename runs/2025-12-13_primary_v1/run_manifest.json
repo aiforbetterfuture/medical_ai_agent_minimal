@@ -1,0 +1,209 @@
+{
+  "schema_version": "run_manifest.v1",
+  "run_id": "2025-12-13_primary_v1",
+  "created_at_utc": "2025-12-14T11:48:47.930707+00:00",
+  "timezone": "Asia/Seoul",
+  "config": {
+    "schema_version": "experiment_config.v1",
+    "run": {
+      "run_id": "2025-12-13_primary_v1",
+      "description": "80 synthea patients x 5 turns, paired LLM vs Agent",
+      "timezone": "Asia/Seoul",
+      "created_by": "researcher",
+      "tags": [
+        "primary",
+        "paired",
+        "5turn",
+        "synthea80"
+      ]
+    },
+    "reproducibility": {
+      "global_seed": 42,
+      "deterministic_question_selection": true,
+      "question_selection_rule": "sha256(patient_id + ':' + turn_id) % 15",
+      "store_resolved_config_json": true
+    },
+    "git": {
+      "repo_url": "https://github.com/aiforbetterfuture/medical_ai_agent_minimal",
+      "branch": "main",
+      "require_clean_worktree": false
+    },
+    "data": {
+      "patient_list_path": "data/patients/patient_list_80.json",
+      "profile_cards_dir": "data/patients/profile_cards",
+      "profile_card_schema": "synthea_profile_card.v1",
+      "language": "ko"
+    },
+    "question_bank": {
+      "path": "experiments/question_bank/question_bank_5x15.v1.json",
+      "version": "question_bank_5x15.v1",
+      "placeholder_style": "{PLACEHOLDER}",
+      "enforce_turn_omit_rules": true
+    },
+    "multiturn_scripts": {
+      "enabled": true,
+      "scripts_path": "data/multiturn_scripts/scripts_5turn.jsonl",
+      "slot_builder_config_dir": "config/synthea"
+    },
+    "modes": {
+      "run_order": [
+        "llm",
+        "agent"
+      ]
+    },
+    "llm": {
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "temperature": 0.2,
+      "top_p": 1.0,
+      "max_tokens": 800,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0,
+      "timeout_sec": 60,
+      "retry": {
+        "max_retries": 2,
+        "backoff_sec": 1.0
+      }
+    },
+    "agent": {
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "temperature": 0.2,
+      "top_p": 1.0,
+      "max_tokens": 800,
+      "timeout_sec": 90,
+      "retry": {
+        "max_retries": 2,
+        "backoff_sec": 1.0
+      },
+      "feature_flags": {
+        "active_retrieval_enabled": true,
+        "response_cache_enabled": true,
+        "self_refine_enabled": true,
+        "llm_judge_enabled": true,
+        "query_rewrite_enabled": true,
+        "time_decay_enabled": true
+      }
+    },
+    "retrieval": {
+      "corpus": {
+        "corpus_id": "medical_corpus_v1",
+        "corpus_manifest_path": "data/corpus/corpus_manifest.json",
+        "enforce_snapshot_hash": true
+      },
+      "bm25": {
+        "enabled": true,
+        "top_k": 8,
+        "k1": 1.5,
+        "b": 0.75
+      },
+      "dense": {
+        "enabled": true,
+        "embedding_model": "text-embedding-3-large",
+        "faiss_index_path": "data/index/faiss.index",
+        "top_k": 8
+      },
+      "fusion": {
+        "method": "rrf",
+        "rrf_k": 60,
+        "final_top_k": 8
+      },
+      "active_retrieval": {
+        "enabled": true,
+        "k_simple": 3,
+        "k_moderate": 8,
+        "k_complex": 15,
+        "complexity_thresholds": {
+          "medical_concept_count_moderate": 1,
+          "medical_concept_count_complex": 3
+        }
+      }
+    },
+    "quality": {
+      "self_refine": {
+        "enabled": true,
+        "max_iterations": 2,
+        "stop_if_improvement_lt": 0.05,
+        "duplicate_doc_jaccard_threshold": 0.8
+      },
+      "llm_judge": {
+        "enabled": true,
+        "judge_model": "gpt-4o-mini",
+        "temperature": 0.2,
+        "weights": {
+          "grounding": 0.4,
+          "completeness": 0.4,
+          "accuracy": 0.2
+        },
+        "thresholds": {
+          "pass_score": 0.6
+        }
+      }
+    },
+    "cache": {
+      "response_cache": {
+        "enabled": true,
+        "similarity_threshold": 0.85,
+        "min_quality_to_store": 0.6,
+        "capacity": 1000,
+        "ttl_hours": 168
+      }
+    },
+    "logging": {
+      "runs_dir": "runs",
+      "write_run_manifest": true,
+      "write_events_jsonl": true,
+      "write_node_trace_jsonl": true,
+      "write_retrieval_snapshot": true,
+      "redact": {
+        "enabled": true,
+        "fields": [
+          "api_key",
+          "patient_name_raw"
+        ]
+      },
+      "snapshots": {
+        "store_doc_text": false,
+        "store_doc_text_sha256": true,
+        "store_doc_first_chars": 200
+      },
+      "metrics": {
+        "store_token_usage": true,
+        "store_latency": true,
+        "store_estimated_cost": true
+      }
+    },
+    "evaluation": {
+      "per_turn_metrics": [
+        "faithfulness",
+        "answer_relevance",
+        "perplexity",
+        "judge_total_score"
+      ],
+      "multiturn_metrics": [
+        "context_utilization",
+        "context_contradiction",
+        "update_responsiveness"
+      ],
+      "memory_verification_enabled": false,
+      "export_summary_json": true,
+      "export_summary_path": "runs/{run_id}/summary.json"
+    }
+  },
+  "git": {
+    "branch": "main",
+    "commit_hash": "efa1a73cf3",
+    "dirty_worktree": false
+  },
+  "data": {
+    "patient_count": 80,
+    "question_bank_version": "N/A",
+    "use_multiturn_scripts": true,
+    "multiturn_scripts_count": 78
+  },
+  "logging": {
+    "events_jsonl_path": "runs\\2025-12-13_primary_v1\\events.jsonl",
+    "node_trace_jsonl_path": "runs\\2025-12-13_primary_v1\\node_trace.jsonl",
+    "run_manifest_path": "runs\\2025-12-13_primary_v1\\run_manifest.json"
+  }
+}

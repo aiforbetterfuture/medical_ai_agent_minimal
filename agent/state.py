@@ -34,7 +34,8 @@ class AgentState(TypedDict):
     # 검색 관련
     retrieved_docs: Annotated[List[Dict[str, Any]], add]
     query_vector: List[float]  # 임베딩 벡터
-    
+    retrieval_attempted: bool  # 검색 시도 여부 (무한 루프 방지용)
+
     # 생성 관련
     system_prompt: str
     user_prompt: str

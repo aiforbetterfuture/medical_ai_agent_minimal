@@ -1,0 +1,54 @@
+{
+  "scenario": {
+    "num_patients": 80,
+    "num_turns": 5,
+    "num_sessions": 80,
+    "working_memory_capacity": 5,
+    "compression_threshold": 5
+  },
+  "memory_consumption": {
+    "working_memory_per_session_bytes": 4585,
+    "total_working_memory_bytes": 366800,
+    "total_working_memory_mb": 0.3498077392578125,
+    "compressed_memory_per_session_bytes": 2000,
+    "total_compressed_memory_bytes": 160000,
+    "total_compressed_memory_mb": 0.152587890625,
+    "semantic_memory_per_session_bytes": 500,
+    "total_semantic_memory_bytes": 40000,
+    "total_semantic_memory_mb": 0.03814697265625,
+    "total_memory_bytes": 566800,
+    "total_memory_mb": 0.5405426025390625
+  },
+  "token_consumption": {
+    "compression_tokens_per_call": {
+      "input_tokens": 1030,
+      "output_tokens": 200,
+      "total_tokens": 1230
+    },
+    "num_compression_calls": 80,
+    "total_input_tokens": 82400,
+    "total_output_tokens": 16000,
+    "total_tokens": 98400,
+    "total_tokens_millions": 0.0984
+  },
+  "cache_consumption": {
+    "cache_entry_size_bytes": 7085,
+    "total_cache_size_bytes": 566800,
+    "total_cache_size_mb": 0.5405426025390625
+  },
+  "cost_estimation": {
+    "input_cost_usd": 0.01236,
+    "output_cost_usd": 0.0096,
+    "total_llm_cost_usd": 0.02196,
+    "cost_per_session_usd": 0.0002745
+  },
+  "breakdown_per_session": {
+    "working_memory_mb": 0.004372596740722656,
+    "compressed_memory_mb": 0.0019073486328125,
+    "semantic_memory_mb": 0.000476837158203125,
+    "total_memory_mb": 0.006756782531738281,
+    "compression_calls": 1,
+    "tokens_per_compression": 1230,
+    "total_tokens_per_session": 1230
+  }
+}

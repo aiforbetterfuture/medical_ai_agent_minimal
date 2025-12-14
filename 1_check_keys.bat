@@ -10,12 +10,18 @@ echo.
 
 REM Check if virtual environment exists
 if not exist .venv\Scripts\python.exe (
-  echo [1_check_keys] WARNING: Virtual environment not found.
-  echo [1_check_keys] Using system Python. For best results, run 0_setup_env.bat first.
-  python check_api_keys.py
+  echo [1_check_keys] ERROR: Virtual environment not found.
+  echo [1_check_keys] Please run 0_setup_env.bat first to create the virtual environment.
+  pause
+  exit /b 1
 ) else (
   echo [1_check_keys] Using virtual environment Python...
   .venv\Scripts\python.exe check_api_keys.py
+  if not %errorlevel% equ 0 (
+    echo [1_check_keys] ERROR: API key check failed.
+    pause
+    exit /b 1
+  )
 )
 
 echo.

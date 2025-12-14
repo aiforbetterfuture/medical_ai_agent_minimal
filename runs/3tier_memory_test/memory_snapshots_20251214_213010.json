@@ -1,0 +1,3651 @@
+[
+  {
+    "turn_id": 1,
+    "timestamp": "2025-12-14T21:31:36.280531",
+    "working_memory": {
+      "size": 1,
+      "turns": [
+        {
+          "turn_id": 0,
+          "user_query": "고혈압과 당뇨병이 있다고 들었는데, 현재 어떤 증상이 있나요?",
+          "agent_response": "",
+          "importance": 1.0
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 0,
+      "memories": []
+    },
+    "semantic_memory": {
+      "chronic_conditions": [],
+      "chronic_medications": [],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 1,
+      "compressions_performed": 0,
+      "semantic_updates": 0,
+      "avg_compression_time_ms": 0.0,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 2,
+    "timestamp": "2025-12-14T21:31:58.277492",
+    "working_memory": {
+      "size": 2,
+      "turns": [
+        {
+          "turn_id": 0,
+          "user_query": "고혈압과 당뇨병이 있다고 들었는데, 현재 어떤 증상이 있나요?",
+          "agent_response": "",
+          "importance": 1.0
+        },
+        {
+          "turn_id": 1,
+          "user_query": "지속적인 두통이 있다고 하셨는데, 두통의 강도는 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 0,
+      "memories": []
+    },
+    "semantic_memory": {
+      "chronic_conditions": [],
+      "chronic_medications": [],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 2,
+      "compressions_performed": 0,
+      "semantic_updates": 0,
+      "avg_compression_time_ms": 0.0,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 3,
+    "timestamp": "2025-12-14T21:32:20.264947",
+    "working_memory": {
+      "size": 3,
+      "turns": [
+        {
+          "turn_id": 0,
+          "user_query": "고혈압과 당뇨병이 있다고 들었는데, 현재 어떤 증상이 있나요?",
+          "agent_response": "",
+          "importance": 1.0
+        },
+        {
+          "turn_id": 1,
+          "user_query": "지속적인 두통이 있다고 하셨는데, 두통의 강도는 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 2,
+          "user_query": "피로감이 증가하고 있다고 하셨는데, 일상 생활에 어떤 영향을 미치고 있나요?",
+          "agent_response": "",
+          "importance": 0.8
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 0,
+      "memories": []
+    },
+    "semantic_memory": {
+      "chronic_conditions": [],
+      "chronic_medications": [],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 3,
+      "compressions_performed": 0,
+      "semantic_updates": 0,
+      "avg_compression_time_ms": 0.0,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 4,
+    "timestamp": "2025-12-14T21:32:54.728121",
+    "working_memory": {
+      "size": 4,
+      "turns": [
+        {
+          "turn_id": 0,
+          "user_query": "고혈압과 당뇨병이 있다고 들었는데, 현재 어떤 증상이 있나요?",
+          "agent_response": "",
+          "importance": 1.0
+        },
+        {
+          "turn_id": 1,
+          "user_query": "지속적인 두통이 있다고 하셨는데, 두통의 강도는 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 2,
+          "user_query": "피로감이 증가하고 있다고 하셨는데, 일상 생활에 어떤 영향을 미치고 있나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 3,
+          "user_query": "가벼운 호흡 곤란이 있다고 하셨는데, 언제 주로 발생하나요?",
+          "agent_response": "",
+          "importance": 0.8
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 0,
+      "memories": []
+    },
+    "semantic_memory": {
+      "chronic_conditions": [],
+      "chronic_medications": [],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 4,
+      "compressions_performed": 0,
+      "semantic_updates": 0,
+      "avg_compression_time_ms": 0.0,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 5,
+    "timestamp": "2025-12-14T21:33:15.497006",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 0,
+          "user_query": "고혈압과 당뇨병이 있다고 들었는데, 현재 어떤 증상이 있나요?",
+          "agent_response": "",
+          "importance": 1.0
+        },
+        {
+          "turn_id": 1,
+          "user_query": "지속적인 두통이 있다고 하셨는데, 두통의 강도는 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 2,
+          "user_query": "피로감이 증가하고 있다고 하셨는데, 일상 생활에 어떤 영향을 미치고 있나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 3,
+          "user_query": "가벼운 호흡 곤란이 있다고 하셨는데, 언제 주로 발생하나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 4,
+          "user_query": "현재 복용 중인 약물인 리시노프릴, 메트포르민, 아토르바스타틴의 효과는 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 1,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 5,
+      "compressions_performed": 1,
+      "semantic_updates": 1,
+      "avg_compression_time_ms": 3531.9721698760986,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 6,
+    "timestamp": "2025-12-14T21:33:32.872126",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 1,
+          "user_query": "지속적인 두통이 있다고 하셨는데, 두통의 강도는 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 2,
+          "user_query": "피로감이 증가하고 있다고 하셨는데, 일상 생활에 어떤 영향을 미치고 있나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 3,
+          "user_query": "가벼운 호흡 곤란이 있다고 하셨는데, 언제 주로 발생하나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 4,
+          "user_query": "현재 복용 중인 약물인 리시노프릴, 메트포르민, 아토르바스타틴의 효과는 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 5,
+          "user_query": "복용 중인 약물의 부작용은 없나요?",
+          "agent_response": "",
+          "importance": 0.8
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 1,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 6,
+      "compressions_performed": 1,
+      "semantic_updates": 1,
+      "avg_compression_time_ms": 3531.9721698760986,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 7,
+    "timestamp": "2025-12-14T21:33:50.807090",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 2,
+          "user_query": "피로감이 증가하고 있다고 하셨는데, 일상 생활에 어떤 영향을 미치고 있나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 3,
+          "user_query": "가벼운 호흡 곤란이 있다고 하셨는데, 언제 주로 발생하나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 4,
+          "user_query": "현재 복용 중인 약물인 리시노프릴, 메트포르민, 아토르바스타틴의 효과는 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 5,
+          "user_query": "복용 중인 약물의 부작용은 없나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 6,
+          "user_query": "현재 복용 중인 약물 외에 다른 약물을 복용하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 1,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 7,
+      "compressions_performed": 1,
+      "semantic_updates": 1,
+      "avg_compression_time_ms": 3531.9721698760986,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 8,
+    "timestamp": "2025-12-14T21:34:08.432938",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 3,
+          "user_query": "가벼운 호흡 곤란이 있다고 하셨는데, 언제 주로 발생하나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 4,
+          "user_query": "현재 복용 중인 약물인 리시노프릴, 메트포르민, 아토르바스타틴의 효과는 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 5,
+          "user_query": "복용 중인 약물의 부작용은 없나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 6,
+          "user_query": "현재 복용 중인 약물 외에 다른 약물을 복용하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        },
+        {
+          "turn_id": 7,
+          "user_query": "약물 복용을 규칙적으로 하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.6
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 1,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 8,
+      "compressions_performed": 1,
+      "semantic_updates": 1,
+      "avg_compression_time_ms": 3531.9721698760986,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 9,
+    "timestamp": "2025-12-14T21:34:30.290732",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 4,
+          "user_query": "현재 복용 중인 약물인 리시노프릴, 메트포르민, 아토르바스타틴의 효과는 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 5,
+          "user_query": "복용 중인 약물의 부작용은 없나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 6,
+          "user_query": "현재 복용 중인 약물 외에 다른 약물을 복용하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        },
+        {
+          "turn_id": 7,
+          "user_query": "약물 복용을 규칙적으로 하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.6
+        },
+        {
+          "turn_id": 8,
+          "user_query": "최근 증상이 악화된 것에 대해 어떤 조치를 취하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 1,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 9,
+      "compressions_performed": 1,
+      "semantic_updates": 1,
+      "avg_compression_time_ms": 3531.9721698760986,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 10,
+    "timestamp": "2025-12-14T21:35:10.065105",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 5,
+          "user_query": "복용 중인 약물의 부작용은 없나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 6,
+          "user_query": "현재 복용 중인 약물 외에 다른 약물을 복용하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        },
+        {
+          "turn_id": 7,
+          "user_query": "약물 복용을 규칙적으로 하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.6
+        },
+        {
+          "turn_id": 8,
+          "user_query": "최근 증상이 악화된 것에 대해 어떤 조치를 취하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        },
+        {
+          "turn_id": 9,
+          "user_query": "고혈압과 당뇨병을 관리하기 위해 어떤 검사를 정기적으로 받고 계신가요?",
+          "agent_response": "",
+          "importance": 1.0
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 2,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 1,
+          "summary": "환자는 최근 증상이 악화되었다고 호소하며, 고혈압과 당뇨병을 앓고 있다. 진단된 질환은 고혈압 및 당뇨병이며, 현재 복용 중인 약물에 대한 부작용이나 다른 약물 복용 여부를 확인하고 있다. 최근 검사 결과와 관련된 중요한 수치에 대한 언급은 없으나, 정기적인 검사와 약물 복용의 규칙성을 강조하고 있다. 향후 관리 계획으로는 증상 악화에 대한 조치와 고혈압 ...",
+          "turn_range": [
+            5,
+            9
+          ],
+          "importance": 0.76,
+          "key_medical_info": {
+            "conditions": 5,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 3,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 3,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 4,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Effect",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Recent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 10,
+      "compressions_performed": 2,
+      "semantic_updates": 2,
+      "avg_compression_time_ms": 3296.6148853302,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 11,
+    "timestamp": "2025-12-14T21:35:47.065558",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 6,
+          "user_query": "현재 복용 중인 약물 외에 다른 약물을 복용하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        },
+        {
+          "turn_id": 7,
+          "user_query": "약물 복용을 규칙적으로 하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.6
+        },
+        {
+          "turn_id": 8,
+          "user_query": "최근 증상이 악화된 것에 대해 어떤 조치를 취하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        },
+        {
+          "turn_id": 9,
+          "user_query": "고혈압과 당뇨병을 관리하기 위해 어떤 검사를 정기적으로 받고 계신가요?",
+          "agent_response": "",
+          "importance": 1.0
+        },
+        {
+          "turn_id": 10,
+          "user_query": "식단 관리는 어떻게 하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 2,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 1,
+          "summary": "환자는 최근 증상이 악화되었다고 호소하며, 고혈압과 당뇨병을 앓고 있다. 진단된 질환은 고혈압 및 당뇨병이며, 현재 복용 중인 약물에 대한 부작용이나 다른 약물 복용 여부를 확인하고 있다. 최근 검사 결과와 관련된 중요한 수치에 대한 언급은 없으나, 정기적인 검사와 약물 복용의 규칙성을 강조하고 있다. 향후 관리 계획으로는 증상 악화에 대한 조치와 고혈압 ...",
+          "turn_range": [
+            5,
+            9
+          ],
+          "importance": 0.76,
+          "key_medical_info": {
+            "conditions": 5,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 3,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 3,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 4,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Effect",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Recent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 11,
+      "compressions_performed": 2,
+      "semantic_updates": 2,
+      "avg_compression_time_ms": 3296.6148853302,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 12,
+    "timestamp": "2025-12-14T21:36:25.465139",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 7,
+          "user_query": "약물 복용을 규칙적으로 하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.6
+        },
+        {
+          "turn_id": 8,
+          "user_query": "최근 증상이 악화된 것에 대해 어떤 조치를 취하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        },
+        {
+          "turn_id": 9,
+          "user_query": "고혈압과 당뇨병을 관리하기 위해 어떤 검사를 정기적으로 받고 계신가요?",
+          "agent_response": "",
+          "importance": 1.0
+        },
+        {
+          "turn_id": 10,
+          "user_query": "식단 관리는 어떻게 하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        },
+        {
+          "turn_id": 11,
+          "user_query": "주 3회 30분 걷기를 하고 계신데, 운동 후 느낌은 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 2,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 1,
+          "summary": "환자는 최근 증상이 악화되었다고 호소하며, 고혈압과 당뇨병을 앓고 있다. 진단된 질환은 고혈압 및 당뇨병이며, 현재 복용 중인 약물에 대한 부작용이나 다른 약물 복용 여부를 확인하고 있다. 최근 검사 결과와 관련된 중요한 수치에 대한 언급은 없으나, 정기적인 검사와 약물 복용의 규칙성을 강조하고 있다. 향후 관리 계획으로는 증상 악화에 대한 조치와 고혈압 ...",
+          "turn_range": [
+            5,
+            9
+          ],
+          "importance": 0.76,
+          "key_medical_info": {
+            "conditions": 5,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 3,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 3,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 4,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Effect",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Recent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 12,
+      "compressions_performed": 2,
+      "semantic_updates": 2,
+      "avg_compression_time_ms": 3296.6148853302,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 13,
+    "timestamp": "2025-12-14T21:36:42.720855",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 8,
+          "user_query": "최근 증상이 악화된 것에 대해 어떤 조치를 취하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        },
+        {
+          "turn_id": 9,
+          "user_query": "고혈압과 당뇨병을 관리하기 위해 어떤 검사를 정기적으로 받고 계신가요?",
+          "agent_response": "",
+          "importance": 1.0
+        },
+        {
+          "turn_id": 10,
+          "user_query": "식단 관리는 어떻게 하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        },
+        {
+          "turn_id": 11,
+          "user_query": "주 3회 30분 걷기를 하고 계신데, 운동 후 느낌은 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 12,
+          "user_query": "저염식 및 저당식 식단을 유지하는 것이 어렵지는 않나요?",
+          "agent_response": "",
+          "importance": 0.8
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 2,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 1,
+          "summary": "환자는 최근 증상이 악화되었다고 호소하며, 고혈압과 당뇨병을 앓고 있다. 진단된 질환은 고혈압 및 당뇨병이며, 현재 복용 중인 약물에 대한 부작용이나 다른 약물 복용 여부를 확인하고 있다. 최근 검사 결과와 관련된 중요한 수치에 대한 언급은 없으나, 정기적인 검사와 약물 복용의 규칙성을 강조하고 있다. 향후 관리 계획으로는 증상 악화에 대한 조치와 고혈압 ...",
+          "turn_range": [
+            5,
+            9
+          ],
+          "importance": 0.76,
+          "key_medical_info": {
+            "conditions": 5,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 3,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 3,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 4,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Effect",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Recent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 13,
+      "compressions_performed": 2,
+      "semantic_updates": 2,
+      "avg_compression_time_ms": 3296.6148853302,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 14,
+    "timestamp": "2025-12-14T21:37:19.308512",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 9,
+          "user_query": "고혈압과 당뇨병을 관리하기 위해 어떤 검사를 정기적으로 받고 계신가요?",
+          "agent_response": "",
+          "importance": 1.0
+        },
+        {
+          "turn_id": 10,
+          "user_query": "식단 관리는 어떻게 하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        },
+        {
+          "turn_id": 11,
+          "user_query": "주 3회 30분 걷기를 하고 계신데, 운동 후 느낌은 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 12,
+          "user_query": "저염식 및 저당식 식단을 유지하는 것이 어렵지는 않나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 13,
+          "user_query": "하루 6시간의 수면이 충분하다고 느끼시나요?",
+          "agent_response": "",
+          "importance": 0.8
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 2,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 1,
+          "summary": "환자는 최근 증상이 악화되었다고 호소하며, 고혈압과 당뇨병을 앓고 있다. 진단된 질환은 고혈압 및 당뇨병이며, 현재 복용 중인 약물에 대한 부작용이나 다른 약물 복용 여부를 확인하고 있다. 최근 검사 결과와 관련된 중요한 수치에 대한 언급은 없으나, 정기적인 검사와 약물 복용의 규칙성을 강조하고 있다. 향후 관리 계획으로는 증상 악화에 대한 조치와 고혈압 ...",
+          "turn_range": [
+            5,
+            9
+          ],
+          "importance": 0.76,
+          "key_medical_info": {
+            "conditions": 5,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 3,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 3,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 4,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Effect",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Recent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 14,
+      "compressions_performed": 2,
+      "semantic_updates": 2,
+      "avg_compression_time_ms": 3296.6148853302,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 15,
+    "timestamp": "2025-12-14T21:37:58.492343",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 10,
+          "user_query": "식단 관리는 어떻게 하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        },
+        {
+          "turn_id": 11,
+          "user_query": "주 3회 30분 걷기를 하고 계신데, 운동 후 느낌은 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 12,
+          "user_query": "저염식 및 저당식 식단을 유지하는 것이 어렵지는 않나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 13,
+          "user_query": "하루 6시간의 수면이 충분하다고 느끼시나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 14,
+          "user_query": "수면 중 자주 깨는 이유가 무엇이라고 생각하시나요?",
+          "agent_response": "",
+          "importance": 0.8
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 3,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 1,
+          "summary": "환자는 최근 증상이 악화되었다고 호소하며, 고혈압과 당뇨병을 앓고 있다. 진단된 질환은 고혈압 및 당뇨병이며, 현재 복용 중인 약물에 대한 부작용이나 다른 약물 복용 여부를 확인하고 있다. 최근 검사 결과와 관련된 중요한 수치에 대한 언급은 없으나, 정기적인 검사와 약물 복용의 규칙성을 강조하고 있다. 향후 관리 계획으로는 증상 악화에 대한 조치와 고혈압 ...",
+          "turn_range": [
+            5,
+            9
+          ],
+          "importance": 0.76,
+          "key_medical_info": {
+            "conditions": 5,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 2,
+          "summary": "환자는 식이요법과 운동에 대한 질문을 통해 건강 관리에 관심을 보였습니다. 주요 증상으로는 수면 중 자주 깨는 문제가 있으며, 이는 불면증과 관련이 있을 수 있습니다. 현재 저염식 및 저당식 식단을 유지하고 있으며, 주 3회 30분 걷기를 실천하고 있습니다. 환자는 하루 6시간의 수면이 충분하다고 느끼지 않으며, 이는 수면의 질과 관련이 있을 수 있습니다....",
+          "turn_range": [
+            10,
+            14
+          ],
+          "importance": 0.7799999999999999,
+          "key_medical_info": {
+            "conditions": 11,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Effect",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Recent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Dietary finding",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Walking",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Minute",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "After exerci대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Maintained",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "대imple carbohydrate",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Emotion",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Once a day, at bedtime",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Awakening",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Frequent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "During 대leep",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 15,
+      "compressions_performed": 3,
+      "semantic_updates": 3,
+      "avg_compression_time_ms": 3347.5773334503174,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 16,
+    "timestamp": "2025-12-14T21:38:37.596037",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 11,
+          "user_query": "주 3회 30분 걷기를 하고 계신데, 운동 후 느낌은 어떤가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 12,
+          "user_query": "저염식 및 저당식 식단을 유지하는 것이 어렵지는 않나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 13,
+          "user_query": "하루 6시간의 수면이 충분하다고 느끼시나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 14,
+          "user_query": "수면 중 자주 깨는 이유가 무엇이라고 생각하시나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 15,
+          "user_query": "증상 관리와 예방을 위해 어떤 추가적인 생활습관 개선을 고려하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.8
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 3,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 1,
+          "summary": "환자는 최근 증상이 악화되었다고 호소하며, 고혈압과 당뇨병을 앓고 있다. 진단된 질환은 고혈압 및 당뇨병이며, 현재 복용 중인 약물에 대한 부작용이나 다른 약물 복용 여부를 확인하고 있다. 최근 검사 결과와 관련된 중요한 수치에 대한 언급은 없으나, 정기적인 검사와 약물 복용의 규칙성을 강조하고 있다. 향후 관리 계획으로는 증상 악화에 대한 조치와 고혈압 ...",
+          "turn_range": [
+            5,
+            9
+          ],
+          "importance": 0.76,
+          "key_medical_info": {
+            "conditions": 5,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 2,
+          "summary": "환자는 식이요법과 운동에 대한 질문을 통해 건강 관리에 관심을 보였습니다. 주요 증상으로는 수면 중 자주 깨는 문제가 있으며, 이는 불면증과 관련이 있을 수 있습니다. 현재 저염식 및 저당식 식단을 유지하고 있으며, 주 3회 30분 걷기를 실천하고 있습니다. 환자는 하루 6시간의 수면이 충분하다고 느끼지 않으며, 이는 수면의 질과 관련이 있을 수 있습니다....",
+          "turn_range": [
+            10,
+            14
+          ],
+          "importance": 0.7799999999999999,
+          "key_medical_info": {
+            "conditions": 11,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Effect",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Recent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Dietary finding",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Walking",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Minute",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "After exerci대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Maintained",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "대imple carbohydrate",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Emotion",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Once a day, at bedtime",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Awakening",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Frequent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "During 대leep",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 16,
+      "compressions_performed": 3,
+      "semantic_updates": 3,
+      "avg_compression_time_ms": 3347.5773334503174,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 17,
+    "timestamp": "2025-12-14T21:38:55.121388",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 12,
+          "user_query": "저염식 및 저당식 식단을 유지하는 것이 어렵지는 않나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 13,
+          "user_query": "하루 6시간의 수면이 충분하다고 느끼시나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 14,
+          "user_query": "수면 중 자주 깨는 이유가 무엇이라고 생각하시나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 15,
+          "user_query": "증상 관리와 예방을 위해 어떤 추가적인 생활습관 개선을 고려하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 16,
+          "user_query": "고혈압, 당뇨병에 대한 장기 관리 계획은 어떻게 세우고 계신가요?",
+          "agent_response": "",
+          "importance": 1.0
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 3,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 1,
+          "summary": "환자는 최근 증상이 악화되었다고 호소하며, 고혈압과 당뇨병을 앓고 있다. 진단된 질환은 고혈압 및 당뇨병이며, 현재 복용 중인 약물에 대한 부작용이나 다른 약물 복용 여부를 확인하고 있다. 최근 검사 결과와 관련된 중요한 수치에 대한 언급은 없으나, 정기적인 검사와 약물 복용의 규칙성을 강조하고 있다. 향후 관리 계획으로는 증상 악화에 대한 조치와 고혈압 ...",
+          "turn_range": [
+            5,
+            9
+          ],
+          "importance": 0.76,
+          "key_medical_info": {
+            "conditions": 5,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 2,
+          "summary": "환자는 식이요법과 운동에 대한 질문을 통해 건강 관리에 관심을 보였습니다. 주요 증상으로는 수면 중 자주 깨는 문제가 있으며, 이는 불면증과 관련이 있을 수 있습니다. 현재 저염식 및 저당식 식단을 유지하고 있으며, 주 3회 30분 걷기를 실천하고 있습니다. 환자는 하루 6시간의 수면이 충분하다고 느끼지 않으며, 이는 수면의 질과 관련이 있을 수 있습니다....",
+          "turn_range": [
+            10,
+            14
+          ],
+          "importance": 0.7799999999999999,
+          "key_medical_info": {
+            "conditions": 11,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Effect",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Recent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Dietary finding",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Walking",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Minute",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "After exerci대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Maintained",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "대imple carbohydrate",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Emotion",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Once a day, at bedtime",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Awakening",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Frequent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "During 대leep",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 17,
+      "compressions_performed": 3,
+      "semantic_updates": 3,
+      "avg_compression_time_ms": 3347.5773334503174,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 18,
+    "timestamp": "2025-12-14T21:39:10.442567",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 13,
+          "user_query": "하루 6시간의 수면이 충분하다고 느끼시나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 14,
+          "user_query": "수면 중 자주 깨는 이유가 무엇이라고 생각하시나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 15,
+          "user_query": "증상 관리와 예방을 위해 어떤 추가적인 생활습관 개선을 고려하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 16,
+          "user_query": "고혈압, 당뇨병에 대한 장기 관리 계획은 어떻게 세우고 계신가요?",
+          "agent_response": "",
+          "importance": 1.0
+        },
+        {
+          "turn_id": 17,
+          "user_query": "합병증 예방을 위해 어떤 검사가 필요한가요?",
+          "agent_response": "",
+          "importance": 0.8
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 3,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 1,
+          "summary": "환자는 최근 증상이 악화되었다고 호소하며, 고혈압과 당뇨병을 앓고 있다. 진단된 질환은 고혈압 및 당뇨병이며, 현재 복용 중인 약물에 대한 부작용이나 다른 약물 복용 여부를 확인하고 있다. 최근 검사 결과와 관련된 중요한 수치에 대한 언급은 없으나, 정기적인 검사와 약물 복용의 규칙성을 강조하고 있다. 향후 관리 계획으로는 증상 악화에 대한 조치와 고혈압 ...",
+          "turn_range": [
+            5,
+            9
+          ],
+          "importance": 0.76,
+          "key_medical_info": {
+            "conditions": 5,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 2,
+          "summary": "환자는 식이요법과 운동에 대한 질문을 통해 건강 관리에 관심을 보였습니다. 주요 증상으로는 수면 중 자주 깨는 문제가 있으며, 이는 불면증과 관련이 있을 수 있습니다. 현재 저염식 및 저당식 식단을 유지하고 있으며, 주 3회 30분 걷기를 실천하고 있습니다. 환자는 하루 6시간의 수면이 충분하다고 느끼지 않으며, 이는 수면의 질과 관련이 있을 수 있습니다....",
+          "turn_range": [
+            10,
+            14
+          ],
+          "importance": 0.7799999999999999,
+          "key_medical_info": {
+            "conditions": 11,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Effect",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Recent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Dietary finding",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Walking",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Minute",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "After exerci대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Maintained",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "대imple carbohydrate",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Emotion",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Once a day, at bedtime",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Awakening",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Frequent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "During 대leep",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 18,
+      "compressions_performed": 3,
+      "semantic_updates": 3,
+      "avg_compression_time_ms": 3347.5773334503174,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 19,
+    "timestamp": "2025-12-14T21:39:26.267284",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 14,
+          "user_query": "수면 중 자주 깨는 이유가 무엇이라고 생각하시나요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 15,
+          "user_query": "증상 관리와 예방을 위해 어떤 추가적인 생활습관 개선을 고려하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 16,
+          "user_query": "고혈압, 당뇨병에 대한 장기 관리 계획은 어떻게 세우고 계신가요?",
+          "agent_response": "",
+          "importance": 1.0
+        },
+        {
+          "turn_id": 17,
+          "user_query": "합병증 예방을 위해 어떤 검사가 필요한가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 18,
+          "user_query": "정기적으로 혈압과 혈당을 체크하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.8
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 3,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 1,
+          "summary": "환자는 최근 증상이 악화되었다고 호소하며, 고혈압과 당뇨병을 앓고 있다. 진단된 질환은 고혈압 및 당뇨병이며, 현재 복용 중인 약물에 대한 부작용이나 다른 약물 복용 여부를 확인하고 있다. 최근 검사 결과와 관련된 중요한 수치에 대한 언급은 없으나, 정기적인 검사와 약물 복용의 규칙성을 강조하고 있다. 향후 관리 계획으로는 증상 악화에 대한 조치와 고혈압 ...",
+          "turn_range": [
+            5,
+            9
+          ],
+          "importance": 0.76,
+          "key_medical_info": {
+            "conditions": 5,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 2,
+          "summary": "환자는 식이요법과 운동에 대한 질문을 통해 건강 관리에 관심을 보였습니다. 주요 증상으로는 수면 중 자주 깨는 문제가 있으며, 이는 불면증과 관련이 있을 수 있습니다. 현재 저염식 및 저당식 식단을 유지하고 있으며, 주 3회 30분 걷기를 실천하고 있습니다. 환자는 하루 6시간의 수면이 충분하다고 느끼지 않으며, 이는 수면의 질과 관련이 있을 수 있습니다....",
+          "turn_range": [
+            10,
+            14
+          ],
+          "importance": 0.7799999999999999,
+          "key_medical_info": {
+            "conditions": 11,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Effect",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Recent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Dietary finding",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Walking",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Minute",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "After exerci대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Maintained",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "대imple carbohydrate",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Emotion",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Once a day, at bedtime",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Awakening",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Frequent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "During 대leep",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 19,
+      "compressions_performed": 3,
+      "semantic_updates": 3,
+      "avg_compression_time_ms": 3347.5773334503174,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 20,
+    "timestamp": "2025-12-14T21:39:47.663509",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 15,
+          "user_query": "증상 관리와 예방을 위해 어떤 추가적인 생활습관 개선을 고려하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 16,
+          "user_query": "고혈압, 당뇨병에 대한 장기 관리 계획은 어떻게 세우고 계신가요?",
+          "agent_response": "",
+          "importance": 1.0
+        },
+        {
+          "turn_id": 17,
+          "user_query": "합병증 예방을 위해 어떤 검사가 필요한가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 18,
+          "user_query": "정기적으로 혈압과 혈당을 체크하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 19,
+          "user_query": "건강 상태를 더 잘 관리하기 위해 어떤 추가적인 조치를 취할 계획이신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 4,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 1,
+          "summary": "환자는 최근 증상이 악화되었다고 호소하며, 고혈압과 당뇨병을 앓고 있다. 진단된 질환은 고혈압 및 당뇨병이며, 현재 복용 중인 약물에 대한 부작용이나 다른 약물 복용 여부를 확인하고 있다. 최근 검사 결과와 관련된 중요한 수치에 대한 언급은 없으나, 정기적인 검사와 약물 복용의 규칙성을 강조하고 있다. 향후 관리 계획으로는 증상 악화에 대한 조치와 고혈압 ...",
+          "turn_range": [
+            5,
+            9
+          ],
+          "importance": 0.76,
+          "key_medical_info": {
+            "conditions": 5,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 2,
+          "summary": "환자는 식이요법과 운동에 대한 질문을 통해 건강 관리에 관심을 보였습니다. 주요 증상으로는 수면 중 자주 깨는 문제가 있으며, 이는 불면증과 관련이 있을 수 있습니다. 현재 저염식 및 저당식 식단을 유지하고 있으며, 주 3회 30분 걷기를 실천하고 있습니다. 환자는 하루 6시간의 수면이 충분하다고 느끼지 않으며, 이는 수면의 질과 관련이 있을 수 있습니다....",
+          "turn_range": [
+            10,
+            14
+          ],
+          "importance": 0.7799999999999999,
+          "key_medical_info": {
+            "conditions": 11,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 3,
+          "summary": "환자는 고혈압과 당뇨병을 앓고 있으며, 증상 관리와 예방을 위해 생활습관 개선을 고려하고 있습니다. 의사는 장기 관리 계획을 수립 중이며, 합병증 예방을 위한 검사를 필요로 하고 있습니다. 환자는 정기적으로 혈압과 혈당을 체크하고 있으며, 건강 상태 관리를 위해 추가적인 조치를 취할 계획입니다. 현재 복용 중인 약물에 대한 언급은 없으나, 지속적인 관리가 ...",
+          "turn_range": [
+            15,
+            19
+          ],
+          "importance": 0.8200000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 4,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 4,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Effect",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Recent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Dietary finding",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Walking",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Minute",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "After exerci대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Maintained",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "대imple carbohydrate",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Emotion",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Once a day, at bedtime",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Awakening",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Frequent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "During 대leep",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Life대tyle",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Prevent대",
+          "frequency": 3,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Needed",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Complication",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Blood대",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "혈압",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Gluco대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "HeALTh",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 20,
+      "compressions_performed": 4,
+      "semantic_updates": 4,
+      "avg_compression_time_ms": 3048.277735710144,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  },
+  {
+    "turn_id": 21,
+    "timestamp": "2025-12-14T21:40:04.111030",
+    "working_memory": {
+      "size": 5,
+      "turns": [
+        {
+          "turn_id": 16,
+          "user_query": "고혈압, 당뇨병에 대한 장기 관리 계획은 어떻게 세우고 계신가요?",
+          "agent_response": "",
+          "importance": 1.0
+        },
+        {
+          "turn_id": 17,
+          "user_query": "합병증 예방을 위해 어떤 검사가 필요한가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 18,
+          "user_query": "정기적으로 혈압과 혈당을 체크하고 계신가요?",
+          "agent_response": "",
+          "importance": 0.8
+        },
+        {
+          "turn_id": 19,
+          "user_query": "건강 상태를 더 잘 관리하기 위해 어떤 추가적인 조치를 취할 계획이신가요?",
+          "agent_response": "",
+          "importance": 0.7
+        },
+        {
+          "turn_id": 20,
+          "user_query": "지금까지 이야기한 내용을 바탕으로 종합적인 관리 계획을 알려주세요.",
+          "agent_response": "",
+          "importance": 0.8
+        }
+      ]
+    },
+    "compressing_memory": {
+      "size": 4,
+      "memories": [
+        {
+          "memory_id": 0,
+          "summary": "환자는 지속적인 두통과 증가하는 피로감, 가벼운 호흡 곤란을 호소하고 있습니다. 진단된 질환으로는 고혈압과 당뇨병이 있으며, 현재 복용 중인 약물은 리시노프릴, 메트포르민, 아토르바스타틴입니다. 중요한 검사 수치는 제시되지 않았으나, 환자는 약물의 효과에 대해 질문하였습니다. 향후 관리 계획에 대해서는 추가적인 상담이 필요할 것으로 보이며, 증상 완화를 위...",
+          "turn_range": [
+            0,
+            4
+          ],
+          "importance": 0.8400000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 3,
+            "symptoms": 2,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 1,
+          "summary": "환자는 최근 증상이 악화되었다고 호소하며, 고혈압과 당뇨병을 앓고 있다. 진단된 질환은 고혈압 및 당뇨병이며, 현재 복용 중인 약물에 대한 부작용이나 다른 약물 복용 여부를 확인하고 있다. 최근 검사 결과와 관련된 중요한 수치에 대한 언급은 없으나, 정기적인 검사와 약물 복용의 규칙성을 강조하고 있다. 향후 관리 계획으로는 증상 악화에 대한 조치와 고혈압 ...",
+          "turn_range": [
+            5,
+            9
+          ],
+          "importance": 0.76,
+          "key_medical_info": {
+            "conditions": 5,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 2,
+          "summary": "환자는 식이요법과 운동에 대한 질문을 통해 건강 관리에 관심을 보였습니다. 주요 증상으로는 수면 중 자주 깨는 문제가 있으며, 이는 불면증과 관련이 있을 수 있습니다. 현재 저염식 및 저당식 식단을 유지하고 있으며, 주 3회 30분 걷기를 실천하고 있습니다. 환자는 하루 6시간의 수면이 충분하다고 느끼지 않으며, 이는 수면의 질과 관련이 있을 수 있습니다....",
+          "turn_range": [
+            10,
+            14
+          ],
+          "importance": 0.7799999999999999,
+          "key_medical_info": {
+            "conditions": 11,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        },
+        {
+          "memory_id": 3,
+          "summary": "환자는 고혈압과 당뇨병을 앓고 있으며, 증상 관리와 예방을 위해 생활습관 개선을 고려하고 있습니다. 의사는 장기 관리 계획을 수립 중이며, 합병증 예방을 위한 검사를 필요로 하고 있습니다. 환자는 정기적으로 혈압과 혈당을 체크하고 있으며, 건강 상태 관리를 위해 추가적인 조치를 취할 계획입니다. 현재 복용 중인 약물에 대한 언급은 없으나, 지속적인 관리가 ...",
+          "turn_range": [
+            15,
+            19
+          ],
+          "importance": 0.8200000000000001,
+          "key_medical_info": {
+            "conditions": 10,
+            "medications": 0,
+            "symptoms": 0,
+            "vitals": 0
+          }
+        }
+      ]
+    },
+    "semantic_memory": {
+      "chronic_conditions": [
+        {
+          "name": "Family hi대tory: 고혈압 환자",
+          "frequency": 4,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "당뇨병 환자",
+          "frequency": 4,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Con대tant - do대ing in대truction fragment",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Increa대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Daily",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "WA대 A",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Light, electromagnetic radiation",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Current",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "리시노프릴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Atorva스타틴",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Effect",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Recent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Dietary finding",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Walking",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Minute",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "After exerci대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Maintained",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "대imple carbohydrate",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Emotion",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Once a day, at bedtime",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Awakening",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Frequent",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "During 대leep",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Life대tyle",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Prevent대",
+          "frequency": 3,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Needed",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Complication",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Blood대",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "혈압",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "Gluco대e",
+          "frequency": 2,
+          "verified_by": "frequency"
+        },
+        {
+          "name": "HeALTh",
+          "frequency": 2,
+          "verified_by": "frequency"
+        }
+      ],
+      "chronic_medications": [
+        {
+          "name": "메트폴민",
+          "frequency": 2
+        },
+        {
+          "name": "메트포르민",
+          "frequency": 2
+        },
+        {
+          "name": "스타틴",
+          "frequency": 2
+        }
+      ],
+      "allergies": [],
+      "health_patterns": {
+        "frequent_symptoms": [
+          {
+            "name": "두통",
+            "frequency": 1
+          },
+          {
+            "name": "호흡 곤란",
+            "frequency": 1
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "total_turns": 21,
+      "compressions_performed": 4,
+      "semantic_updates": 4,
+      "avg_compression_time_ms": 3048.277735710144,
+      "working_memory_hits": 0,
+      "compressing_memory_hits": 0,
+      "semantic_memory_hits": 0
+    }
+  }
+]

@@ -298,11 +298,23 @@ def classify_intent_node(state: AgentState) -> AgentState:
             }
 
         # Classifier 초기화 (캐싱)
-        if 'intent_classifier' not in state:
+        if 'intent_classifier' not in state or state['intent_classifier'] is None:
             classifier = IntentClassifier(feature_flags)
             state['intent_classifier'] = classifier
         else:
             classifier = state['intent_classifier']
+        
+        # Classifier 유효성 검증
+        if classifier is None:
+            print("[WARNING] IntentClassifier가 None입니다. 기본값을 사용합니다.")
+            return {
+                **state,
+                'needs_retrieval': True,
+                'dynamic_k': None,
+                'query_complexity': "error_fallback",
+                'classification_skipped': True,
+                'classification_error': "IntentClassifier is None"
+            }
 
         # 분류 수행
         needs_retrieval, dynamic_k, complexity = classifier.classify(

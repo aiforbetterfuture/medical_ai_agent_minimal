@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Events Record Schema",
+  "description": "Schema for individual event records in events.jsonl",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "mode",
+    "patient_id",
+    "turn_id",
+    "question",
+    "answer",
+    "timestamp_utc"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "events_record.v1"
+    },
+    "run_id": {
+      "type": "string",
+      "description": "Run identifier matching directory name"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["llm", "agent"],
+      "description": "Execution mode (llm or agent)"
+    },
+    "patient_id": {
+      "type": "string",
+      "description": "Unique patient identifier"
+    },
+    "turn_id": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Turn number (1-based)"
+    },
+    "question": {
+      "type": "object",
+      "required": ["question_id", "text"],
+      "properties": {
+        "question_id": {
+          "type": "string",
+          "description": "Unique question identifier"
+        },
+        "text": {
+          "type": "string",
+          "description": "Question text (with placeholders filled)"
+        }
+      }
+    },
+    "answer": {
+      "type": "string",
+      "description": "Generated answer text"
+    },
+    "timestamp_utc": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp in UTC"
+    },
+    "usage": {
+      "type": "object",
+      "description": "Token usage and cost",
+      "properties": {
+        "input_tokens": {"type": "integer"},
+        "output_tokens": {"type": "integer"},
+        "estimated_cost_usd": {"type": "number"}
+      }
+    },
+    "timing_ms": {
+      "type": "object",
+      "description": "Timing breakdown in milliseconds",
+      "properties": {
+        "total": {"type": "number"},
+        "llm_call": {"type": ["number", "null"]},
+        "context_assembly": {"type": ["number", "null"]},
+        "retrieval": {"type": ["number", "null"]}
+      }
+    },
+    "metadata": {
+      "type": ["object", "null"],
+      "description": "Additional metadata for AI Agent mode",
+      "properties": {
+        "cache_hit": {"type": "boolean"},
+        "quality_score": {"type": "number"},
+        "iteration_count": {"type": "integer"},
+        "retrieved_docs_count": {"type": "integer"},
+        "needs_retrieval": {"type": "boolean"},
+        "dynamic_k": {"type": ["integer", "null"]},
+        "query_complexity": {"type": ["string", "null"]},
+        "compression_applied": {"type": ["boolean", "null"]},
+        "error": {"type": ["string", "null"]}
+      }
+    },
+    "metrics": {
+      "type": ["object", "null"],
+      "description": "Evaluation metrics (if computed)",
+      "properties": {
+        "faithfulness": {"type": ["number", "null"]},
+        "answer_relevance": {"type": ["number", "null"]},
+        "context_precision": {"type": ["number", "null"]},
+        "context_recall": {"type": ["number", "null"]},
+        "context_relevancy": {"type": ["number", "null"]},
+        "perplexity": {"type": ["number", "null"], "description": "Perplexity (next-token prediction uncertainty), lower is better"},
+        "CUS": {"type": ["number", "null"], "description": "Context Utilization Score (0.0~1.0), higher is better"},
+        "CUS_improved": {"type": ["number", "null"], "description": "Context Utilization Score (improved version with slots_truth) (0.0~1.0), higher is better"},
+        "UR": {"type": ["number", "null"], "description": "Update Responsiveness (0.0~1.0), higher is better"},
+        "CCR": {"type": ["number", "null"], "description": "Context Contradiction Rate (0.0~1.0), lower is better (0=no contradiction, 1=has contradiction)"},
+        "SFS": {"type": ["number", "null"], "description": "Slot Factuality Score (0.0~1.0), higher is better (measures hallucination)"},
+        "CSP": {"type": ["number", "null"], "description": "Contraindication/Safety Penalty (0.0~1.0), lower is better (measures safety violations)"},
+        "ASS": {"type": ["number", "null"], "description": "Actionability/Specificity Score (0.0~1.0), higher is better (measures actionability of recommendations)"}
+      }
+    }
+  }
+}

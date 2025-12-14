@@ -66,7 +66,8 @@ def retrieve_node(state: AgentState) -> AgentState:
     if is_llm_mode(state):
         return {
             **state,
-            'retrieved_docs': []
+            'retrieved_docs': [],
+            'retrieval_attempted': True
         }
 
     feature_flags = state.get('feature_flags', {})
@@ -86,7 +87,11 @@ def retrieve_node(state: AgentState) -> AgentState:
     
     # LLM 클라이언트 초기화 (임베딩용)
     if 'llm_client' not in state:
-        llm_client = get_llm_client(provider=embedding_config.get('provider', 'openai'))
+        embedding_model = embedding_config.get('model', 'text-embedding-3-large')
+        llm_client = get_llm_client(
+            provider=embedding_config.get('provider', 'openai'),
+            embedding_model=embedding_model
+        )
         state['llm_client'] = llm_client
     else:
         llm_client = state['llm_client']
@@ -97,10 +102,12 @@ def retrieve_node(state: AgentState) -> AgentState:
     rewritten_query = _rewrite_query(state['user_text'], slot_out, profile_summary, feature_flags)
     state['query_for_retrieval'] = rewritten_query
     
-    # 쿼리 벡터 생성
+    # 쿼리 벡터 생성 (3072차원)
     try:
-        query_vector = llm_client.embed(rewritten_query)
+        embedding_model = embedding_config.get('model', 'text-embedding-3-large')
+        query_vector = llm_client.embed(rewritten_query, embedding_model=embedding_model)
         state['query_vector'] = query_vector
+        print(f"[INFO] 쿼리 벡터 생성 완료: {len(query_vector)}차원 (모델: {embedding_model})")
     except Exception as e:
         print(f"[WARNING] 임베딩 생성 실패: {e}")
         query_vector = None
@@ -188,6 +195,7 @@ def retrieve_node(state: AgentState) -> AgentState:
     
     return {
         **state,
-        'retrieved_docs': selected_docs
+        'retrieved_docs': selected_docs,
+        'retrieval_attempted': True  # Flag to indicate retrieval has been attempted
     }
 

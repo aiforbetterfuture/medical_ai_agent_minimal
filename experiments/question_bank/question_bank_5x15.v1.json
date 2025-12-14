@@ -1,0 +1,133 @@
+{
+  "schema_version": "question_bank.v1",
+  "version": "question_bank_5x15.v1",
+  "language": "ko",
+  "placeholder_style": "{PLACEHOLDER}",
+  "selection_rule": "sha256(patient_id + ':' + turn_id) % 15",
+  "placeholders": [
+    "AGE","SEX_KO","COND1_KO","COND2_KO","MED1_KO","MED2_KO","ALLERGY_KO",
+    "CC","DUR","TRIGGER","ADD_SYM",
+    "VITAL_NAME","VITAL_VALUE","VITAL_UNIT",
+    "LAB_NAME","LAB_VALUE","LAB_UNIT",
+    "OTC","NEW_INFO"
+  ],
+  "turns": [
+    {
+      "turn_id": 1,
+      "intent": "profile_ingestion",
+      "omit_rules": {"must_omit": []},
+      "required_fields_default": ["AGE","SEX_KO","COND1_KO","MED1_KO","DUR","CC"]
+    },
+    {
+      "turn_id": 2,
+      "intent": "implicit_followup_must_use_memory",
+      "omit_rules": {
+        "must_omit_any_of": [
+          ["MED1_KO"],
+          ["COND1_KO"]
+        ],
+        "note": "Turn2에서는 Turn1의 핵심 정보(약물 또는 기저질환 중 최소 1개)를 문장에 직접 언급하지 않도록 강제"
+      },
+      "required_fields_default": ["TRIGGER","ADD_SYM","CC"]
+    },
+    {
+      "turn_id": 3,
+      "intent": "update_new_evidence",
+      "omit_rules": {"must_omit": []},
+      "required_fields_default": ["VITAL_NAME","VITAL_VALUE","VITAL_UNIT"]
+    },
+    {
+      "turn_id": 4,
+      "intent": "near_duplicate_plus_minor_addition",
+      "omit_rules": {"must_include": ["OTC"]},
+      "required_fields_default": ["OTC","CC"]
+    },
+    {
+      "turn_id": 5,
+      "intent": "personalized_plan_and_safety_net",
+      "omit_rules": {"must_omit": []},
+      "required_fields_default": ["AGE","SEX_KO","COND1_KO","MED1_KO","VITAL_NAME","VITAL_VALUE"]
+    }
+  ],
+  "items": [
+    {"id":"T1_Q01","turn_id":1,"intent":"profile_ingestion","required_fields":["AGE","SEX_KO","COND1_KO","MED1_KO","DUR","CC"],"must_omit":[],"template_text":"저는 {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있어요. {MED1_KO}을(를) 복용 중인데, {DUR} 전부터 {CC}가 있어서 조언을 받고 싶습니다."},
+    {"id":"T1_Q02","turn_id":1,"intent":"profile_ingestion","required_fields":["AGE","SEX_KO","COND1_KO","MED1_KO","DUR","CC"],"must_omit":[],"template_text":"{AGE}세 {SEX_KO}입니다. 기저질환은 {COND1_KO}이고 약은 {MED1_KO} 먹고 있어요. {DUR}째 {CC}가 있는데 어떻게 봐야 하나요?"},
+    {"id":"T1_Q03","turn_id":1,"intent":"profile_ingestion","required_fields":["COND1_KO","MED1_KO","DUR","CC"],"must_omit":[],"template_text":"기저질환이 {COND1_KO}이고 현재 {MED1_KO} 복용 중입니다. {DUR} 동안 {CC}가 있는데, 우선 확인할 점을 알려주세요."},
+    {"id":"T1_Q04","turn_id":1,"intent":"profile_ingestion","required_fields":["AGE","SEX_KO","COND1_KO","COND2_KO","MED1_KO","MED2_KO","DUR","CC"],"must_omit":[],"template_text":"{AGE}세 {SEX_KO}이고 {COND1_KO}/{COND2_KO}가 있습니다. 약은 {MED1_KO}, {MED2_KO} 복용 중이고요. {DUR} 전부터 {CC}가 있었습니다."},
+    {"id":"T1_Q05","turn_id":1,"intent":"profile_ingestion","required_fields":["AGE","SEX_KO","ALLERGY_KO","MED1_KO","DUR","CC"],"must_omit":[],"template_text":"{AGE}세 {SEX_KO}입니다. 알레르기는 {ALLERGY_KO}가 있고, {MED1_KO}을(를) 복용해요. {DUR} 전부터 {CC}가 있습니다."},
+    {"id":"T1_Q06","turn_id":1,"intent":"profile_ingestion","required_fields":["AGE","SEX_KO","COND1_KO","MED1_KO","CC","DUR"],"must_omit":[],"template_text":"{AGE}세 {SEX_KO}이고 {COND1_KO} 때문에 {MED1_KO} 먹고 있어요. {CC}가 {DUR}째인데 어떤 가능성을 생각해야 할까요?"},
+    {"id":"T1_Q07","turn_id":1,"intent":"profile_ingestion","required_fields":["COND1_KO","MED1_KO","DUR","CC"],"must_omit":[],"template_text":"기저질환이 {COND1_KO}이고 현재 {MED1_KO} 복용 중입니다. {DUR} 동안 {CC}가 있는데, 우선 확인할 점을 알려주세요."},
+    {"id":"T1_Q08","turn_id":1,"intent":"profile_ingestion","required_fields":["AGE","SEX_KO","COND1_KO","MED1_KO","TRIGGER","CC","DUR"],"must_omit":[],"template_text":"{AGE}세 {SEX_KO}입니다. {COND1_KO}이(가) 있고 {MED1_KO} 복용합니다. {TRIGGER} 때 {CC}가 더 심해요. 어떻게 대응해야 하나요?"},
+    {"id":"T1_Q09","turn_id":1,"intent":"profile_ingestion","required_fields":["AGE","SEX_KO","COND1_KO","DUR","CC","ADD_SYM"],"must_omit":[],"template_text":"{AGE}세 {SEX_KO}이고 {COND1_KO} 진단을 받았습니다. {DUR} 전부터 {CC}가 있고 {ADD_SYM}도 동반됩니다."},
+    {"id":"T1_Q10","turn_id":1,"intent":"profile_ingestion","required_fields":["AGE","SEX_KO","COND1_KO","MED1_KO","DUR","CC"],"must_omit":[],"template_text":"저는 {AGE}세 {SEX_KO}입니다. {COND1_KO} 때문에 약({MED1_KO})을 먹고 있는데 {DUR}째 {CC}가 있어서 안내받고 싶습니다."},
+    {"id":"T1_Q11","turn_id":1,"intent":"profile_ingestion","required_fields":["AGE","SEX_KO","COND1_KO","MED1_KO","DUR","CC"],"must_omit":[],"template_text":"{AGE}세 {SEX_KO}이고 현재 {COND1_KO} 관리 중입니다({MED1_KO}). 최근 {DUR} 동안 {CC}가 생겼습니다."},
+    {"id":"T1_Q12","turn_id":1,"intent":"profile_ingestion","required_fields":["AGE","SEX_KO","COND1_KO","MED1_KO","DUR","CC"],"must_omit":[],"template_text":"{AGE}세 {SEX_KO}입니다. {COND1_KO}이(가) 있고 {MED1_KO} 복용합니다. {CC}가 {DUR}째인데 응급 기준이 있나요?"},
+    {"id":"T1_Q13","turn_id":1,"intent":"profile_ingestion","required_fields":["AGE","SEX_KO","COND1_KO","MED1_KO","DUR","CC"],"must_omit":[],"template_text":"{AGE}세 {SEX_KO}, {COND1_KO} 병력, {MED1_KO} 복용 중. {DUR} 동안 {CC}. 다음은 무엇을 해야 하는지 단계별로 알려주세요."},
+    {"id":"T1_Q14","turn_id":1,"intent":"profile_ingestion","required_fields":["AGE","SEX_KO","COND1_KO","COND2_KO","MED1_KO","DUR","CC"],"must_omit":[],"template_text":"{AGE}세 {SEX_KO}이고 {COND1_KO}/{COND2_KO}가 있어요. 약은 {MED1_KO} 복용 중입니다. {CC}가 {DUR}째라 걱정됩니다."},
+    {"id":"T1_Q15","turn_id":1,"intent":"profile_ingestion","required_fields":["AGE","SEX_KO","COND1_KO","MED1_KO","DUR","CC"],"must_omit":[],"template_text":"저는 {AGE}세 {SEX_KO}이며 {COND1_KO}이(가) 있습니다. {MED1_KO} 먹는 중인데, {DUR} 전부터 {CC}가 있어요. 어떤 점을 확인해야 할까요?"},
+
+    {"id":"T2_Q01","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["TRIGGER"],"must_omit":["MED1_KO","COND1_KO"],"template_text":"증상이 {TRIGGER} 때 더 심해요. 이런 경우 집에서 먼저 확인할 것과 피해야 할 행동이 뭔가요?"},
+    {"id":"T2_Q02","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["ADD_SYM"],"must_omit":["MED1_KO","COND1_KO"],"template_text":"{ADD_SYM}이(가) 같이 있어요. 지금 단계에서 위험 신호인지 판단 기준을 알려주세요."},
+    {"id":"T2_Q03","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["CC"],"must_omit":["MED1_KO","COND1_KO"],"template_text":"{CC}가 하루 중 여러 번 반복되는데, 증상 관찰을 어떻게 기록하면 좋을까요?"},
+    {"id":"T2_Q04","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["CC","AGE","SEX_KO","COND1_KO"],"must_omit":["MED1_KO"],"template_text":"{CC}가 있을 때, {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 바로 병원에 가야 하는 상황과 며칠 지켜봐도 되는 상황을 구분해 주세요."},
+    {"id":"T2_Q05","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["CC"],"must_omit":["MED1_KO","COND1_KO"],"template_text":"{CC}가 있을 때 자택에서 바로 할 수 있는 조치(수분, 휴식, 자세 등)를 우선순위로 정리해 주세요."},
+    {"id":"T2_Q06","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["CC","AGE","SEX_KO","COND1_KO"],"must_omit":["MED1_KO"],"template_text":"{CC}가 반복될 때, {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 가장 먼저 의심해야 하는 위험 요인은 뭐가 있나요?"},
+    {"id":"T2_Q07","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["TRIGGER"],"must_omit":["MED1_KO","COND1_KO"],"template_text":"{TRIGGER} 이후 자택에도 괜찮은데, 응급실/외래/자택 관찰 중 어디가 적절할까요?"},
+    {"id":"T2_Q08","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["CC","AGE","SEX_KO","COND1_KO"],"must_omit":["MED1_KO"],"template_text":"{CC}가 있을 때, {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 추가로 물어봐야 할 질문(의사가 확인할 문진 항목)을 체크리스트로 주세요."},
+    {"id":"T2_Q09","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["CC"],"must_omit":["MED1_KO","COND1_KO"],"template_text":"{CC}가 있을 때, 검사 없이도 자가로 확인 가능한 신체 징후나 간단 테스트가 있나요?"},
+    {"id":"T2_Q10","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["CC","AGE","SEX_KO","COND1_KO"],"must_omit":["MED1_KO"],"template_text":"{CC}가 지속되면, {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 보통 어떤 검사를 하게 되나요? 검사 목적도 같이 설명해 주세요."},
+    {"id":"T2_Q11","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["ADD_SYM"],"must_omit":["MED1_KO","COND1_KO"],"template_text":"{ADD_SYM}이(가) 동반될 때 특히 주의해야 할 조합이 있나요?"},
+    {"id":"T2_Q12","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["CC","COND1_KO"],"must_omit":["MED1_KO"],"template_text":"{CC}가 있을 때, {COND1_KO}이(가) 있는 경우 '하면 안 되는 행동/약'이 있으면 알려주세요(가능한 범위에서)."},
+    {"id":"T2_Q13","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["CC","AGE","SEX_KO","COND1_KO"],"must_omit":["MED1_KO"],"template_text":"{CC}가 있고 오늘 밤처럼 의료 접근이 어렵다면, {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 안전하게 버틸 수 있는 최소행동지침을 알려주세요."},
+    {"id":"T2_Q14","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["CC","AGE","SEX_KO","COND1_KO"],"must_omit":["MED1_KO"],"template_text":"{CC}와 관련해, {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 놓치기 쉬운 위험 신호 3가지만 꼽아 주세요."},
+    {"id":"T2_Q15","turn_id":2,"intent":"implicit_followup_must_use_memory","required_fields":["CC"],"must_omit":["MED1_KO","COND1_KO"],"template_text":"{CC}에 대해 바로 관찰해야 할 항목(빈도/강도/유발요인)을 표로 정리해 주세요."},
+
+    {"id":"T3_Q01","turn_id":3,"intent":"update_new_evidence","required_fields":["VITAL_NAME","VITAL_VALUE","VITAL_UNIT","AGE","SEX_KO","COND1_KO"],"must_omit":[],"template_text":"방금 {VITAL_NAME}을(를) 재보니 {VITAL_VALUE}{VITAL_UNIT}로 나왔어요. {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 이 수치가 의미하는 위험도와 다음 조치를 알려주세요."},
+    {"id":"T3_Q02","turn_id":3,"intent":"update_new_evidence","required_fields":["VITAL_NAME","VITAL_VALUE","VITAL_UNIT","AGE","SEX_KO","COND1_KO"],"must_omit":[],"template_text":"오늘 측정한 {VITAL_NAME}이 {VITAL_VALUE}{VITAL_UNIT}였습니다. {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 지금은 응급실 기준인지, 외래로 가능한지 기준을 알려주세요."},
+    {"id":"T3_Q03","turn_id":3,"intent":"update_new_evidence","required_fields":["LAB_NAME","LAB_VALUE","LAB_UNIT","AGE","SEX_KO","COND1_KO"],"must_omit":[],"template_text":"{LAB_NAME} 결과가 {LAB_VALUE}{LAB_UNIT}로 나왔습니다. {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 이 결과를 어떻게 해석해야 하나요?"},
+    {"id":"T3_Q04","turn_id":3,"intent":"update_new_evidence","required_fields":["ADD_SYM","VITAL_NAME","VITAL_VALUE","VITAL_UNIT"],"must_omit":[],"template_text":"{ADD_SYM}이(가) 새로 생겼고 {VITAL_NAME}이 {VITAL_VALUE}{VITAL_UNIT}입니다. 우선순위로 해야 할 조치를 정리해 주세요."},
+    {"id":"T3_Q05","turn_id":3,"intent":"update_new_evidence","required_fields":["NEW_INFO","CC","AGE","SEX_KO","COND1_KO"],"must_omit":[],"template_text":"{CC}가 악화돼서 {NEW_INFO}가 추가됐습니다. {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 지금 단계에서 위험 신호 체크를 다시 해주세요."},
+    {"id":"T3_Q06","turn_id":3,"intent":"update_new_evidence","required_fields":["VITAL_NAME","VITAL_VALUE","VITAL_UNIT"],"must_omit":[],"template_text":"{VITAL_NAME}이 평소보다 높게({VITAL_VALUE}{VITAL_UNIT}) 나왔는데, 재측정/휴식 후 재확인 같은 절차를 어떻게 밟아야 하나요?"},
+    {"id":"T3_Q07","turn_id":3,"intent":"update_new_evidence","required_fields":["LAB_NAME","LAB_VALUE","LAB_UNIT","AGE","SEX_KO","COND1_KO"],"must_omit":[],"template_text":"{LAB_NAME}이 {LAB_VALUE}{LAB_UNIT}인데, {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 바로 조치가 필요한 수준인지 '경고-위험' 기준으로 설명해 주세요."},
+    {"id":"T3_Q08","turn_id":3,"intent":"update_new_evidence","required_fields":["VITAL_NAME","VITAL_VALUE","VITAL_UNIT","COND1_KO","MED1_KO"],"must_omit":[],"template_text":"{VITAL_NAME}이 {VITAL_VALUE}{VITAL_UNIT}로 나왔을 때, {COND1_KO}이(가) 있고 {MED1_KO}을(를) 복용 중인 경우 약/식사/활동 중 무엇을 먼저 조절해야 할까요?"},
+    {"id":"T3_Q09","turn_id":3,"intent":"update_new_evidence","required_fields":["ADD_SYM","VITAL_NAME","VITAL_VALUE","VITAL_UNIT"],"must_omit":[],"template_text":"{ADD_SYM} 동반 + {VITAL_NAME} {VITAL_VALUE}{VITAL_UNIT} 상황에서 바로 피해야 할 행동이 있나요?"},
+    {"id":"T3_Q10","turn_id":3,"intent":"update_new_evidence","required_fields":["VITAL_NAME","VITAL_VALUE","VITAL_UNIT","CC"],"must_omit":[],"template_text":"{VITAL_NAME}이 {VITAL_VALUE}{VITAL_UNIT}이고 {CC}가 있는 상황에서, 이 수치가 일시적 변동인지 지속적으로 위험한 패턴인지 구분하려면 무엇을 더 확인해야 하나요?"},
+    {"id":"T3_Q11","turn_id":3,"intent":"update_new_evidence","required_fields":["VITAL_NAME","VITAL_VALUE","VITAL_UNIT","AGE","SEX_KO","COND1_KO"],"must_omit":[],"template_text":"{VITAL_NAME}이 {VITAL_VALUE}{VITAL_UNIT}일 때, {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 '지켜보기'가 가능한 조건과 '즉시 진료'가 필요한 조건을 나눠 주세요."},
+    {"id":"T3_Q12","turn_id":3,"intent":"update_new_evidence","required_fields":["LAB_NAME","LAB_VALUE","LAB_UNIT","AGE","SEX_KO","COND1_KO"],"must_omit":[],"template_text":"{LAB_NAME}이 {LAB_VALUE}{LAB_UNIT}라면, {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 어떤 추가 검사를 권하나요?"},
+    {"id":"T3_Q13","turn_id":3,"intent":"update_new_evidence","required_fields":["VITAL_NAME","VITAL_VALUE","VITAL_UNIT","CC","AGE","SEX_KO","COND1_KO"],"must_omit":[],"template_text":"{VITAL_NAME}이 {VITAL_VALUE}{VITAL_UNIT}이고 {CC}가 있는 상황에서, {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 제 상태를 위험도 단계(낮음/중간/높음)로 분류하고 근거를 제시해 주세요."},
+    {"id":"T3_Q14","turn_id":3,"intent":"update_new_evidence","required_fields":["VITAL_NAME","VITAL_VALUE","VITAL_UNIT","COND1_KO"],"must_omit":[],"template_text":"{VITAL_NAME}이 {VITAL_VALUE}{VITAL_UNIT}로 나왔습니다. {COND1_KO}이(가) 있는 경우 바로 할 수 있는 안전 조치 5가지를 체크리스트로 주세요."},
+    {"id":"T3_Q15","turn_id":3,"intent":"update_new_evidence","required_fields":["VITAL_NAME","VITAL_VALUE","VITAL_UNIT","CC","AGE","SEX_KO","COND1_KO"],"must_omit":[],"template_text":"{VITAL_NAME}이 {VITAL_VALUE}{VITAL_UNIT}이고 {CC}가 있는 상황에서, {AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있는 경우 가장 가능성이 큰 원인 가설(진단 단정 없이)을 3개로 정리해 주세요."},
+
+    {"id":"T4_Q01","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC"],"must_omit":[],"template_text":"아, 그리고 {OTC}을(를) 어제 1번 복용했어요. 이런 게 {CC}에 영향을 줄 수 있나요?"},
+    {"id":"T4_Q02","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC"],"must_omit":[],"template_text":"증상이 비슷하게 반복되는데 {OTC}을(를) 먹은 다음 더 느껴졌어요. 주의할 점이 있을까요?"},
+    {"id":"T4_Q03","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC"],"must_omit":[],"template_text":"추가로 {OTC}을(를) 했습니다. 제가 피해야 할 약물/행동이 있는지 다시 점검해 주세요."},
+    {"id":"T4_Q04","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC","ADD_SYM"],"must_omit":[],"template_text":"{OTC} 이후로 {ADD_SYM}이(가) 더 뚜렷해졌어요. 관련 가능성과 대처를 알려주세요."},
+    {"id":"T4_Q05","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC"],"must_omit":[],"template_text":"제가 {OTC}을(를) 했는데, 이런 상황에서 안전하게 복용 가능한 범위가 있나요?"},
+    {"id":"T4_Q06","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC","CC"],"must_omit":[],"template_text":"{CC}가 있는데 {OTC}을(를) 복용한 경우 위험도가 달라지나요?"},
+    {"id":"T4_Q07","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC","CC"],"must_omit":[],"template_text":"{OTC}을(를) 한 상태에서 {CC}를 지켜봐도 되는지, 진료가 필요한지 다시 정리해 주세요."},
+    {"id":"T4_Q08","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC","CC"],"must_omit":[],"template_text":"{CC}에 대해 '해야 할 질문 체크리스트'를 다시 주되, {OTC} 요인까지 포함해 주세요."},
+    {"id":"T4_Q09","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC","TRIGGER"],"must_omit":[],"template_text":"{OTC}을(를) 하고 {TRIGGER} 때 악화됐어요. 어떤 조합이 위험 신호인지 알려주세요."},
+    {"id":"T4_Q10","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC","AGE","SEX_KO","COND1_KO","MED1_KO"],"must_omit":[],"template_text":"{AGE}세 {SEX_KO}이고 {COND1_KO}이(가) 있으며 {MED1_KO}을(를) 복용 중인 경우, {OTC}이(가) 금기일 수 있는 경우가 있나요?"},
+    {"id":"T4_Q11","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC","CC"],"must_omit":[],"template_text":"{OTC} 이후 {CC}가 변했어요. 지금 단계에서 관찰해야 할 항목을 다시 정해 주세요."},
+    {"id":"T4_Q12","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC"],"must_omit":[],"template_text":"제가 {OTC}을(를) 했다는 점을 까지 포함해서, 오늘 밤 안전 행동지침을 업데이트해 주세요."},
+    {"id":"T4_Q13","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC"],"must_omit":[],"template_text":"{OTC}을(를) 하고 {CC}가 이어집니다. 병원에 가면 어떤 검사를 우선 할지 예상해 주세요."},
+    {"id":"T4_Q14","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC"],"must_omit":[],"template_text":"지금까지 말한 내용에서, {OTC}이(가) 문제일 가능성을 높이는 단서/낮추는 단서를 나눠 주세요."},
+    {"id":"T4_Q15","turn_id":4,"intent":"near_duplicate_plus_minor_addition","required_fields":["OTC"],"must_omit":[],"template_text":"{OTC}을(를) 했다는 점을 반영해, 피해야 할 행동 5개와 할 수 있는 대안 5개를 제안해 주세요."},
+
+    {"id":"T5_Q01","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":[],"must_omit":[],"template_text":"지금까지 제가 말한 상황을 기준으로 (1)오늘 바로 할 일 (2)며칠 내 해야 할 검사/진료 (3)피해야 할 것 (4)응급 기준을 한 번에 정리해 주세요."},
+    {"id":"T5_Q02","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":[],"must_omit":[],"template_text":"제 정보(나이/기저질환/복용약/최근 수치)를 반영해서, 행동계획을 '우선순위'로 1~5번까지 제안해 주세요."},
+    {"id":"T5_Q03","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":[],"must_omit":[],"template_text":"제가 놓치면 위험한 레드플래그를 5개, 그리고 그때 행동(119/응급실/외래)을 매칭해서 알려주세요."},
+    {"id":"T5_Q04","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":["CC"],"must_omit":[],"template_text":"{CC}가 재발할 때를 대비해, '자가 모니터링 루틴'(측정 항목/빈도/기록 양식)을 만들어 주세요."},
+    {"id":"T5_Q05","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":[],"must_omit":[],"template_text":"제가 복용 중인 약/상태를 고려할 때, 일반적으로 조심해야 하는 약물/음식/행동이 있다면 정리해 주세요."},
+    {"id":"T5_Q06","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":[],"must_omit":[],"template_text":"지금 대화 내용을 10줄 요약으로 정리하고, 마지막 줄에 '다음에 의사에게 꼭 말할 정보' 3가지를 넣어 주세요."},
+    {"id":"T5_Q07","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":[],"must_omit":[],"template_text":"위험도를 낮음/중간/높음으로 분류하고, 각 등급에서의 권장 행동을 표로 정리해 주세요."},
+    {"id":"T5_Q08","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":[],"must_omit":[],"template_text":"제 상황에서 가장 합리적인 '다음 진료과/검사' 후보를 3개 제안하고 이유를 달아 주세요(진단 단정 없이)."},
+    {"id":"T5_Q09","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":[],"must_omit":[],"template_text":"오늘과 내일 기준으로 할 일을 시간표처럼(아침/점심/저녁) 제안해 주세요."},
+    {"id":"T5_Q10","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":[],"must_omit":[],"template_text":"제가 불안해서 과도하게 행동하지 않도록, '지켜볼 수 있는 조건'과 '반드시 진료해야 하는 조건'을 다시 한 번 구분해 주세요."},
+    {"id":"T5_Q11","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":[],"must_omit":[],"template_text":"제가 말한 수치/증상 변화까지 포함해, 안전을 최우선으로 한 권고안을 간단명료하게 주세요."},
+    {"id":"T5_Q12","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":["CC"],"must_omit":[],"template_text":"{CC}와 관련된 현재 상황에서 상담을 마무리할 때, 제가 스스로 점검할 체크리스트 10개를 만들어 주세요."},
+    {"id":"T5_Q13","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":[],"must_omit":[],"template_text":"응급 상황이 아니라면, 2주 동안의 관리 계획(식사/복약/측정/추적)을 제안해 주세요."},
+    {"id":"T5_Q14","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":[],"must_omit":[],"template_text":"제가 의료진에게 전달해야 할 정보를 SBAR 형식(상황-배경-평가-요청)으로 작성해 주세요."},
+    {"id":"T5_Q15","turn_id":5,"intent":"personalized_plan_and_safety_net","required_fields":[],"must_omit":[],"template_text":"전체 답변에 반드시 '주의: 확정 진단 아님' 문구를 포함하고, 근거가 된 요소(제 프로필/수치/증상)를 항목별로 명시해 주세요."}
+  ]
+}

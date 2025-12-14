@@ -1,0 +1,6 @@
+﻿Profile,Description,Avg_Quality,Avg_Iterations,Avg_Docs,Avg_Time_Sec,Total_Cost_USD
+baseline,"베이스라인: Self-Refine 없음; 1회 검색-생성만",1.0000,0.00,28.80,27.09,0.000000
+self_refine_heuristic,"Self-Refine + 휴리스틱 품질 평가 (LLM 평가 없음)",1.0000,0.00,28.80,15.87,0.000000
+self_refine_llm_quality,"Self-Refine + LLM 기반 품질 평가 (동적 질의 재작성 없음)",0.7560,0.00,28.80,22.57,0.000000
+self_refine_dynamic_query,"Self-Refine + LLM 품질 평가 + 동적 질의 재작성",0.7400,0.20,54.40,28.13,0.000000
+full_context_engineering,"Context Engineering 기반 전체 활성화 (최종 버전)",0.6880,0.20,54.40,27.98,0.000000

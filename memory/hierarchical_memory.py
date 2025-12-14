@@ -385,47 +385,143 @@ class HierarchicalMemorySystem:
 
     def _extract_chronic_conditions(self, all_slots: List[Dict[str, Any]]) -> None:
         """
-        만성 질환 추출 (MedCAT2 연동)
+        만성 질환 추출 (MedCAT2 연동 강화)
 
         기준:
         - 2회 이상 언급된 질환
         - '만성', '지속', '오래' 등의 키워드
         - MedCAT2로 검증된 만성 질환
+        - 급성 질환 제외 (감기, 독감, 일시적 증상 등)
+        - 일반 단어 제외 (Current, Effect, Recent 등)
+        - 약물 제외 (약물은 medications로만 처리)
         """
         condition_freq = {}
+        condition_details = {}  # 질환별 상세 정보 저장
 
         for slots in all_slots:
             for cond in slots.get('conditions', []):
                 cond_name = cond.get('name', '')
                 if cond_name:
                     condition_freq[cond_name] = condition_freq.get(cond_name, 0) + 1
+                    # 상세 정보 저장 (MedCAT 결과 등)
+                    if cond_name not in condition_details:
+                        condition_details[cond_name] = cond
 
-        # 만성 질환 키워드
+        # 만성 질환 키워드 (확장)
         chronic_keywords = [
+            # 한국어
             '당뇨', '고혈압', '심장', '신장', '간', '암', '천식', '관절염',
-            'diabetes', 'hypertension', 'heart', 'kidney', 'liver', 'cancer', 'asthma', 'arthritis'
+            '만성', '지속', '오래', '평생', '장기',
+            '고지혈증', '갑상선', '파킨슨', '치매', '알츠하이머',
+            '류마티스', '루푸스', '크론병', '궤양성대장염',
+            # 영어
+            'diabetes', 'hypertension', 'heart', 'kidney', 'liver', 'cancer', 
+            'asthma', 'arthritis', 'chronic', 'persistent', 'long-term',
+            'hyperlipidemia', 'thyroid', 'parkinson', 'dementia', 'alzheimer',
+            'rheumatoid', 'lupus', 'crohn', 'colitis'
+        ]
+        
+        # 급성 질환 키워드 (제외)
+        acute_keywords = [
+            '감기', '독감', '몸살', '설사', '구토', '두통', '복통',
+            '염좌', '타박상', '찰과상', '화상', '골절',
+            'cold', 'flu', 'fever', 'diarrhea', 'vomiting', 'headache',
+            'sprain', 'bruise', 'burn', 'fracture', 'acute'
+        ]
+        
+        # 일반 단어 제외 (stop words)
+        stop_words = [
+            'current', 'effect', 'recent', 'minute', 'walking', 'daily',
+            'increase', 'maintained', 'needed', 'prevent', 'complication',
+            'blood', 'glucose', 'health', 'lifestyle', 'speaking',
+            'awakening', 'frequent', 'during', 'sleep', 'emotion',
+            'simple', 'carbohydrate', 'after', 'exercise', 'once',
+            'day', 'bedtime', 'dietary', 'finding', 'light',
+            'electromagnetic', 'radiation', 'constant', 'dosing',
+            'instruction', 'fragment', 'was', 'a', 'family', 'history',
+            'con', '대', 'hi', '대tory', '대leep', '대imple', '대peaking',
+            'gluco', '대e', 'blood', '대', 'atorva', '스타틴', 'increa', '대e'
+        ]
+        
+        # 약물 키워드 (제외 - 약물은 medications로만 처리)
+        medication_keywords = [
+            '리시노프릴', '메트포르민', '메트폴민', '아토르바스타틴', '스타틴',
+            'lisinopril', 'metformin', 'atorvastatin', 'statin',
+            'aspirin', '아스피린', '약물', 'medication', 'drug'
         ]
 
         # 2회 이상 언급되거나 만성 키워드 포함
         for cond_name, freq in condition_freq.items():
+            cond_name_lower = cond_name.lower()
+            
+            # 1. 일반 단어 제외 (stop words)
+            if any(stop_word in cond_name_lower for stop_word in stop_words):
+                print(f"[Semantic Memory] 일반 단어 제외: {cond_name}")
+                continue
+            
+            # 2. 약물 제외 (약물은 medications로만 처리)
+            if any(med_keyword in cond_name_lower for med_keyword in medication_keywords):
+                print(f"[Semantic Memory] 약물 제외 (conditions에서): {cond_name}")
+                continue
+            
+            # 3. 급성 질환 제외
+            if any(keyword in cond_name_lower for keyword in acute_keywords):
+                print(f"[Semantic Memory] 급성 질환 제외: {cond_name}")
+                continue
+            
+            # 4. 만성 질환 키워드 확인
+            has_chronic_keyword = any(keyword in cond_name_lower for keyword in chronic_keywords)
+            
+            # 5. MedCAT CUI 확인 (질환 관련 CUI만 허용)
+            cond_detail = condition_details.get(cond_name, {})
+            cui = cond_detail.get('cui', '')
+            pretty_name_en = cond_detail.get('pretty_name_en', '').lower()
+            
+            # MedCAT에서 질환이 아닌 것으로 판단되는 경우 제외
+            # (예: "Current", "Effect" 등은 일반 단어)
+            if not has_chronic_keyword and not cui:
+                # 키워드도 없고 CUI도 없으면 제외
+                print(f"[Semantic Memory] 질환 키워드 없음, 제외: {cond_name}")
+                continue
+            
+            # 6. 만성 질환 판정
             is_chronic = (
-                freq >= 2 or
-                any(keyword in cond_name.lower() for keyword in chronic_keywords)
+                (freq >= 2 and has_chronic_keyword) or  # 빈도 2회 이상 + 만성 키워드
+                (has_chronic_keyword) or  # 만성 키워드 포함
+                (freq >= 3 and cui)  # 빈도 3회 이상 + MedCAT CUI
             )
 
             if is_chronic:
                 # 이미 존재하는지 확인
-                if not any(c.get('name') == cond_name for c in self.semantic_memory.chronic_conditions):
-                    self.semantic_memory.chronic_conditions.append({
+                existing = next((c for c in self.semantic_memory.chronic_conditions if c.get('name') == cond_name), None)
+                
+                if existing:
+                    # 빈도 업데이트
+                    existing['frequency'] = freq
+                    existing['last_mentioned'] = datetime.now().isoformat()
+                else:
+                    # 새로 추가
+                    chronic_cond = {
                         'name': cond_name,
                         'first_mentioned': datetime.now().isoformat(),
+                        'last_mentioned': datetime.now().isoformat(),
                         'frequency': freq,
-                        'verified_by': 'frequency' if freq >= 2 else 'keyword'
-                    })
-
+                        'verified_by': 'frequency' if freq >= 2 else 'keyword',
+                        'medcat_verified': bool(cui),
+                        'medcat_cui': cui if cui else '',
+                        'medcat_confidence': cond_detail.get('confidence', 0.0) if cui else 0.0
+                    }
+                    
                     # MedCAT2로 추가 검증 (선택적)
-                    if self.medcat_adapter:
-                        self._verify_with_medcat(cond_name, 'condition')
+                    if self.medcat_adapter and not cui:
+                        medcat_result = self._verify_with_medcat(cond_name, 'condition')
+                        if medcat_result:
+                            chronic_cond['medcat_verified'] = True
+                            chronic_cond['medcat_cui'] = medcat_result.get('cui', '')
+                            chronic_cond['medcat_confidence'] = medcat_result.get('confidence', 0.0)
+                    
+                    self.semantic_memory.chronic_conditions.append(chronic_cond)
+                    print(f"[Semantic Memory] 만성 질환 추가: {cond_name} (빈도: {freq}회, CUI: {cui if cui else 'N/A'})")
 
     def _extract_chronic_medications(self, all_slots: List[Dict[str, Any]]) -> None:
         """
@@ -506,17 +602,20 @@ class HierarchicalMemorySystem:
             for name, freq in sorted(symptom_freq.items(), key=lambda x: x[1], reverse=True)[:3]
         ]
 
-    def _verify_with_medcat(self, entity_name: str, entity_type: str) -> None:
+    def _verify_with_medcat(self, entity_name: str, entity_type: str) -> Optional[Dict[str, Any]]:
         """
         MedCAT2로 의료 엔티티 검증 (선택적)
 
         Args:
             entity_name: 엔티티 이름
             entity_type: 'condition' 또는 'medication'
+        
+        Returns:
+            검증 결과 (CUI, confidence 등) 또는 None
         """
         try:
             if not self.medcat_adapter:
-                return
+                return None
 
             # MedCAT2로 검증
             result = self.medcat_adapter.extract(entity_name)
@@ -524,11 +623,22 @@ class HierarchicalMemorySystem:
             # 신뢰도 높은 경우에만 검증 마크
             if result and len(result) > 0:
                 top_result = result[0]
-                if top_result.get('confidence', 0) > 0.7:
-                    print(f"[MedCAT2] Verified '{entity_name}' as {entity_type}")
+                confidence = top_result.get('confidence', 0)
+                
+                if confidence > 0.7:
+                    print(f"[MedCAT2] Verified '{entity_name}' as {entity_type} (confidence: {confidence:.2f})")
+                    return {
+                        'cui': top_result.get('cui', ''),
+                        'confidence': confidence,
+                        'semantic_type': top_result.get('semantic_type', ''),
+                        'preferred_name': top_result.get('preferred_name', entity_name)
+                    }
+            
+            return None
 
         except Exception as e:
             print(f"[WARNING] MedCAT2 verification failed: {e}")
+            return None
 
     def retrieve_context(
         self,

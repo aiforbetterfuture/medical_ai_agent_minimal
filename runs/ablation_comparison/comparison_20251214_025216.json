@@ -1,0 +1,399 @@
+{
+  "experiment_type": "ablation_comparison",
+  "timestamp": "2025-12-14T02:52:16.471321",
+  "profiles_tested": [
+    "baseline",
+    "self_refine_heuristic",
+    "self_refine_llm_quality",
+    "self_refine_dynamic_query",
+    "full_context_engineering"
+  ],
+  "num_queries": 5,
+  "test_queries": [
+    "당뇨병 환자에게 메트포르민의 부작용은?",
+    "고혈압 환자의 식이요법은?",
+    "아스피린 복용 시 피해야 할 음식은?",
+    "임신 중 복용 가능한 진통제는?",
+    "간 질환 환자에게 금기인 약물은?"
+  ],
+  "results": {
+    "baseline": {
+      "description": "베이스라인: Self-Refine 없음, 1회 검색-생성만",
+      "feature_config": {
+        "self_refine_enabled": false,
+        "quality_check_enabled": false,
+        "llm_based_quality_check": false,
+        "dynamic_query_rewrite": false,
+        "duplicate_detection": false,
+        "progress_monitoring": false,
+        "response_cache_enabled": false
+      },
+      "results": [
+        {
+          "query_id": 1,
+          "query": "당뇨병 환자에게 메트포르민의 부작용은?",
+          "quality_score": 1.0,
+          "iteration_count": 0,
+          "num_docs": 32,
+          "elapsed_sec": 63.906893253326416,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 2,
+          "query": "고혈압 환자의 식이요법은?",
+          "quality_score": 1.0,
+          "iteration_count": 0,
+          "num_docs": 32,
+          "elapsed_sec": 18.512577056884766,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 3,
+          "query": "아스피린 복용 시 피해야 할 음식은?",
+          "quality_score": 1.0,
+          "iteration_count": 0,
+          "num_docs": 16,
+          "elapsed_sec": 15.84125542640686,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 4,
+          "query": "임신 중 복용 가능한 진통제는?",
+          "quality_score": 1.0,
+          "iteration_count": 0,
+          "num_docs": 16,
+          "elapsed_sec": 15.581670761108398,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 5,
+          "query": "간 질환 환자에게 금기인 약물은?",
+          "quality_score": 1.0,
+          "iteration_count": 0,
+          "num_docs": 48,
+          "elapsed_sec": 21.599287509918213,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        }
+      ],
+      "summary": {
+        "total_queries": 5,
+        "successful": 5,
+        "avg_quality": 1.0,
+        "avg_iterations": 0.0,
+        "avg_docs": 28.8,
+        "avg_time_sec": 27.088336801528932,
+        "total_tokens": 0,
+        "total_cost_usd": 0.0
+      }
+    },
+    "self_refine_heuristic": {
+      "description": "Self-Refine + 휴리스틱 품질 평가 (LLM 평가 없음)",
+      "feature_config": {
+        "self_refine_enabled": true,
+        "quality_check_enabled": true,
+        "llm_based_quality_check": false,
+        "dynamic_query_rewrite": false,
+        "duplicate_detection": false,
+        "progress_monitoring": false,
+        "max_refine_iterations": 2,
+        "quality_threshold": 0.5,
+        "response_cache_enabled": false
+      },
+      "results": [
+        {
+          "query_id": 1,
+          "query": "당뇨병 환자에게 메트포르민의 부작용은?",
+          "quality_score": 1.0,
+          "iteration_count": 0,
+          "num_docs": 32,
+          "elapsed_sec": 17.070250034332275,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 2,
+          "query": "고혈압 환자의 식이요법은?",
+          "quality_score": 1.0,
+          "iteration_count": 0,
+          "num_docs": 32,
+          "elapsed_sec": 13.839416265487671,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 3,
+          "query": "아스피린 복용 시 피해야 할 음식은?",
+          "quality_score": 1.0,
+          "iteration_count": 0,
+          "num_docs": 16,
+          "elapsed_sec": 14.63936161994934,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 4,
+          "query": "임신 중 복용 가능한 진통제는?",
+          "quality_score": 1.0,
+          "iteration_count": 0,
+          "num_docs": 16,
+          "elapsed_sec": 14.586432218551636,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 5,
+          "query": "간 질환 환자에게 금기인 약물은?",
+          "quality_score": 1.0,
+          "iteration_count": 0,
+          "num_docs": 48,
+          "elapsed_sec": 19.222928762435913,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        }
+      ],
+      "summary": {
+        "total_queries": 5,
+        "successful": 5,
+        "avg_quality": 1.0,
+        "avg_iterations": 0.0,
+        "avg_docs": 28.8,
+        "avg_time_sec": 15.871677780151368,
+        "total_tokens": 0,
+        "total_cost_usd": 0.0
+      }
+    },
+    "self_refine_llm_quality": {
+      "description": "Self-Refine + LLM 기반 품질 평가 (동적 질의 재작성 없음)",
+      "feature_config": {
+        "self_refine_enabled": true,
+        "quality_check_enabled": true,
+        "llm_based_quality_check": true,
+        "dynamic_query_rewrite": false,
+        "duplicate_detection": false,
+        "progress_monitoring": false,
+        "max_refine_iterations": 2,
+        "quality_threshold": 0.5,
+        "response_cache_enabled": false
+      },
+      "results": [
+        {
+          "query_id": 1,
+          "query": "당뇨병 환자에게 메트포르민의 부작용은?",
+          "quality_score": 0.8600000000000002,
+          "iteration_count": 0,
+          "num_docs": 32,
+          "elapsed_sec": 24.718379497528076,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 2,
+          "query": "고혈압 환자의 식이요법은?",
+          "quality_score": 0.7800000000000001,
+          "iteration_count": 0,
+          "num_docs": 32,
+          "elapsed_sec": 22.25995397567749,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 3,
+          "query": "아스피린 복용 시 피해야 할 음식은?",
+          "quality_score": 0.68,
+          "iteration_count": 0,
+          "num_docs": 16,
+          "elapsed_sec": 20.197459936141968,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 4,
+          "query": "임신 중 복용 가능한 진통제는?",
+          "quality_score": 0.7800000000000001,
+          "iteration_count": 0,
+          "num_docs": 16,
+          "elapsed_sec": 23.82656979560852,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 5,
+          "query": "간 질환 환자에게 금기인 약물은?",
+          "quality_score": 0.68,
+          "iteration_count": 0,
+          "num_docs": 48,
+          "elapsed_sec": 21.8569655418396,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        }
+      ],
+      "summary": {
+        "total_queries": 5,
+        "successful": 5,
+        "avg_quality": 0.7560000000000001,
+        "avg_iterations": 0.0,
+        "avg_docs": 28.8,
+        "avg_time_sec": 22.57186574935913,
+        "total_tokens": 0,
+        "total_cost_usd": 0.0
+      }
+    },
+    "self_refine_dynamic_query": {
+      "description": "Self-Refine + LLM 품질 평가 + 동적 질의 재작성",
+      "feature_config": {
+        "self_refine_enabled": true,
+        "quality_check_enabled": true,
+        "llm_based_quality_check": true,
+        "dynamic_query_rewrite": true,
+        "duplicate_detection": false,
+        "progress_monitoring": false,
+        "max_refine_iterations": 2,
+        "quality_threshold": 0.5,
+        "response_cache_enabled": false
+      },
+      "results": [
+        {
+          "query_id": 1,
+          "query": "당뇨병 환자에게 메트포르민의 부작용은?",
+          "quality_score": 0.7800000000000001,
+          "iteration_count": 0,
+          "num_docs": 32,
+          "elapsed_sec": 20.97659397125244,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 2,
+          "query": "고혈압 환자의 식이요법은?",
+          "quality_score": 0.68,
+          "iteration_count": 0,
+          "num_docs": 32,
+          "elapsed_sec": 24.957014083862305,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 3,
+          "query": "아스피린 복용 시 피해야 할 음식은?",
+          "quality_score": 0.68,
+          "iteration_count": 1,
+          "num_docs": 144,
+          "elapsed_sec": 49.10359168052673,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 4,
+          "query": "임신 중 복용 가능한 진통제는?",
+          "quality_score": 0.7800000000000001,
+          "iteration_count": 0,
+          "num_docs": 16,
+          "elapsed_sec": 20.837693691253662,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 5,
+          "query": "간 질환 환자에게 금기인 약물은?",
+          "quality_score": 0.7800000000000001,
+          "iteration_count": 0,
+          "num_docs": 48,
+          "elapsed_sec": 24.751645803451538,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        }
+      ],
+      "summary": {
+        "total_queries": 5,
+        "successful": 5,
+        "avg_quality": 0.7400000000000001,
+        "avg_iterations": 0.2,
+        "avg_docs": 54.4,
+        "avg_time_sec": 28.125307846069337,
+        "total_tokens": 0,
+        "total_cost_usd": 0.0
+      }
+    },
+    "full_context_engineering": {
+      "description": "Context Engineering 기반 전체 활성화 (최종 버전)",
+      "feature_config": {
+        "self_refine_enabled": true,
+        "quality_check_enabled": true,
+        "llm_based_quality_check": true,
+        "dynamic_query_rewrite": true,
+        "duplicate_detection": true,
+        "progress_monitoring": true,
+        "max_refine_iterations": 3,
+        "quality_threshold": 0.6,
+        "response_cache_enabled": false
+      },
+      "results": [
+        {
+          "query_id": 1,
+          "query": "당뇨병 환자에게 메트포르민의 부작용은?",
+          "quality_score": 0.7800000000000001,
+          "iteration_count": 0,
+          "num_docs": 32,
+          "elapsed_sec": 28.841647148132324,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 2,
+          "query": "고혈압 환자의 식이요법은?",
+          "quality_score": 0.7800000000000001,
+          "iteration_count": 0,
+          "num_docs": 32,
+          "elapsed_sec": 21.19849419593811,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 3,
+          "query": "아스피린 복용 시 피해야 할 음식은?",
+          "quality_score": 0.68,
+          "iteration_count": 1,
+          "num_docs": 144,
+          "elapsed_sec": 48.43710923194885,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 4,
+          "query": "임신 중 복용 가능한 진통제는?",
+          "quality_score": 0.6000000000000001,
+          "iteration_count": 0,
+          "num_docs": 16,
+          "elapsed_sec": 21.419145107269287,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        },
+        {
+          "query_id": 5,
+          "query": "간 질환 환자에게 금기인 약물은?",
+          "quality_score": 0.6000000000000001,
+          "iteration_count": 0,
+          "num_docs": 48,
+          "elapsed_sec": 20.023725986480713,
+          "total_tokens": 0,
+          "estimated_cost_usd": 0.0
+        }
+      ],
+      "summary": {
+        "total_queries": 5,
+        "successful": 5,
+        "avg_quality": 0.6880000000000001,
+        "avg_iterations": 0.2,
+        "avg_docs": 54.4,
+        "avg_time_sec": 27.984024333953858,
+        "total_tokens": 0,
+        "total_cost_usd": 0.0
+      }
+    }
+  }
+}

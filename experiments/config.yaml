@@ -1,0 +1,163 @@
+# experiments/config.yaml
+# Multi-turn Experiment Configuration for LLM vs AI Agent Comparison
+# Based on ChatGPT recommendations for reproducibility and objectivity
+
+schema_version: "experiment_config.v1"
+
+run:
+  run_id: "2025-12-13_primary_v1"
+  description: "80 synthea patients x 5 turns, paired LLM vs Agent"
+  timezone: "Asia/Seoul"
+  created_by: "researcher"
+  tags: ["primary", "paired", "5turn", "synthea80"]
+
+reproducibility:
+  global_seed: 42
+  deterministic_question_selection: true
+  question_selection_rule: "sha256(patient_id + ':' + turn_id) % 15"
+  store_resolved_config_json: true   # 실행 시 config를 해석한 최종 값을 JSON으로 저장 권장
+
+git:
+  repo_url: "https://github.com/aiforbetterfuture/medical_ai_agent_minimal"
+  branch: "main"
+  require_clean_worktree: false        # true면 dirty일 때 실행 중단(권장)
+
+data:
+  patient_list_path: "data/patients/patient_list_80.json"
+  profile_cards_dir: "data/patients/profile_cards"
+  profile_card_schema: "synthea_profile_card.v1"
+  language: "ko"
+
+question_bank:
+  path: "experiments/question_bank/question_bank_5x15.v1.json"
+  version: "question_bank_5x15.v1"
+  placeholder_style: "{PLACEHOLDER}"
+  enforce_turn_omit_rules: true
+
+# 새로운 질문 생성 방식 (자동 생성 스크립트 사용)
+multiturn_scripts:
+  enabled: true  # true면 자동 생성 스크립트 사용, false면 기존 question_bank 사용
+  scripts_path: "data/multiturn_scripts/scripts_5turn.jsonl"
+  slot_builder_config_dir: "config/synthea"
+
+modes:
+  # paired 실험: 동일 patient_id + 동일 question_id 시퀀스를
+  # mode=llm / mode=agent 둘 다 실행
+  run_order: ["llm", "agent"]
+
+llm:
+  provider: "openai"
+  model: "gpt-4o-mini"
+  temperature: 0.2
+  top_p: 1.0
+  max_tokens: 800
+  frequency_penalty: 0.0
+  presence_penalty: 0.0
+  timeout_sec: 60
+  retry:
+    max_retries: 2
+    backoff_sec: 1.0
+
+agent:
+  provider: "openai"
+  model: "gpt-4o-mini"
+  temperature: 0.2
+  top_p: 1.0
+  max_tokens: 800
+  timeout_sec: 90
+  retry:
+    max_retries: 2
+    backoff_sec: 1.0
+
+  feature_flags:
+    active_retrieval_enabled: true
+    response_cache_enabled: true
+    self_refine_enabled: true
+    llm_judge_enabled: true
+    query_rewrite_enabled: true
+    time_decay_enabled: true
+
+retrieval:
+  corpus:
+    corpus_id: "medical_corpus_v1"
+    corpus_manifest_path: "data/corpus/corpus_manifest.json"
+    enforce_snapshot_hash: true
+
+  bm25:
+    enabled: true
+    top_k: 8
+    k1: 1.5
+    b: 0.75
+
+  dense:
+    enabled: true
+    embedding_model: "text-embedding-3-large"
+    faiss_index_path: "data/index/faiss.index"
+    top_k: 8
+
+  fusion:
+    method: "rrf"
+    rrf_k: 60
+    final_top_k: 8
+
+  active_retrieval:
+    enabled: true
+    k_simple: 3
+    k_moderate: 8
+    k_complex: 15
+    # intent/complexity 판단 로직은 코드에 있지만, 재현 위해 값을 여기서 기록
+    complexity_thresholds:
+      medical_concept_count_moderate: 1
+      medical_concept_count_complex: 3
+
+quality:
+  self_refine:
+    enabled: true
+    max_iterations: 2
+    stop_if_improvement_lt: 0.05
+    duplicate_doc_jaccard_threshold: 0.80
+
+  llm_judge:
+    enabled: true
+    judge_model: "gpt-4o-mini"
+    temperature: 0.2
+    weights:
+      grounding: 0.4
+      completeness: 0.4
+      accuracy: 0.2
+    thresholds:
+      pass_score: 0.60
+
+cache:
+  response_cache:
+    enabled: true
+    similarity_threshold: 0.85
+    min_quality_to_store: 0.60
+    capacity: 1000
+    ttl_hours: 168
+
+logging:
+  runs_dir: "runs"
+  write_run_manifest: true
+  write_events_jsonl: true
+  write_node_trace_jsonl: true
+  write_retrieval_snapshot: true
+  redact:
+    enabled: true
+    fields: ["api_key", "patient_name_raw"]
+  snapshots:
+    store_doc_text: false                # 저작권/개인정보 이슈 회피(권장)
+    store_doc_text_sha256: true
+    store_doc_first_chars: 200           # 디버깅용(원하면 0으로)
+  metrics:
+    store_token_usage: true
+    store_latency: true
+    store_estimated_cost: true
+
+evaluation:
+  # 논문 표/그래프 만들기 쉽게 "결과 집계 키"를 미리 고정
+  per_turn_metrics: ["faithfulness", "answer_relevance", "perplexity", "judge_total_score"]
+  multiturn_metrics: ["context_utilization", "context_contradiction", "update_responsiveness"]
+  memory_verification_enabled: false  # 계층형 메모리 검증 활성화 (Agent 모드에서만)
+  export_summary_json: true
+  export_summary_path: "runs/{run_id}/summary.json"

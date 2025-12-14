@@ -41,8 +41,10 @@ class NeuralTranslator:
     """
     
     # 모델 설정
+    # 한영 번역: Helsinki-NLP/opus-mt-ko-en (확인됨)
+    # 영한 번역: Helsinki-NLP/opus-mt-en-ko는 존재하지 않으므로 대체 모델 사용
     KO2EN_MODEL = "Helsinki-NLP/opus-mt-ko-en"
-    EN2KO_MODEL = "Helsinki-NLP/opus-mt-en-ko"
+    EN2KO_MODEL = None  # 영한 번역 모델이 Hugging Face에 없음, 사용하지 않음
     
     _instance = None
     
@@ -115,19 +117,31 @@ class NeuralTranslator:
                 )
                 logger.info("[NeuralTranslator] 한영 번역 모델 로드 완료")
             
-            # 영한 번역기
-            if self._en2ko_pipeline is None:
-                logger.info(f"[NeuralTranslator] 영한 번역 모델 로딩: {self.EN2KO_MODEL}")
-                self._en2ko_pipeline = pipeline(
-                    "translation",
-                    model=self.EN2KO_MODEL,
-                    device=0 if self.device == "cuda" else -1
-                )
-                logger.info("[NeuralTranslator] 영한 번역 모델 로드 완료")
+            # 영한 번역기 (모델이 없으므로 건너뜀)
+            if self.EN2KO_MODEL is None:
+                logger.info("[NeuralTranslator] 영한 번역 모델이 설정되지 않았습니다. (Helsinki-NLP/opus-mt-en-ko는 Hugging Face에 존재하지 않음)")
+                self._en2ko_pipeline = None
+            elif self._en2ko_pipeline is None:
+                try:
+                    logger.info(f"[NeuralTranslator] 영한 번역 모델 로딩: {self.EN2KO_MODEL}")
+                    self._en2ko_pipeline = pipeline(
+                        "translation",
+                        model=self.EN2KO_MODEL,
+                        device=0 if self.device == "cuda" else -1
+                    )
+                    logger.info("[NeuralTranslator] 영한 번역 모델 로드 완료")
+                except Exception as e:
+                    logger.warning(f"[NeuralTranslator] 영한 번역 모델 로드 실패: {e}")
+                    self._en2ko_pipeline = None
                 
         except Exception as e:
             logger.error(f"[NeuralTranslator] 번역 모델 로드 실패: {e}")
-            self._ko2en_pipeline = None
+            # 한영 번역기만 실패한 경우에만 None으로 설정
+            if self._ko2en_pipeline is not None:
+                # 한영은 성공했지만 영한만 실패한 경우
+                logger.warning("[NeuralTranslator] 한영 번역기는 사용 가능하지만 영한 번역기는 사용할 수 없습니다.")
+            else:
+                self._ko2en_pipeline = None
             self._en2ko_pipeline = None
     
     @property
@@ -181,6 +195,9 @@ class NeuralTranslator:
         """
         영어 → 한국어 번역
         
+        주의: Helsinki-NLP/opus-mt-en-ko 모델이 Hugging Face에 존재하지 않으므로
+        현재는 원본 텍스트를 반환합니다. 필요시 다른 번역 모델로 대체 가능합니다.
+        
         Args:
             text: 영어 텍스트
             
@@ -188,6 +205,11 @@ class NeuralTranslator:
             한국어로 번역된 텍스트 (실패 시 원본 반환)
         """
         if not text or not text.strip():
+            return text
+        
+        # 영한 번역 모델이 없으므로 원본 반환
+        if self.EN2KO_MODEL is None:
+            logger.debug("[NeuralTranslator] 영한 번역 모델이 설정되지 않음, 원본 반환")
             return text
         
         if not self._check_transformers():
@@ -198,7 +220,7 @@ class NeuralTranslator:
             self._load_pipelines()
         
         if self._en2ko_pipeline is None:
-            logger.warning("[NeuralTranslator] 영한 번역기 로드 실패, 원본 반환")
+            logger.debug("[NeuralTranslator] 영한 번역기 로드 실패, 원본 반환")
             return text
         
         try:
